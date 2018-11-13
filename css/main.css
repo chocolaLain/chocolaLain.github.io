@@ -941,7 +941,7 @@ pre .javascript .function {
   padding: 0 20px;
   font-size: 14px;
   color: #555;
-  background: #fff;
+  background: rgba(255,255,255,0.5);
   border: 2px solid #555;
   text-decoration: none;
   border-radius: 2px;
@@ -1823,7 +1823,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e0b18b;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2607,7 +2607,7 @@ pre .javascript .function {
   overflow: hidden;
   padding: 0;
   width: 240px;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
@@ -2848,7 +2848,7 @@ pre .javascript .function {
   box-sizing: border-box;
   width: 240px;
   color: #555;
-  background: #fff;
+  background: rgba(255,255,255,0.9);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
   opacity: 0;
@@ -2984,7 +2984,7 @@ pre .javascript .function {
 }
 .post-block {
   padding: 40px;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12);
   border-radius: initial;
 }
@@ -2997,7 +2997,7 @@ pre .javascript .function {
   padding: 40px;
   margin: initial;
   margin-top: 12px;
-  background: #fff;
+  background: rgba(255,255,255,0.7);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
 }
@@ -3017,7 +3017,7 @@ pre .javascript .function {
 .pagination {
   margin: 12px 0 0;
   border-top: initial;
-  background: #fff;
+  background: rgba(255,255,255,0.8);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
   padding: 10px 0 10px;
