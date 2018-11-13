@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://cdn.wiz.cn/wp-content/uploads/2015/06/wiz_logo.png">
 <meta property="og:image" content="http://wx4.sinaimg.cn/mw690/c374df4cly1fx6orn06i2j20lk1jcdhu.jpg">
-<meta property="og:updated_time" content="2018-11-13T12:09:50.661Z">
+<meta property="og:updated_time" content="2018-11-13T12:17:21.811Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="markdown语法学习">
 <meta name="twitter:description" content="这是为知的markdown教程这是视频形式的的markdown教程 一级标题二级标题三级标题共有六级标题(类似h1-h6) 1.有序列表2.有序列表3.有序列表  无序列表 无序列表   插入图片可以直接插入,或者使用标准的markdown语法  粗体斜体删除线   引用:无论你去哪里,人与人之间都是联系着的 – Lain谈谈为知笔记的 markdown功能引用语块下面如果还有内容的话继续归入引用">
@@ -362,8 +362,24 @@
 </blockquote>
 <hr>
 <h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><blockquote>
-<p>引用时>与字之间有没有空格无所谓<br>但是使用表格时,|与字之间需要有空格<br><a href="url:https://www.jianshu.com/p/2df05f279331" target="_blank" rel="noopener">另外| —— |中的—–可以用<strong>‘:’</strong>来设置左对齐右对齐或者居中设置</a><br>| episode | caption | script |<br>| :———–: | ——— | ——– |<br>|      01   | WERID | 小中千昭 |</p>
+<p>引用时>与字之间有没有空格无所谓<br>但是使用表格时,|与字之间需要有空格<br><a href="url:https://www.jianshu.com/p/2df05f279331" target="_blank" rel="noopener">另外| —— |中的—–可以用<strong>‘:’</strong>来设置左对齐右对齐或者居中设置</a></p>
 </blockquote>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">episode</th>
+<th>caption</th>
+<th>script</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">01</td>
+<td>WERID</td>
+<td>小中千昭</td>
+</tr>
+</tbody>
+</table>
 <hr>
 <h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p><strong>注意 反单引号是在Esc 下面</strong><br><strong>如果需要指定语言,在开头的```后面紧跟具体语言,如```Python</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = 1</span><br><span class="line">def fun2():</span><br><span class="line">    y = x # 这时x无定义</span><br><span class="line">    x = 2 # 当函数体里面出现过x的赋值定义时,无论其他的x赋值定义处在什么位置,都必须把这个x当做局部变量,否则下面再用到x的时候会出现不知道到底用全局变量还是局部变量的矛盾.</span><br><span class="line">    return x + y # 报错 local variable &apos;x&apos; referenced before assignment</span><br></pre></td></tr></table></figure></p>
 <hr>
