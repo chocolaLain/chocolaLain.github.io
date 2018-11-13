@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.   如果全局定义域里面x有了定义,而某个函数里面又给x重">
+<meta name="description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
 <meta property="og:title" content="函数与程序结构">
 <meta property="og:url" content="http://chocolaLain.github.io/2018/11/13/函数与程序结构/index.html">
 <meta property="og:site_name" content="Lain&#39;s Blog">
-<meta property="og:description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.   如果全局定义域里面x有了定义,而某个函数里面又给x重">
+<meta property="og:description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-13T12:33:01.749Z">
+<meta property="og:updated_time" content="2018-11-13T13:49:55.269Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="函数与程序结构">
-<meta name="twitter:description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.   如果全局定义域里面x有了定义,而某个函数里面又给x重">
+<meta name="twitter:description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)">
 
 
 
@@ -147,6 +147,7 @@
 
   <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
+    <a href="https://github.com/chocolaLain" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
       <div class="header-inner"><div class="site-brand-wrapper">
@@ -321,8 +322,10 @@
 
       
         <p>2018年11月8日, 星期四</p>
-<h1 id="4-1-1作用域与函数定义"><a href="#4-1-1作用域与函数定义" class="headerlink" title="4.1.1作用域与函数定义"></a>4.1.1作用域与函数定义</h1><p>1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.<br>而模块里的函数定义了一个局部作用域(范围就是函数的体)<br>2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.</p>
-<p>  如果全局定义域里面x有了定义,而某个函数里面又给x重新定义,那么这个函数里面用这个作用域里面的局部定义,即x的局部定义遮蔽全局定义,没有局部定义的话也可以直接使用全局定义.<br>3.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = 1</span><br><span class="line">def fun2():</span><br><span class="line">    y = x # 这时x无定义</span><br><span class="line">    x = 2 # 当函数体里面出现过x的赋值定义时,无论其他的x赋值定义处在什么位置,都必须把这个x当做局部变量,否则下面再用到x的时候会出现不知道到底用全局变量还是局部变量的矛盾.</span><br><span class="line">    return x + y # 报错 local variable &apos;x&apos; referenced before assignment</span><br></pre></td></tr></table></figure></p>
+<h1 id="4-1-1作用域与函数定义"><a href="#4-1-1作用域与函数定义" class="headerlink" title="4.1.1作用域与函数定义"></a>4.1.1作用域与函数定义</h1><p>1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.<br>而模块里的函数定义了一个局部作用域(范围就是函数的体)</p>
+<a id="more"></a>
+<p>2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.</p>
+<p>  如果全局定义域里面x有了定义,而某个函数里面又给x重新定义,那么这个函数里面用这个作用域里面的局部定义,即x的局部定义遮蔽全局定义,没有局部定义的话也可以直接使用全局定义.<br>3.<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = <span class="number">1</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">fun2</span><span class="params">()</span>:</span></span><br><span class="line">    y = x <span class="comment"># 这时x无定义</span></span><br><span class="line">    x = <span class="number">2</span> <span class="comment"># 当函数体里面出现过x的赋值定义时,无论其他的x赋值定义处在什么位置,都必须把这个x当做局部变量,否则下面再用到x的时候会出现不知道到底用全局变量还是局部变量的矛盾.</span></span><br><span class="line">    <span class="keyword">return</span> x + y <span class="comment"># 报错 local variable 'x' referenced before assignment</span></span><br></pre></td></tr></table></figure></p>
 <h1 id="4-1-2-环境和状态"><a href="#4-1-2-环境和状态" class="headerlink" title="4.1.2 环境和状态"></a>4.1.2 环境和状态</h1>
       
     </div>
