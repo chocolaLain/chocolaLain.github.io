@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="Welcome to WEIRD">
-<meta property="og:type" content="website">
+<meta name="description" content="第四章 函数与程序结构      .wiz-editor-body .wiz-code-container{position: relative; padding:8px 0; margin: 5px 25px 5px 5px;text-indent:0; text-align:left;}.CodeMirror {font-family: Consolas, &quot;Liberation Mon">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Lain&#39;s Blog">
-<meta property="og:url" content="http://chocolaLain.github.io/index.html">
+<meta property="og:url" content="http://chocolaLain.github.io/2018/11/13/第四章 函数与程序结构/index.html">
 <meta property="og:site_name" content="Lain&#39;s Blog">
-<meta property="og:description" content="Welcome to WEIRD">
+<meta property="og:description" content="第四章 函数与程序结构      .wiz-editor-body .wiz-code-container{position: relative; padding:8px 0; margin: 5px 25px 5px 5px;text-indent:0; text-align:left;}.CodeMirror {font-family: Consolas, &quot;Liberation Mon">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-13T07:36:18.907Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Lain&#39;s Blog">
-<meta name="twitter:description" content="Welcome to WEIRD">
+<meta name="twitter:description" content="第四章 函数与程序结构      .wiz-editor-body .wiz-code-container{position: relative; padding:8px 0; margin: 5px 25px 5px 5px;text-indent:0; text-align:left;}.CodeMirror {font-family: Consolas, &quot;Liberation Mon">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://chocolaLain.github.io/"/>
+  <link rel="canonical" href="http://chocolaLain.github.io/2018/11/13/第四章 函数与程序结构/"/>
 
 
 
 
 
-  <title>Lain's Blog</title>
+  <title> | Lain's Blog</title>
   
 
 
@@ -143,8 +144,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -237,9 +237,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +269,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/13/第四章 函数与程序结构/" itemprop="url">未命名</a></h1>
+          <h1 class="post-title" itemprop="name headline"></h1>
         
 
         <div class="post-meta">
@@ -321,9 +319,7 @@
       
 
       
-        
-          
-            <!doctype html><html><head><meta name="generator" content="Hexo 3.8.0">
+        <!doctype html><html><head><meta name="generator" content="Hexo 3.8.0">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 
 <title>第四章 函数与程序结构</title>
@@ -336,8 +332,6 @@ def fun2():
     y = x # 这时x无定义
     x = 2 # 当函数体里面出现过x的赋值定义时,无论其他的x赋值定义处在什么位置,都必须把这个x当做局部变量,否则下面再用到x的时候会出现不知道到底用全局变量还是局部变量的矛盾.
     return x + y # 报错 local variable 'x' referenced before assignment</textarea><wiz_code_mirror><div class="CodeMirror CodeMirror-wrap cm-s-blackboard" data-id="wiz_cm_1541680897511_9035"><div class="CodeMirror-scrollbar-filler"></div><div class="CodeMirror-gutter-filler"></div><div class="CodeMirror-scroll"><div class="CodeMirror-sizer" style="margin-left: 29px; margin-bottom: 0px; border-right-width: 30px; min-height: 330px; padding-right: 0px; padding-bottom: 0px;"><div style="position: relative; top: 0px;"><div class="CodeMirror-lines"><div style="position: relative; outline: none;"><div class="CodeMirror-measure"><div class="CodeMirror-linenumber CodeMirror-gutter-elt"><div>5</div></div></div><div class="CodeMirror-measure"></div><div style="position: relative; z-index: 1;"></div><div class="wiz-hide wiz_CodeMirror-cursors"></div><div class="CodeMirror-code"><div class="CodeMirror-activeline" style="position: relative;"><div class="wiz-hide wiz_CodeMirror-activeline-background CodeMirror-linebackground"></div><div class="CodeMirror-gutter-background CodeMirror-activeline-gutter" style="left: -29px; width: 29px;"></div><div class="CodeMirror-gutter-wrapper CodeMirror-activeline-gutter" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">1</div></div><pre class="CodeMirror-line"><span style="padding-right: 0.1px;"><span class="cm-variable">x</span> = <span class="cm-number">1</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">2</div></div><pre class="CodeMirror-line"><span style="padding-right: 0.1px;"><span class="cm-keyword">def</span> <span class="cm-def">fun2</span>():</span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">3</div></div><pre class="CodeMirror-line"><span style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">y</span> = <span class="cm-variable">x</span> <span class="cm-comment"># 这时x无定义</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">4</div></div><pre class="CodeMirror-line"><span style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-variable">x</span> = <span class="cm-number">2</span> <span class="cm-comment"># 当函数体里面出现过x的赋值定义时,无论其他的x赋值定义处在什么位置,都必须把这个x当做局部变量,否则下面再用到x的时候会出现不知道到底用全局变量还是局部变量的矛盾.</span></span></pre></div><div style="position: relative;"><div class="CodeMirror-gutter-wrapper" style="left: -29px;"><div class="CodeMirror-linenumber CodeMirror-gutter-elt" style="left: 0px; width: 21px;">5</div></div><pre class="CodeMirror-line"><span style="padding-right: 0.1px;"> &nbsp; &nbsp;<span class="cm-keyword">return</span> <span class="cm-variable">x</span> <span class="cm-operator">+</span> <span class="cm-variable">y</span> <span class="cm-comment"># 报错 local variable 'x' referenced before assignment</span></span></pre></div></div></div></div></div></div><div style="position: absolute; height: 13px; width: 1px; border-bottom-width: 0px; border-bottom-style: solid; border-bottom-color: transparent; top: 330px;"></div><div class="CodeMirror-gutters" style="height: 360px;"><div class="CodeMirror-gutter CodeMirror-linenumbers" style="width: 29px;"></div></div></div></div></wiz_code_mirror></div><div>总结:变量(和函数等)的定义与作用域有三条规<span data-wiz-span="data-wiz-span">则:<span data-wiz-span="data-wiz-span" style="color: rgb(255, 104, 32);">1)在一个作用域里,一个名字只有一个定义,赋值即定义</span>;2)</span>在不同作用域例定义的同样名字相互无关;3)如果作用域嵌套,在内层作用域里的变量(或参数)定义将遮蔽外层作用域里的同名定义.如果没有遮蔽,在局部作用域里可以使用外围作用域中定义的变量.</div></li></ol><h1>4.1.2 环境和状态</h1></div></body></html>
-          
-        
       
     </div>
     
@@ -354,154 +348,28 @@ def fun2():
       
 
       
-
-      
-
       
       
-        <div class="post-eof"></div>
+
       
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chocolaLain.github.io/2018/11/13/Lain/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lain">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://wx4.sinaimg.cn/mw690/c374df4cgy1fx6k7npma2j20990a3ads.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lain's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/13/Lain/" itemprop="url">Lain</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
             
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-13T14:15:37+08:00">
-                2018-11-13
-              </time>
+              <a href="/2018/11/13/Lain/" rel="next" title="Lain">
+                <i class="fa fa-chevron-left"></i> Lain
+              </a>
             
+          </div>
 
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
             
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Lain/" itemprop="url" rel="index">
-                    <span itemprop="name">Lain</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
+          </div>
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
-        
-          
-            <h2 id="Lain"><a href="#Lain" class="headerlink" title="Lain"></a>Lain</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </div>
@@ -511,139 +379,11 @@ def fun2():
   </article>
 
 
-    
-      
 
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chocolaLain.github.io/2018/11/13/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lain">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://wx4.sinaimg.cn/mw690/c374df4cgy1fx6k7npma2j20990a3ads.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lain's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/13/hello-world/" itemprop="url">未命名</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-13T11:41:49+08:00">
-                2018-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <hr>
-<h2 id="title-这👆里👇就是我家了-还蛮大的-心虚"><a href="#title-这👆里👇就是我家了-还蛮大的-心虚" class="headerlink" title="title:这👆里👇就是我家了,还蛮大的(心虚)"></a>title:这👆里👇就是我家了,还蛮大的(心虚)</h2><p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start-CO👆co👇"><a href="#Quick-Start-CO👆co👇" class="headerlink" title="Quick Start CO👆co👇"></a>Quick Start CO👆co👇</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
-        
+    <div class="post-spread">
       
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
-  
-  
-  
-  </article>
-
-
-    
-  </section>
-
-  
 
 
           </div>
@@ -651,6 +391,10 @@ def fun2():
 
 
           
+
+  
+
+
 
         </div>
         
@@ -671,8 +415,17 @@ def fun2():
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -736,6 +489,22 @@ def fun2():
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">1.</span> <span class="nav-text">4.1.1作用域与函数定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#undefined"><span class="nav-number">2.</span> <span class="nav-text">4.1.2 环境和状态</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -876,6 +645,10 @@ def fun2():
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
