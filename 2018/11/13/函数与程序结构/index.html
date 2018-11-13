@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT">
+  <meta name="keywords" content="python,">
 
 
 
@@ -79,16 +79,18 @@
 
 
 
-<meta name="description" content="Welcome to WEIRD">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lain&#39;s Blog">
-<meta property="og:url" content="http://chocolaLain.github.io/index.html">
+<meta name="description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.   如果全局定义域里面x有了定义,而某个函数里面又给x重">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="函数与程序结构">
+<meta property="og:url" content="http://chocolaLain.github.io/2018/11/13/函数与程序结构/index.html">
 <meta property="og:site_name" content="Lain&#39;s Blog">
-<meta property="og:description" content="Welcome to WEIRD">
+<meta property="og:description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.   如果全局定义域里面x有了定义,而某个函数里面又给x重">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2018-11-13T12:33:01.749Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lain&#39;s Blog">
-<meta name="twitter:description" content="Welcome to WEIRD">
+<meta name="twitter:title" content="函数与程序结构">
+<meta name="twitter:description" content="2018年11月8日, 星期四 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.   如果全局定义域里面x有了定义,而某个函数里面又给x重">
 
 
 
@@ -118,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://chocolaLain.github.io/">
+  <link rel="canonical" href="http://chocolaLain.github.io/2018/11/13/函数与程序结构/">
 
 
 
 
 
-  <title>Lain's Blog</title>
+  <title>函数与程序结构 | Lain's Blog</title>
   
 
 
@@ -143,8 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
@@ -237,9 +238,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -269,9 +270,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/13/函数与程序结构/" itemprop="url">函数与程序结构</a></h1>
+          <h1 class="post-title" itemprop="name headline">函数与程序结构</h1>
         
 
         <div class="post-meta">
@@ -321,14 +320,10 @@
       
 
       
-        
-          
-            <p>2018年11月8日, 星期四</p>
+        <p>2018年11月8日, 星期四</p>
 <h1 id="4-1-1作用域与函数定义"><a href="#4-1-1作用域与函数定义" class="headerlink" title="4.1.1作用域与函数定义"></a>4.1.1作用域与函数定义</h1><p>1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.<br>而模块里的函数定义了一个局部作用域(范围就是函数的体)<br>2.Python的一条基本原则是赋值及定义,一个作用域里面一个变量只有一个定义,在这个作用域里的任何地方,只要提到变量名都是使用同一个定义.</p>
 <p>  如果全局定义域里面x有了定义,而某个函数里面又给x重新定义,那么这个函数里面用这个作用域里面的局部定义,即x的局部定义遮蔽全局定义,没有局部定义的话也可以直接使用全局定义.<br>3.<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = 1</span><br><span class="line">def fun2():</span><br><span class="line">    y = x # 这时x无定义</span><br><span class="line">    x = 2 # 当函数体里面出现过x的赋值定义时,无论其他的x赋值定义处在什么位置,都必须把这个x当做局部变量,否则下面再用到x的时候会出现不知道到底用全局变量还是局部变量的矛盾.</span><br><span class="line">    return x + y # 报错 local variable &apos;x&apos; referenced before assignment</span><br></pre></td></tr></table></figure></p>
 <h1 id="4-1-2-环境和状态"><a href="#4-1-2-环境和状态" class="headerlink" title="4.1.2 环境和状态"></a>4.1.2 环境和状态</h1>
-          
-        
       
     </div>
     
@@ -343,194 +338,36 @@
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://chocolaLain.github.io/2018/11/13/markdown语法学习/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Lain">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="http://wx4.sinaimg.cn/mw690/c374df4cgy1fx6k7npma2j20990a3ads.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Lain's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2018/11/13/markdown语法学习/" itemprop="url">markdown语法学习</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-11-13T19:40:27+08:00">
-                2018-11-13
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/语法学习/" itemprop="url" rel="index">
-                    <span itemprop="name">语法学习</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/python/" rel="tag"># python</a>
           
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p><a href="url:http://www.wiz.cn/feature-markdown.html" target="_blank" rel="noopener">这是为知的markdown教程</a><br><a href="url:https://www.bilibili.com/video/av17653359/?p=11" target="_blank" rel="noopener">这是视频形式的的markdown教程</a></p>
-<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h6 id="共有六级标题-类似h1-h6"><a href="#共有六级标题-类似h1-h6" class="headerlink" title="共有六级标题(类似h1-h6)"></a>共有六级标题(类似h1-h6)</h6><hr>
-<p>1.有序列表<br>2.有序列表<br>3.有序列表</p>
-<ul>
-<li>无序列表</li>
-<li>无序列表</li>
-</ul>
-<hr>
-<p>插入图片可以直接插入,或者使用标准的markdown语法<br><img src="http://cdn.wiz.cn/wp-content/uploads/2015/06/wiz_logo.png" alt=""></p>
-<hr>
-<p><strong>粗体</strong><br><em>斜体</em><br><del>删除线</del></p>
-<hr>
-<blockquote>
-<p>引用:<br>无论你去哪里,人与人之间都是联系着的 – Lain<br><a href="url:https://sspai.com/post/37275" target="_blank" rel="noopener">谈谈为知笔记的 markdown功能</a><br>引用语块下面如果还有内容的话继续归入引用,不管开头有没有>,想要分开就要回车隔出一行来</p>
-</blockquote>
-<hr>
-<h3 id="表格"><a href="#表格" class="headerlink" title="表格"></a>表格</h3><blockquote>
-<p>引用时>与字之间有没有空格无所谓<br>但是使用表格时,|与字之间需要有空格<br><a href="url:https://www.jianshu.com/p/2df05f279331" target="_blank" rel="noopener">另外| —— |中的—–可以用<strong>‘:’</strong>来设置左对齐右对齐或者居中设置</a></p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th style="text-align:center">episode</th>
-<th>caption</th>
-<th>script</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center">01</td>
-<td>WERID</td>
-<td>小中千昭</td>
-</tr>
-</tbody>
-</table>
-<hr>
-<h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><p><strong>注意 反单引号是在Esc 下面</strong><br><strong>如果需要指定语言,在开头的```后面紧跟具体语言,如```Python</strong><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">x = 1</span><br><span class="line">def fun2():</span><br><span class="line">    y = x # 这时x无定义</span><br><span class="line">    x = 2 # 当函数体里面出现过x的赋值定义时,无论其他的x赋值定义处在什么位置,都必须把这个x当做局部变量,否则下面再用到x的时候会出现不知道到底用全局变量还是局部变量的矛盾.</span><br><span class="line">    return x + y # 报错 local variable &apos;x&apos; referenced before assignment</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h2 id="最后附上本文Markdown语法图片版"><a href="#最后附上本文Markdown语法图片版" class="headerlink" title="最后附上本文Markdown语法图片版"></a><strong>最后附上本文Markdown语法图片版</strong></h2><h5 id="图片引用时-括号里面不需要url"><a href="#图片引用时-括号里面不需要url" class="headerlink" title="图片引用时,括号里面不需要url"></a>图片引用时,括号里面不需要url</h5><p><img src="http://wx2.sinaimg.cn/mw690/c374df4cly1fx6pgbx8r2j20lk2z84a6.jpg" alt=""></p>
-
-          
-        
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
       
 
       
       
-        <div class="post-eof"></div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/13/markdown语法学习/" rel="next" title="markdown语法学习">
+                <i class="fa fa-chevron-left"></i> markdown语法学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
       
     </footer>
   </div>
@@ -540,10 +377,11 @@
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -551,6 +389,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -571,8 +413,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
@@ -634,6 +485,22 @@
         </div>
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#4-1-1作用域与函数定义"><span class="nav-number">1.</span> <span class="nav-text">4.1.1作用域与函数定义</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-1-2-环境和状态"><span class="nav-number">2.</span> <span class="nav-text">4.1.2 环境和状态</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -774,6 +641,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
