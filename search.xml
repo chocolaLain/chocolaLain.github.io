@@ -2,7 +2,7 @@
 <search>
   <entry>
     <title><![CDATA[概率论基础教程第六章]]></title>
-    <url>%2F2018%2F11%2F15%2F%E6%A6%82%E7%8E%87%E8%AE%BA%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E7%AC%AC%E5%85%AD%E7%AB%A0%2F</url>
+    <url>%2F2018%2F11%2F15%2F%E6%A6%82%E7%8E%87%E8%AE%BA%2F%E6%A6%82%E7%8E%87%E8%AE%BA%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E7%AC%AC%E5%85%AD%E7%AB%A0%2F</url>
     <content type="text"><![CDATA[第六章 随机变量的联合分布6.1 联合分布函数]]></content>
       <categories>
         <category>概率论基础教程</category>
@@ -22,7 +22,7 @@
   <entry>
     <title><![CDATA[Next主题个人DIY相关文章]]></title>
     <url>%2F2018%2F11%2F14%2FNext%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BADIY%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[Next外观相关 Hexo瞎折腾系列(2) - 添加背景图片轮播 Next主题个性化之自动更换背景图片 Next文档:内置标签 Next功能相关 hexo next主题为博客添加分享功能 - Masimaro的专栏 - CSDN博客 hexo的next主题个性化教程:打造炫酷网站 - 简书 Hexo Next 使用配置 这篇文章的设置内连接部分代码有些错误,例如border-bottom的设置里面字体大小 字体样式 和字体颜色没有用空格隔开 以下是我的设置(我将border-bottom的值设置为none,即不显示下划线) 点击显/隐内容 123456789101112131415161718192021222324252627282930313233.post-body p a&#123;color: #0593d3;border-bottom:none;&amp;:hover &#123;color: #fc6423;border-bottom: none;&#125;&#125;.post-body li a&#123;color: #0593d3;border-bottom: none;&amp;:hover &#123;color: #fc6423;border-bottom: none;&#125;&#125; Hexo添加折叠代码块功能 hexo博客优化之文章置顶+置顶标签 hexo添加文章更新时间 根据博客配置文件中的 language 参数修改对应的语言配置文件（博客主目录）/themes/next/languages/zh_Hans.yml 12345post:updated: 更新于试了下,在md文件里面,貌似也可以用html,这个代码块就是用了&lt;div&gt;实现了位置的缩进.不过我是用的&lt;div&gt;&lt;div&gt;,如果用的&lt;div&gt;&lt;/div&gt;的话这个块与其他内容会出现比较大的间隔,这个问题以后研究一下. 我这里的设置原本是modified: 更新于,但是显示的是post-updated:时间,将modified更改为updated后就成功显示了更新于:时间 可能是前面在/themes/next/layout/_macro/post.swig设置的代码是连接到updated变量,但是到zh_Hans.yml的post那里没有updated变量,所以按照默认的来显示更新样式. 这个博客的评论功能是用leancloud和valine实现的评论头像的实现是借助Gravatars实现的,详情见头像配置]]></content>
+    <content type="text"><![CDATA[Next外观相关 打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化 Hexo瞎折腾系列(1) - 准备工作与简单美化 Hexo瞎折腾系列(2) - 添加背景图片轮播 Next主题个性化之自动更换背景图片 Next文档:内置标签 Next功能相关 hexo next主题为博客添加分享功能 - Masimaro的专栏 - CSDN博客 hexo的next主题个性化教程:打造炫酷网站 - 简书 Hexo Next 使用配置 这篇文章的设置内连接部分代码有些错误,例如border-bottom的设置里面字体大小 字体样式 和字体颜色没有用空格隔开 以下是我的设置(我将border-bottom的值设置为none,即不显示下划线) 点击显/隐内容 123456789101112131415161718192021222324252627282930313233.post-body p a&#123;color: #0593d3;border-bottom:none;&amp;:hover &#123;color: #fc6423;border-bottom: none;&#125;&#125;.post-body li a&#123;color: #0593d3;border-bottom: none;&amp;:hover &#123;color: #fc6423;border-bottom: none;&#125;&#125; Hexo添加折叠代码块功能 hexo博客优化之文章置顶+置顶标签 hexo添加文章更新时间 根据博客配置文件中的 language 参数修改对应的语言配置文件（博客主目录）/themes/next/languages/zh_Hans.yml 12345post:updated: 更新于试了下,在md文件里面,貌似也可以用html,这个代码块就是用了&lt;div&gt;实现了位置的缩进.不过我是用的&lt;div&gt;&lt;div&gt;,如果用的&lt;div&gt;&lt;/div&gt;的话这个块与其他内容会出现比较大的间隔,这个问题以后研究一下. 我这里的设置原本是modified: 更新于,但是显示的是post-updated:时间,将modified更改为updated后就成功显示了更新于:时间 可能是前面在/themes/next/layout/_macro/post.swig设置的代码是连接到updated变量,但是到zh_Hans.yml的post那里没有updated变量,所以按照默认的来显示更新样式. 这个博客的评论功能是用leancloud和valine实现的评论头像的实现是借助Gravatars实现的,详情见头像配置]]></content>
       <categories>
         <category>网站建设</category>
       </categories>
@@ -32,7 +32,7 @@
   </entry>
   <entry>
     <title><![CDATA[概率论基础教程第一章笔记]]></title>
-    <url>%2F2018%2F11%2F14%2F%E6%A6%82%E7%8E%87%E8%AE%BA%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%94%E8%AE%B0(%E6%9B%B4%E6%96%B0%E5%AE%8C)%2F</url>
+    <url>%2F2018%2F11%2F14%2F%E6%A6%82%E7%8E%87%E8%AE%BA%2F%E6%A6%82%E7%8E%87%E8%AE%BA%E5%9F%BA%E7%A1%80%E6%95%99%E7%A8%8B%E7%AC%AC%E4%B8%80%E7%AB%A0%E7%AC%94%E8%AE%B0(%E6%9B%B4%E6%96%B0%E5%AE%8C)%2F</url>
     <content type="text"><![CDATA[第一章 组合分析1.2计数基本法则：1.有两个实验，其中试验1有m种可能发生的结果，对应于试验1的每一个结果，试验2有n种可能发生的结果，则对这两个试验来说，一共有mn种可能结果。 证明略. 2.当有2个以上的试验时，基本法则可以推广如下：推广计数法则 一共有r个试验，第一个实验有n1种可能结果；对应于第一个实验的每一个实验结果，第二个试验有n2种可能结果；对应于头两个试验的每一种试验结果，第三个试验有n3种可能结果；等等，那么这r个试验一共有n1·n2···nr种可能结果。 1.3排列：1.按随意顺序来排列字母A,B,C 一共有多少种排排列方式？3个元素一共有6种可能排列方式，在排列中第一个位置可供选择的元素有3个，第二个位置可供选择的元素是剩下的两个之一，第三个位置只能选择剩下的1个元素，因此一共有321=6种可能的排列 假设有n个元素，那么用上述类似的方法，可知一共有n(n-1)(n-2)···3·2·1=n！种不同的排列方式。 b）男生女生分开排是两种试验，女生每一个结果对应前面男生每一个结果。 例3c也可以看一下 例3d比较重要 如果不理解可以将6！/(3!2!)=60变成6!=60*(3!2!)，理解为有60种相同的情况对应每一种不同的情况，所以除掉所有相同的情况。如果不理解可以将6！/(3!2!)=60变成6!=60*(3!2!)，理解为有60种相同的情况对应每一种不同的情况，所以除掉所有相同的情况。 1.4 组合:1.从n个元素中取r个，一共有多少种取法？这也是一个有趣的问题。比如，从A,B,C,D,E这5个元素中选取3个组成一组，一共有多少种取法？解答如下：取第一个有5种取法，取第2个有4种取法，取第三个有3种取法，所以如果考虑选择顺序的话，那么一共有543种取法，但是，每一个包含3个元素的组（比如包含A，B，C的组）都被计算了6次，（也即，如果考虑顺序的话，所有排列ABC,ACB,BAC,BCA,CAB,CBA都被算了一次，但是我们并不在乎他们的顺序）所以，组成方法数为： 一般来说，如果考虑顺序的话，从n个元素中选择r个组成一组一共有n(n-1)···(n-r+1)种方式，而每个含r个元素的小组都被重复计算了共r!次。所以，能组成不同的组的数目为: 2.例4d也很有意思。 3.以下是一个非常有用的组合恒等式：上述恒等式可用分析的方法证明，也可以从组合的角度来证明，设想从n个元素中取r个，一共有（n r）种取法。从另一个角度来考虑，不妨设这n个元素里有一个特殊的，记为元素1，那么取r个元素就有两种结果，取1或者不取元素1.取元素1的方法一共有（n-1 r-1）种（从n-1个元素里面取r-1个）；不取元素1的方法一共有（n-1 r）种（从去掉元素1的剩下n-1个元素种取r个）。两者之和就是从n个元素里面取r个的方法之和，所以恒等式成立。 同理，可以以此类推，上面的证明也结识了r为什么要&gt;=1. 值（n r）经常也成为二项式系数（binomial coefficient），这是因为它们是以下的二项式定理种重要的系数。 数学归纳法： 无论i如何，这里本质是k的范围，又因为这两个是不同的和式，式子只管你有没有把原本的意思表达出来，不管你怎么表示，i的不同显示的是取值范围的不同，所以第一个和式转化成了第二个和式的样子，使得两个和式此时的取值范围相同。 归纳法还需要再去了解一下 1.5 多项式系数1.涉及到排列部分的例3d 看前面几个例子这个部分更像是从排列中分出来的，但是转换成了分组的说法，而且这个组是与其他组相斥的，例如下面这两个例子。 2.下面的定理是二项式定理的推广，其证明留做习题。]]></content>
       <categories>
         <category>概率论基础教程</category>
@@ -60,7 +60,6 @@
         <category>语法学习</category>
       </categories>
       <tags>
-        <tag>markdown</tag>
         <tag>语法学习</tag>
       </tags>
   </entry>

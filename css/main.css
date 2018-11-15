@@ -1844,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fdf;
+  background: #70f2af;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3142,12 +3142,6 @@ pre .javascript .function {
     margin: 8px 0 0;
   }
 }
-body {
-  background: url("https://source.unsplash.com/random/1600x900");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: 50% 50%;
-}
 .hider_title {
   font-family: "Microsoft Yahei";
   cursor: pointer;
@@ -3164,4 +3158,18 @@ body {
 }
 :active {
   cursor: url("http://pi67irekk.bkt.clouddn.com/18-11-15/12573629.jpg"), auto !important;
+}
+.post {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 25px;
+  -webkit-box-shadow: 0 0 5px rgba(202,203,203,0.5);
+  -moz-box-shadow: 0 0 5px rgba(202,203,204,0.5);
+}
+.posts-expand .post-body img {
+  border: none;
+  padding: 0px;
+}
+.post-gallery .post-gallery-img img {
+  padding: 3px;
 }
