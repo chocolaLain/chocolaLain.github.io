@@ -1844,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f463d7;
+  background: #13a839;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3158,4 +3158,10 @@ body {
 }
 .open:after {
   content: "▲";
+}
+* {
+  cursor: url("http://pi67irekk.bkt.clouddn.com/18-11-15/12573629.jpg"), auto !important;
+}
+:active {
+  cursor: url("http://pi67irekk.bkt.clouddn.com/18-11-15/12573629.jpg"), auto !important;
 }
