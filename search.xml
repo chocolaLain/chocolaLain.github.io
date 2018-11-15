@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[接下来要完成的事情]]></title>
     <url>%2F2018%2F11%2F14%2F%E6%8E%A5%E4%B8%8B%E6%9D%A5%E8%A6%81%E5%AE%8C%E6%88%90%E7%9A%84%E4%BA%8B%E6%83%85%2F</url>
-    <content type="text"><![CDATA[短期计划 完成搜索功能 实现字数统计和阅读时长功能 去欣赏一下其他Hexo的其他主题,例如Gal和夏娜,而且这两个主题里面的文章挺不错的. 设置显示文章的更新时间(没出现效果) 设置标签的样式,例如:夏娜 设置鼠标样式,例如同上. 实现背景切换,例如同上(ps:实现了的话就要把原先的背景和动态背景去掉). 11.15日下午要开始解决概率论联合分布,所以以上内容在明天上午上英语课之前以及中午和晚上时间段尽量解决. 中期计划 11月20号以后开始学习sublime的具体操作 美图]]></content>
+    <content type="text"><![CDATA[短期计划 完成搜索功能 实现字数统计和阅读时长功能 去欣赏一下其他Hexo的其他主题,例如Gal和夏娜,而且这两个主题里面的文章挺不错的. 设置显示文章的更新时间 设置标签的样式,例如:夏娜 设置鼠标样式,例如同上. 实现背景切换,例如同上(ps:实现了的话就要把原先的背景和动态背景去掉). 11.15日下午要开始解决概率论联合分布,所以以上内容在明天上午上英语课之前以及中午和晚上时间段尽量解决. 中期计划 11月20号以后开始学习sublime的具体操作 美图]]></content>
       <tags>
         <tag>任务和计划</tag>
       </tags>
@@ -11,7 +11,7 @@
   <entry>
     <title><![CDATA[Next主题个人DIY相关文章]]></title>
     <url>%2F2018%2F11%2F14%2FNext%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BADIY%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[Next外观相关 Hexo瞎折腾系列(2) - 添加背景图片轮播 Next主题个性化之自动更换背景图片 Next文档:内置标签 Next功能相关 hexo next主题为博客添加分享功能 - Masimaro的专栏 - CSDN博客 hexo的next主题个性化教程:打造炫酷网站 - 简书 Hexo Next 使用配置 这篇文章的设置内连接部分代码有些错误,例如border-bottom的设置里面字体大小 字体样式 和字体颜色没有用空格隔开 以下是我的设置(我将border-bottom的值设置为none,即不显示下划线) 点击显/隐内容 123456789101112131415161718192021222324252627282930313233.post-body p a&#123;color: #0593d3;border-bottom:none;&amp;:hover &#123;color: #fc6423;border-bottom: none;&#125;&#125;.post-body li a&#123;color: #0593d3;border-bottom: none;&amp;:hover &#123;color: #fc6423;border-bottom: none;&#125;&#125; Hexo添加折叠代码块功能 hexo博客优化之文章置顶+置顶标签]]></content>
+    <content type="text"><![CDATA[Next外观相关 Hexo瞎折腾系列(2) - 添加背景图片轮播 Next主题个性化之自动更换背景图片 Next文档:内置标签 Next功能相关 hexo next主题为博客添加分享功能 - Masimaro的专栏 - CSDN博客 hexo的next主题个性化教程:打造炫酷网站 - 简书 Hexo Next 使用配置 这篇文章的设置内连接部分代码有些错误,例如border-bottom的设置里面字体大小 字体样式 和字体颜色没有用空格隔开 以下是我的设置(我将border-bottom的值设置为none,即不显示下划线) 点击显/隐内容 123456789101112131415161718192021222324252627282930313233.post-body p a&#123;color: #0593d3;border-bottom:none;&amp;:hover &#123;color: #fc6423;border-bottom: none;&#125;&#125;.post-body li a&#123;color: #0593d3;border-bottom: none;&amp;:hover &#123;color: #fc6423;border-bottom: none;&#125;&#125; Hexo添加折叠代码块功能 hexo博客优化之文章置顶+置顶标签 hexo添加文章更新时间 根据博客配置文件中的 language 参数修改对应的语言配置文件（博客主目录）/themes/next/languages/zh_Hans.yml 12345post:updated: 更新于试了下,在md文件里面,貌似也可以用html,这个代码块就是用了&lt;div&gt;实现了位置的缩进.不过我是用的&lt;div&gt;&lt;div&gt;,如果用的&lt;div&gt;&lt;/div&gt;的话这个块与其他内容会出现比较大的间隔,这个问题以后研究一下. 我这里的设置原本是modified: 更新于,但是显示的是post-updated:时间,将modified更改为updated后就成功显示了更新于:时间 可能是前面在/themes/next/layout/_macro/post.swig设置的代码是连接到updated变量,但是到zh_Hans.yml的post那里没有updated变量,所以按照默认的来显示更新样式. 这个博客的评论功能是用leancloud和valine实现的评论头像的实现是借助Gravatars实现的,详情见头像配置]]></content>
       <categories>
         <category>网站建设</category>
       </categories>
