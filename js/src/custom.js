@@ -8,6 +8,6 @@ $(function () {
     $.backstretch([  
           "http://pi67irekk.bkt.clouddn.com/18-11-15/4737610.jpg",
           "http://pi67irekk.bkt.clouddn.com/18-11-15/62187172.jpg",
-          "http://pi67irekk.bkt.clouddn.com/18-11-15/81500241.jpg"
+          "http://pi67irekk.bkt.clouddn.com/18-11-17/37361663.jpg"
     ], { duration: 6000, fade: 1500 });  
 });
