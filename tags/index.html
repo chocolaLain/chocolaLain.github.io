@@ -79,17 +79,14 @@
 
 
 
-<meta name="description" content="Welcome to WEIRD">
 <meta property="og:type" content="website">
 <meta property="og:title" content="标签">
 <meta property="og:url" content="http://chocolaLain.github.io/tags/index.html">
 <meta property="og:site_name" content="Lain&#39;s Blog">
-<meta property="og:description" content="Welcome to WEIRD">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-11-13T08:55:03.074Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="标签">
-<meta name="twitter:description" content="Welcome to WEIRD">
 
 
 
@@ -304,7 +301,7 @@
                 目前共计 8 个标签
             </div>
             <div class="tag-cloud-tags">
-              <a href="/tags/Next主题/" style="font-size: 12px; color: #f0cb35">Next主题</a> <a href="/tags/python/" style="font-size: 12px; color: #f0cb35">python</a> <a href="/tags/任务和计划/" style="font-size: 12px; color: #f0cb35">任务和计划</a> <a href="/tags/收集/" style="font-size: 30px; color: #c02425">收集</a> <a href="/tags/概率论/" style="font-size: 30px; color: #c02425">概率论</a> <a href="/tags/编程/" style="font-size: 30px; color: #c02425">编程</a> <a href="/tags/语法学习/" style="font-size: 12px; color: #f0cb35">语法学习</a> <a href="/tags/资源/" style="font-size: 12px; color: #f0cb35">资源</a>
+              <a href="/tags/Next主题/" style="font-size: 12px; color: #f0cb35">Next主题</a> <a href="/tags/python/" style="font-size: 12px; color: #f0cb35">python</a> <a href="/tags/任务和计划/" style="font-size: 12px; color: #f0cb35">任务和计划</a> <a href="/tags/收集/" style="font-size: 21px; color: #d8782d">收集</a> <a href="/tags/概率论/" style="font-size: 30px; color: #c02425">概率论</a> <a href="/tags/编程/" style="font-size: 21px; color: #d8782d">编程</a> <a href="/tags/语法学习/" style="font-size: 12px; color: #f0cb35">语法学习</a> <a href="/tags/资源/" style="font-size: 12px; color: #f0cb35">资源</a>
             </div>
           </div>
         
@@ -369,7 +366,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">9</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -448,10 +445,14 @@
                   </li>
                 
               </ul>
-            </div>
+
           
 
           
+            </div>
+
+          
+
 
         </div>
       </section>
@@ -469,6 +470,36 @@
 
     </div>
   </aside>
+
+
+
+
+<div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("11/13/2018 15:13:14");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
 
 
         
@@ -502,7 +533,7 @@
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.9k字</span>
+  <span class="post-count">博客全站共5.8k字</span>
 </div>
         
 <div class="busuanzi-count">
