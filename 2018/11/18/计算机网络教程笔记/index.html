@@ -89,7 +89,9 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-18/93908932.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-18/2644234.jpg">
-<meta property="og:updated_time" content="2018-11-18T02:26:48.591Z">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-19/85416290.jpg">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-19/30911924.jpg">
+<meta property="og:updated_time" content="2018-11-19T05:13:02.791Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络教程(谢希仁第五版)笔记">
 <meta name="twitter:description" content="资源:韩老师讲大学高校课程《计算机网络原理》详细讲解TCPIP协议栈和网络基础原理概念课件: 链接: https://pan.baidu.com/s/10GInOUv47BhjRYOY5jlSAA 提取码: sybm计算机网络教程(谢希仁第五版)">
@@ -328,8 +330,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-11-18T10:26:48+08:00" content="2018-11-18">
-                    2018-11-18
+                  <time itemprop="dateUpdated" datetime="2018-11-19T13:13:02+08:00" content="2018-11-19">
+                    2018-11-19
                   </time>
                 </span>
               
@@ -388,7 +390,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  689
+                  1.2k
                 </span>
               
 
@@ -404,7 +406,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  4
                 </span>
               
             </div>
@@ -432,7 +434,12 @@
 <li>21世纪网络有着数字化 信息化 网络化的特点,有三个比较重要的网络(简称三网)是电信网络(电话) 计算机网络(主要是因特网和其他网络) 有线电视网络(以前是单向的,现在也可以双向点播.).还有着连通性和共享的重要功能,共享有着信息共享,软(例如远程桌面操作虚拟机)硬件(利用光缆远程操作其他设备,)共享</li>
 </ul>
 <h3 id="因特网概述"><a href="#因特网概述" class="headerlink" title="因特网概述:"></a>因特网概述:</h3><p>1.先区分网络 互连网 因特网.<br>2.计算机通过集线器和交换机建立一个局域网(结点是计算机设备,链路是光缆之类的东西),这就是一个<strong>网络(Network)</strong>,不同的网络相连就是成了<strong>互连网(Network of Networks)</strong>.<br>3.因特网(Internet,I大写)是全球最大的一个互连网(internet)(不过这个称呼到了第七版似乎又有了变化,互联网就是因特网,而internet是互连网).用的是TCP/IP协议.<br>4.003(05:41)讲了下因特网的发展史,1983年TCP/IP协议出现,可以说是因特网出现的时间.最开始TCP/IP协议是美国国防部自己用,安全问题没怎么考虑,放开后一些安全问题就出现了,之后IPV6加了安全问题的考虑.<br><strong>ARPANET向互联网发展(上世纪60年代到80年代中期)→三级结构(网络 地区网 主干网)的因特网(上世纪80年代中期到90年代初)→多层次ISP(互联网服务提供商 Internet Service Provide)结构的因特网</strong><br>5.可以再cmd里面ping出域名的ip地址,但是有时候ping出的ip地址不同,例如BAIDU.COM,因为百度用了CDN(Content Delivery Network),所以我们查看的一般都是地方缓存服务器的地址.<br>6.003(16:36)讲到了ISP分层结构,<strong>注意服务器放的位置,如果放在了比较低的层,那么其他人要想访问这个服务器就要先从底层到第一层再到服务器所在的底层,那么访问速度就会变慢.</strong><img src="http://pi67irekk.bkt.clouddn.com/18-11-18/93908932.jpg" alt=""><br>7.电信的人访问电信的服务器快一些,其他同理,此外还有双线机房,能连电信 网通等多个运营商,访问这些双线机房也比较快.<br>8.因特网标准化工作:<img src="http://pi67irekk.bkt.clouddn.com/18-11-18/2644234.jpg" alt="">)</p>
-<h2 id="因特网组成"><a href="#因特网组成" class="headerlink" title="因特网组成:"></a>因特网组成:</h2><p>1.</p>
+<h2 id="因特网组成"><a href="#因特网组成" class="headerlink" title="因特网组成:"></a>因特网组成:</h2><p>本节知识结构图:<img src="http://pi67irekk.bkt.clouddn.com/18-11-19/85416290.jpg" alt=""><br>1.因特网有核心部分(能够让计算机通讯的网络网络)和边缘部分(接入网络的计算机)<br>2.主机之间的通讯方式:1.客户服务器方式（Client/Server方式-C/S）2.对等（Peer-to-Peer方式—P2P）方式<br>3.客户服务器方式（Client/Server方式-C/S）:客户A向服务器B发出请求服务，而服务器B向客户A提供服务。(Browser/Server方式是C/S方式的一种特例。)<br>4.P2P方式(04:11):如果很多个客户端都从一个服务器那里下载,服务器带宽可能会承受不了,如果使用P2P,那么已经下载的人就可以当做服务器,其他人可以从这些服务器里面下载(迅雷有个上传功能就是提供P2P服务,这也是为什么下载的人越多,下载速度就越快).(不混乱，文件是按照一定大小的块来下载，每个块有一个 md5 码)<img src="http://pi67irekk.bkt.clouddn.com/18-11-19/30911924.jpg" alt=""><br>5.因特网的核心(5:33):数据交换方式:电路交换（Circuit Switching）报文交换（Message Switching）<strong>分组交换（Packet Switching）</strong>(计算机网络数据交换的主要方式)</p>
+<ul>
+<li>电路交换面向连接(很多电话连着交换机,(一个或者多个)交换机让电话通信相连):1.申请占用通信资源建立连接(拨号)2.一直占用通信资源通话.3.释放通信资源释放连接(挂断电话).如果拨打的地方远的话要经过多个交换机(所以说为什么打长途贵…..)</li>
+<li>电路交换适合于数据量很大的实时性传输：核心路由器之间可以使用电路交换。例如视频之类的,事先花时间建立连接,然后通话很流畅,传输数据的时延非常小(通信线路为通信双方用户专用，数据直达)</li>
+<li>分组交换（Packet Switching）(9:42):</li>
+</ul>
 
       
     </div>
@@ -748,7 +755,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共10.1k字</span>
+  <span class="post-count">博客全站共10.7k字</span>
 </div>
         
 <div class="busuanzi-count">
