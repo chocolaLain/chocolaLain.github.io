@@ -1844,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffb8d2;
+  background: #8fe9ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3171,4 +3171,16 @@ pre .javascript .function {
 }
 .post-gallery .post-gallery-img img {
   padding: 3px;
+}
+p::selection {
+  background: #fb7f2c;
+  color: #fff;
+}
+p::-moz-selection {
+  background: #fb7f2c;
+  color: #fff;
+}
+p::-webkit-selection {
+  background: #fb7f2c;
+  color: #fff;
 }
