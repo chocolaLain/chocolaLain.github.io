@@ -95,7 +95,8 @@
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-23/2853770.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-23/15420289.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-23/15304237.jpg">
-<meta property="og:updated_time" content="2018-11-23T15:11:51.782Z">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-24/46719787.jpg">
+<meta property="og:updated_time" content="2018-11-24T15:19:41.300Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络教程(谢希仁第五版)笔记">
 <meta name="twitter:description" content="资源:  韩老师讲大学高校课程《计算机网络原理》详细讲解TCPIP协议栈和网络基础原理概念 课件: 链接: https://pan.baidu.com/s/10GInOUv47BhjRYOY5jlSAA 提取码: sybm计算机网络教程(谢希仁第五版) 计算机网络（谢希仁 第7版）课件">
@@ -334,8 +335,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-11-23T23:11:51+08:00" content="2018-11-23">
-                    2018-11-23
+                  <time itemprop="dateUpdated" datetime="2018-11-24T23:19:41+08:00" content="2018-11-24">
+                    2018-11-24
                   </time>
                 </span>
               
@@ -416,7 +417,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3.8k
+                  4.4k
                 </span>
               
 
@@ -432,7 +433,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  13
+                  15
                 </span>
               
             </div>
@@ -457,9 +458,9 @@
 <ul>
 <li><a href="https://www.bilibili.com/video/av10921041?from=search&amp;seid=16467922731767290808" target="_blank" rel="noopener">韩老师讲大学高校课程《计算机网络原理》详细讲解TCPIP协议栈和网络基础原理概念</a></li>
 <li>课件: 链接: <a href="https://pan.baidu.com/s/10GInOUv47BhjRYOY5jlSAA" target="_blank" rel="noopener">https://pan.baidu.com/s/10GInOUv47BhjRYOY5jlSAA</a> 提取码: sybm<br>计算机网络教程(谢希仁第五版)</li>
-<li><a href="http://pi67irekk.bkt.clouddn.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%88%E8%B0%A2%E5%B8%8C%E4%BB%81%20%E7%AC%AC7%E7%89%88%EF%BC%89%E8%AF%BE%E4%BB%B6.rar" target="_blank" rel="noopener">计算机网络（谢希仁 第7版）课件</a><a id="more"></a>
-</li>
+<li><a href="http://pi67irekk.bkt.clouddn.com/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C%EF%BC%88%E8%B0%A2%E5%B8%8C%E4%BB%81%20%E7%AC%AC7%E7%89%88%EF%BC%89%E8%AF%BE%E4%BB%B6.rar" target="_blank" rel="noopener">计算机网络（谢希仁 第7版）课件</a></li>
 </ul>
+<a id="more"></a>
 <hr>
 <h2 id="1-计算机网络概述"><a href="#1-计算机网络概述" class="headerlink" title="1.计算机网络概述:"></a>1.计算机网络概述:</h2><ul>
 <li>21世纪网络有着数字化 信息化 网络化的特点,有三个比较重要的网络(简称三网)是电信网络(电话) 计算机网络(主要是因特网和其他网络) 有线电视网络(以前是单向的,现在也可以双向点播.).还有着连通性和共享的重要功能,共享有着信息共享,软(例如远程桌面操作虚拟机)硬件(利用光缆远程操作其他设备,)共享</li>
@@ -557,17 +558,18 @@
 <li>OSI/RM(Open System Interconnection) 互联网法律上的国际标准</li>
 <li>TCP/IP Suite 因特网事实上的国际标准</li>
 <li>Network Protocols 数据交换遵守的规则 标准或约定</li>
-<li>网络体系结构 计算机网络隔层及其协议的集合<ul>
+<li><p>网络体系结构 计算机网络隔层及其协议的集合</p>
+<ul>
 <li>分层模型(可以理解为步骤,分了步骤有利于标准化,降低相互之间的依赖)</li>
 <li>OSI七层模型<ul>
-<li>应用层:能够产生网络流量能够和用户交互的应用程序(例如QQ 浏览器之类的,像记事本这种不涉及通讯,不产生流量,可以算是应用程序,但不属于应用层)</li>
-<li>表示层:加密(聊天记录) 压缩(例如qq上传视频时会压缩一下,到了对方那里再解压,这样节省带宽) 开发人员要考虑的问题,再例如编码设置错误,导致浏览器显示字符有问题之类的也是表示层的问题.</li>
-<li>会话层:服务和客户端建立的会话  可以用来查木马看看哪个会话在产生流量 netstat -n(b) (cmd中使用,加b可以显示名称,netstat/?可以显示所有命令提示);木马和病毒是有区别的.<a href="zhihhttps://www.zhihu.com/question/23207532" target="_blank" rel="noopener">木马和病毒有何区别？</a></li>
-<li>传输层:<strong>可靠传输</strong> 建立会话(例如传文件分组交换,有的包丢失,为了防止文件失效,这些包需要重传,像视频网站要和用户建立会话,记录用户观看到哪里,这样比较占用资源); <strong>不可靠传输</strong> 不建立会话(例如QQ,不明确什么时候再次会话,或者上网的域名解析,一个包就能传达信息,所以不需要可靠传输.再例如计算机教室教师机传输文件的广播也是不可靠传输.);<strong>流量控制</strong> 例如服务器向客户端传输数据,客户端处理不过来,就告诉服务器调节一下数据传输.</li>
+<li>应用层(Application):能够产生网络流量能够和用户交互的应用程序(例如QQ 浏览器之类的,像记事本这种不涉及通讯,不产生流量,可以算是应用程序,但不属于应用层)</li>
+<li>表示层(Presentation<br>):加密(聊天记录) 压缩(例如qq上传视频时会压缩一下,到了对方那里再解压,这样节省带宽) 开发人员要考虑的问题,再例如编码设置错误,导致浏览器显示字符有问题之类的也是表示层的问题.</li>
+<li>会话层(Session<br>):服务和客户端建立的会话  可以用来查木马看看哪个会话在产生流量 netstat -n(b) (cmd中使用,加b可以显示名称,netstat/?可以显示所有命令提示);木马和病毒是有区别的.<a href="zhihhttps://www.zhihu.com/question/23207532" target="_blank" rel="noopener">木马和病毒有何区别？</a></li>
+<li>传输层(Transport<br>):<strong>可靠传输</strong> 建立会话(例如传文件分组交换,有的包丢失,为了防止文件失效,这些包需要重传,像视频网站要和用户建立会话,记录用户观看到哪里,这样比较占用资源); <strong>不可靠传输</strong> 不建立会话(例如QQ,不明确什么时候再次会话,或者上网的域名解析,一个包就能传达信息,所以不需要可靠传输.再例如计算机教室教师机传输文件的广播也是不可靠传输.);<strong>流量控制</strong> 例如服务器向客户端传输数据,客户端处理不过来,就告诉服务器调节一下数据传输.</li>
 <li><a href="https://www.zhihu.com/question/39324847/answer/82082794" target="_blank" rel="noopener">怎么有效理解可靠数据传输？</a> </li>
-<li>网络层:IP地址编址;选择最佳路径</li>
-<li>数据链路层:输入如何封装;添加物理层地址,也叫MAC地址,（Media Access Control Address），直译为媒体访问控制地址，也称为局域网地址（LAN Address），以太网地址（Ethernet Address）或物理地址（Physical Address），它是一个用来确认网上设备位置的地址。</li>
-<li>物理层:规定了电压(多少伏代表0或者1这些都要规定好) 接口标准</li>
+<li>网络层(Network<br>):IP地址编址;选择最佳路径</li>
+<li>数据链路层(Data Link<br>))输入如何封装;添加物理层地址,也叫MAC地址,（Media Access Control Address），直译为媒体访问控制地址，也称为局域网地址（LAN Address），以太网地址（Ethernet Address）或物理地址（Physical Address），它是一个用来确认网上设备位置的地址。</li>
+<li>物理层(Physical):规定了电压(多少伏代表0或者1这些都要规定好) 接口标准</li>
 <li><strong>程序开发人员偏向于考虑应用层 表示层 会话层,网络工程师偏向于考虑传输层 网络层 数据链路层,物理层的问题一般来说都弄好标准了,直接用就可以了.</strong></li>
 <li><a href="https://www.bilibili.com/video/av10921041/?p=10" target="_blank" rel="noopener">结合实际发生的情况主要讲了下分层模型的好处</a></li>
 <li>(用分层的方式)网络排查:一般来说是<strong>从底层往高层排错</strong>,底层的错误更容易被排查出来,看看网线插没插对(物理层),看看IP地址有没有设置好(网络层),再看看浏览器是不是出了什么问题(应用层)</li>
@@ -580,6 +582,35 @@
 </li>
 </ul>
 </li>
+</ul>
+<ul>
+<li>TCP/IP四层模型:应用层(相当于OSI的应用层+表示层+会话层);传输层;网络层;数据接口层(Network Access,相当于OSI的数据链路层+物理层)</li>
+<li>计算机网络(谢希仁版)是按照五层来讲的:Application;Transport;Internet;Data Link;Physical</li>
+<li><p>开放系统信息交换涉及的几个概念:</p>
+<ul>
+<li>实体（entity）:交换信息的硬件或软件进程</li>
+<li>协议(protocol):控制两个对等实体通信的规则</li>
+<li>服务(service):下层向上层提供服务,上层需要使用下层提供的服务来实现本层的功能</li>
+<li>服务访问点(SAP Service Accessing point):相邻两层尸体间交换信息的地方.</li>
+<li><img src="http://pi67irekk.bkt.clouddn.com/18-11-24/46719787.jpg" alt=""></li>
+<li><blockquote>
+<p>1.实体向上下层传输信息的时候需要SAP<br>2.SAP有点抽象,像是一个函数或者参数<br>3.同一层的实体可以通过协议相互理解各自传输的信息,例如图中左上实体的信息右下看不懂,各层的协议也是有所不同的.<br>4.水平协议 垂直服务</p>
+</blockquote>
+</li>
+</ul>
+</li>
+<li><p>五层协议对应的<strong>数据单元</strong>:应用层(传输数据单元PDU,像是文档什么的),运输层(运输层报文),网络层(IP数据报(IP分组)),数据链路层(数据帧),物理层(比特,0101011100011).<strong>对这些进行理解需要去看一下书</strong>,通俗来说就是一段数据分组,分组前加上IP地址就是数据包,属于网络层,再加上mark地址(指定物理层地址)就是数据帧,属于数据链路层,在物理层传的时候加上帧头帧尾编程比特.<a href="https://www.bilibili.com/video/av10921041/?p=13" target="_blank" rel="noopener">p13 06:42演示动画</a>,可以看到再传到另外一个主机的时候由附加信息不再用到,会被逐渐去掉.</p>
+</li>
+<li>数据→分成段→编上号→加上地址→变成比特流</li>
+<li>功能较强的计算机可以同时运行多个服务器运行,支持多个服务.</li>
+</ul>
+</li>
+<li>课堂练习<ul>
+<li>查看会话</li>
+<li>查看建立会话的程序</li>
+<li>ping www.baidu.com 返回时间</li>
+<li>ping www.inhe.com 返回时间</li>
+<li>查看计算机网络连接状态.本地连接属性→配置→能看到网络地址(MAC地址)和连接速度(自动侦测可以自动配合主机和isp双方的传输速率)</li>
 </ul>
 </li>
 </ul>
@@ -625,8 +656,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/18/历史相关/红星照耀中国笔记/" rel="prev" title="红星照耀中国笔记">
-                红星照耀中国笔记 <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/22/sublime操作笔记/" rel="prev" title="sublime操作笔记">
+                sublime操作笔记 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -715,7 +746,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">18</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -726,7 +757,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -737,7 +768,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">17</span>
+                  <span class="site-state-item-count">11</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -906,7 +937,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共20.2k字</span>
+  <span class="post-count">博客全站共13k字</span>
 </div>
         
 <div class="busuanzi-count">
