@@ -82,14 +82,14 @@
 <meta name="description" content="资源&amp;amp;教程:[小甲鱼]零基础入门学习Python">
 <meta name="keywords" content="python">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Python学习笔记">
+<meta property="og:title" content="Python入门学习笔记">
 <meta property="og:url" content="http://chocolaLain.github.io/2018/11/22/Python/Python入门学习笔记/index.html">
 <meta property="og:site_name" content="Lain&#39;s Blog">
 <meta property="og:description" content="资源&amp;amp;教程:[小甲鱼]零基础入门学习Python">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-24T15:37:37.629Z">
+<meta property="og:updated_time" content="2018-11-25T13:27:52.368Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Python学习笔记">
+<meta name="twitter:title" content="Python入门学习笔记">
 <meta name="twitter:description" content="资源&amp;amp;教程:[小甲鱼]零基础入门学习Python">
 
 
@@ -126,7 +126,7 @@
 
 
 
-  <title>Python学习笔记 | Lain's Blog</title>
+  <title>Python入门学习笔记 | Lain's Blog</title>
   
 
 
@@ -312,7 +312,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Python学习笔记</h1>
+          <h1 class="post-title" itemprop="name headline">Python入门学习笔记</h1>
         
 
         <div class="post-meta">
@@ -325,8 +325,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-11-24T23:37:37+08:00" content="2018-11-24">
-                    2018-11-24
+                  <time itemprop="dateUpdated" datetime="2018-11-25T21:27:52+08:00" content="2018-11-25">
+                    2018-11-25
                   </time>
                 </span>
               
@@ -407,7 +407,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  864
+                  879
                 </span>
               
 
@@ -461,7 +461,7 @@
 <li>收集参数(也可以叫可变参数):<ul>
 <li>如果你不确定要用多少看参数,可以使用收集参数</li>
 <li>在参数前面加<em>,例如</em>params,这样调用函数的时候可以添加多个参数.这些参数相当于用元祖打包了起来.</li>
-<li>收集参数的作用是将输入参数打包成为元组，自然不能不用收集参数要自己写为元组的形式</li>
+<li><strong>收集参数的作用是将输入参数打包成为元组，自然不能不用收集参数要自己写为元组的形式</strong>(这里需要去复习一下)</li>
 <li>print函数就用到了收集函数.</li>
 </ul>
 </li>
@@ -485,7 +485,7 @@
 <li>内嵌函数:可以在函数里面再定义函数使用,<strong>注意内嵌函数的作用域,出了被内嵌的函数后,内嵌函数无法再被调用.</strong></li>
 <li>闭包(Closure)(涉及到了范式和lisp,找时间了解一下)python的闭包表现形式定义为：如果在一个内部函数里，对外部作用域,但不是在全局作用域进行引用,那内部函数就认为为闭包(内部函数参数引用外部函数就是闭包,弹幕解)</li>
 <li><p>因为外部数是不能调用被嵌套的函数的，所以引进闭包的方法来进行调用(函数的函数,类似于复合函数)</p>
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">FunX</span><span class="params">(x)</span>:</span></span><br><span class="line">    print(x)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">FunY</span><span class="params">(y)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> x * y</span><br><span class="line">    <span class="keyword">return</span> FunY</span><br><span class="line"> print(FunX()(<span class="number">1</span>)) <span class="comment">#会报错,x需要赋值.</span></span><br><span class="line">i = FunX(<span class="number">8</span>)  <span class="comment">#相当于给x赋值,但缺少给y赋值,这仍然是一个函数.</span></span><br><span class="line">print(type(i)) <span class="comment">#显示是一个函数</span></span><br><span class="line">i(<span class="number">8</span>) <span class="comment">#给y赋值</span></span><br><span class="line">print(i(<span class="number">5</span>)) <span class="comment">#返回40</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">FunX</span><span class="params">(x)</span>:</span></span><br><span class="line">    print(x)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">FunY</span><span class="params">(y)</span>:</span></span><br><span class="line">        <span class="keyword">return</span> x * y</span><br><span class="line">    <span class="keyword">return</span> FunY</span><br><span class="line"> print(FunX()(<span class="number">1</span>)) <span class="comment">#会报错,x需要赋值.</span></span><br><span class="line">i = FunX(<span class="number">8</span>)  <span class="comment">#相当于给x赋值,但缺少给y赋值,这仍然是一个函数.返回&lt;class 'function'&gt;</span></span><br><span class="line">print(type(i)) <span class="comment">#显示是一个函数</span></span><br><span class="line">i(<span class="number">8</span>) <span class="comment">#给y赋值</span></span><br><span class="line">print(i(<span class="number">5</span>)) <span class="comment">#返回40</span></span><br></pre></td></tr></table></figure>
 </li>
 <li><p>这个知识点还需要再去了解一下,还涉及到了nonlocal</p>
 </li>
@@ -811,7 +811,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共22.1k字</span>
+  <span class="post-count">博客全站共25k字</span>
 </div>
         
 <div class="busuanzi-count">
