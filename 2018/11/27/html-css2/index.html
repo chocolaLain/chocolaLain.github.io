@@ -87,10 +87,14 @@
 <meta property="og:site_name" content="Lain&#39;s Blog">
 <meta property="og:description" content="资源:【极客学院】Web前端开发教学 - 第一部分：H5+CSS+JS详细HTML例子可以参考W3SchoolHTML转义字符对照表">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-27T15:06:03.300Z">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/51858521.jpg">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/69967640.jpg">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/2972592.jpg">
+<meta property="og:updated_time" content="2018-11-28T14:25:41.054Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="HTML&#x2F;CSS学习(二:HTML框架)">
 <meta name="twitter:description" content="资源:【极客学院】Web前端开发教学 - 第一部分：H5+CSS+JS详细HTML例子可以参考W3SchoolHTML转义字符对照表">
+<meta name="twitter:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/51858521.jpg">
 
 
 
@@ -325,8 +329,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-11-27T23:06:03+08:00" content="2018-11-27">
-                    2018-11-27
+                  <time itemprop="dateUpdated" datetime="2018-11-28T22:25:41+08:00" content="2018-11-28">
+                    2018-11-28
                   </time>
                 </span>
               
@@ -407,7 +411,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  262
+                  2.2k
                 </span>
               
 
@@ -423,7 +427,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  8
                 </span>
               
             </div>
@@ -469,14 +473,144 @@
 </ul>
 </li>
 <li>内联框架(重要):iframe<ul>
-<li>主框架需要去掉body标签</li>
+<li>iframe可以再body里面</li>
 <li>frameborder可以去掉外边框</li>
 <li>也可以设置高度和宽度</li>
-<li>如果某个框架内有很内容,会显示进度条,可上下滑动浏览</li>
+<li>如果某个框架内有很多内容,会显示进度条,可上下滑动浏览</li>
 <li><a href="https://www.bilibili.com/video/av10298843/?p=19" target="_blank" rel="noopener">框架的嵌套和与超链接的使用</a></li>
+<li>超链接target可以设置_blank(新页面打开),_self(自身打开), _parent(父框架打开), _top(顶部框架打开)</li>
 </ul>
 </li>
 </ol>
+<h3 id="HTML背景"><a href="#HTML背景" class="headerlink" title="HTML背景"></a>HTML背景</h3><ul>
+<li>背景标签:background</li>
+<li>背景颜色:bgcolor</li>
+<li>颜色:<ul>
+<li>颜色是由一个十六进制符号来定义，这个符号由红色、绿色和蓝色的值组成（RGB）</li>
+<li>颜色值最小值：O（#00）</li>
+<li>颜色值最大值：255（#FF)</li>
+<li>红色：#FF0000</li>
+<li>绿色：#00FF00</li>
+<li>蓝色：#0000FF</li>
+</ul>
+</li>
+</ul>
+<h3 id="HTML实体"><a href="#HTML实体" class="headerlink" title="HTML实体"></a>HTML实体</h3><p>HTML中预留字符串必须被替换成字符实体<br>如&lt;,&gt;,&amp;<br>这些不用特别去记忆,百度即可 </p>
+<h3 id="XHTML介绍"><a href="#XHTML介绍" class="headerlink" title="XHTML介绍"></a><a href="https://baike.baidu.com/item/XHTML/316621?fr=aladdin" target="_blank" rel="noopener">XHTML介绍</a></h3><p>简介:</p>
+<ul>
+<li><strong>什么是XHTML</strong>:<ul>
+<li>XHTML指的是可扩展超文本标记语言</li>
+<li>XHTML与HTML4.01几乎是相同的</li>
+<li>XHTML是更严格更纯净的HTML版本</li>
+<li>XHTML是以XML应用的方式定义的HTML</li>
+<li>XHTML得到所有主流浏览器的支持</li>
+</ul>
+</li>
+<li>为什么使用XHTML?<ul>
+<li>为了代码的完整性和良好性</li>
+</ul>
+</li>
+<li>文档声明:<ul>
+<li><a href="https://baike.baidu.com/item/dtd/2661276?fr=aladdin" target="_blank" rel="noopener">DTD</a>(文档类型定义(Document Type Definition)):规定了使用通用标记语言的网页语法</li>
+<li><a href="https://www.zhihu.com/question/38843167" target="_blank" rel="noopener">xsd，dtd，tld有什么区别和联系？</a></li>
+<li>STRICT（严格类型）<br>TRANSITIONAL（过渡类型）<br>FRAMESET（框架类型）</li>
+</ul>
+</li>
+<li>还涉及到了XHTML的一些声明,但只做了解<img src="http://pi67irekk.bkt.clouddn.com/18-11-28/51858521.jpg" alt=""></li>
+<li>加了XHTML声明,一些不规范的代码就会被提示,例如元素不完整,或者标签格式不规范.</li>
+<li><strong>XHTML元素语法</strong>:<ul>
+<li>XHTML元素必须正确嵌套:例如h1 p content  /h1 /p,这是个错误的嵌套<br>XHTML元素必须始终关闭:例如h1 /h1 或者 br/,要有’/‘来关闭<br>XHTML元素必须小写:例如不允许”A”标签的写法<br>XHTML文档必须有一个根元素:例如body header这种根元素</li>
+</ul>
+</li>
+<li><strong>XHTML属性语法规则</strong>:<ul>
+<li>XHTML属性必须使用小写:例如不允许’WIDTH’这种属性写法<br>XHTML属性值必须用引号包围:例如width=”100px”<br>XHTML属性最小化也是禁止的:不允许简写,例如type=button,不能直接去写button</li>
+</ul>
+</li>
+</ul>
+<h3 id="HTML5与HTML4区别"><a href="#HTML5与HTML4区别" class="headerlink" title="HTML5与HTML4区别"></a>HTML5与HTML4区别</h3><ul>
+<li>推出的理由及目标:<br>HTML5的出现，对于Web来说意义是非常重大的，因为他的意图是想要把目前Web上存在的各种问题一并解决掉了。<ul>
+<li>Web浏览器之间的兼容性很低</li>
+<li>文档结构不够明确</li>
+<li>Web应用程序的功能受到了限制</li>
+</ul>
+</li>
+</ul>
+<p>世界知名浏览器厂商对HTML5的支持:微软、Google、苹果、Opera、Mozilla </p>
+<ul>
+<li><p>内容的改变:</p>
+<ul>
+<li>内容类型:文件扩展名,html或者htm没有变</li>
+<li>DOCTYPE声明:HMTL4中需要明确指出是哪个版本,5中直接!DOCTYPE(可小写) HTML</li>
+<li>指定字符编码:<img src="http://pi67irekk.bkt.clouddn.com/18-11-28/69967640.jpg" alt=""><br>上面是HTML4,下面是HTML5</li>
+<li>可以省略标记的元素</li>
+<li><p>具有boolean值的属性:例如checkbox这样的属性,不指定属性值的时候默认为true,如果想要为false,可以不写该属性.</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">&lt;!-- 前三项复选框选中,最后一项复选框没有选中 --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">checked</span>=<span class="string">""</span>&gt;</span> </span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">checked</span>=<span class="string">"checked"</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">checked</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> &gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>省略引号:指定属性值的时候可以去掉引号.</p>
+</li>
+</ul>
+</li>
+<li>新增的元素和废除的元素<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-28/2972592.jpg" alt=""><br>新增的结构元素:<div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold">
+<ul>
+<li>section: 页面中的一个内容块,如章节 页眉 页脚以及页面中的其他部分,可与h1~h6标题结合使用,表示文档的结构</li>
+<li>article: 表示页面中的一块与上下文不相关的独立内容,例如博客或者报纸当中的一篇文章</li>
+<li>aside: 表示article元素之外的,与article相关的辅助信息</li>
+<li>header: 页面中的一个内容区域块,通常表示标题</li>
+<li>hgroup: 用于对整个页面或者一个内容块的标题进行集合</li>
+<li>footer:表示页面中的一个部分,一个区域块,通常来表示这个区域块的底部 脚部,可以用来承载作者 姓名日期等与作者相关的元素</li>
+<li>nav: 用于页面中导航链接的一部分</li>
+<li>figure:表示一段独立的流的内容</li>
+</ul>
+
+</div></div>
+新增的其他元素:<ul>
+<li>video:表示电影片段或者视频流</li>
+<li>audio:定义音乐,例如音频或者音频流</li>
+<li><strong>cavans(画布)</strong>:表示图形,例如图表或者其他图形,这个元素本身没有行为,只是提供一个画布,但是可以借助API来画图<br>新增的input元素的类型</li>
+<li>email:表示email地址</li>
+<li>url:表示文本框输入的一个地址</li>
+<li>number:表示输入的数字</li>
+<li>range:表示输入框内输入的一个范围值</li>
+<li>Date Pickers:表示日历的日期 时间<br>废除的元素:</li>
+<li>能使用CSS替代的元素：basefont,big,center,font,s,tt,u等</li>
+<li>不再使用frame框架</li>
+<li>只有部分浏览器支持的元素</li>
+<li>其他被废除的元素</li>
+</ul>
+</li>
+</ul>
+<p>新增的属性和废除的属性<br>新增的属性:</p>
+<ul>
+<li><strong>表单相关的属性</strong></li>
+<li><strong>链接相关的属性</strong></li>
+<li>其他属性</li>
+</ul>
+<h3 id="全局属性"><a href="#全局属性" class="headerlink" title="全局属性"></a><a href="http://www.w3school.com.cn/tags/html_ref_standardattributes.asp" target="_blank" rel="noopener">全局属性</a></h3><ul>
+<li><a href="http://www.w3school.com.cn/tags/att_global_contenteditable.asp" target="_blank" rel="noopener">contentEditable属性</a><br>可以规定内容是否可以编辑,是布尔值类型</li>
+<li>designMode属性<br>也是规定页面是否可以编辑,但是只能在js文档里面设置,on可编辑,off不可编辑</li>
+<li><a href="http://www.w3school.com.cn/tags/att_global_hidden.asp" target="_blank" rel="noopener">hidden属性</a><br>可以用于隐藏元素</li>
+<li><a href="http://www.w3school.com.cn/tags/att_global_spellcheck.asp" target="_blank" rel="noopener">spellcheck属性</a><br>可以进行拼写检查,例如contentable设置好后,在设置这个,文本框内输入appple,会提示你拼写错误</li>
+<li><a href="http://www.w3school.com.cn/tags/att_standard_tabindex.asp" target="_blank" rel="noopener">tabindex属性</a><br>可以利用table键将焦点放在设置了tabindex的元素上,例如给链接设置了,这样可以方便打开链接.<br>tabindex=”1”,可以给每个元素设置数字选择先选中哪个元素<br>如果不需要某个元素来tab,但将来可能会用到,可以设置值为”-1”,这样tab时不会选中,但是程序中是可以获取到tabindex的.</li>
+</ul>
+<h3 id="新增的结构元素"><a href="#新增的结构元素" class="headerlink" title="新增的结构元素"></a>新增的结构元素</h3><ul>
+<li><a href="http://www.w3school.com.cn/html5/html5_article.asp" target="_blank" rel="noopener">article元素</a><ul>
+<li>article元素代表文档、页面或应用程序中独立的、完整的、可以独自被外部引用的内容。它可以是一篇博客或者报刊中的文章，一篇论坛帖子、一段用户评论或独立的插件，或其他任何独立的内容。</li>
+<li>article元素是可以嵌套使用的。例如一篇博客文章中的评论就可以使用嵌套article元素的方式</li>
+<li>article元素可以用来表示插件</li>
+<li>代替了DIV之后语义化更加方便,不过从内容的呈现角度上来说是没有区别的<div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold">
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">article</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">header</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">h1</span>&gt;</span>Lain's Blog<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span>&gt;</span>Hello,Welcome Werid<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">article</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">header</span>&gt;</span>作者<span class="tag">&lt;/<span class="name">header</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span>&gt;</span>comment<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">footer</span>&gt;</span>time<span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">footer</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">p</span>&gt;</span>这是底部<span class="tag">&lt;/<span class="name">p</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">footer</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">article</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">h1</span>&gt;</span>这是一个内嵌页面<span class="tag">&lt;/<span class="name">h1</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">object</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">embed</span> <span class="attr">src</span>=<span class="string">"#"</span> <span class="attr">width</span>=<span class="string">"600"</span> <span class="attr">height</span>=<span class="string">"400"</span>&gt;</span><span class="tag">&lt;/<span class="name">embed</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;/<span class="name">object</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">article</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+</div></div>
+还涉及到了<a href="http://www.w3school.com.cn/tags/tag_object.asp" target="_blank" rel="noopener">object标签</a>和<a href="http://www.w3school.com.cn/tags/tag_embed.asp" target="_blank" rel="noopener">embed标签</a></li>
+</ul>
+</li>
+<li><a href="http://www.w3school.com.cn/tags/tag_section.asp" target="_blank" rel="noopener">section元素</a><ul>
+<li>section元素用于对网站或应用程序中页面上的内容进行分块。<strong>一个section元素通常由内容及其标题组成</strong>。但section元素并非一个普通的容器元素；<strong>当一个容器需要被直接定义样式或通过脚本定义行为时，推荐使用div而非section元素。</strong></li>
+<li>不推荐给没有标题和内容的元素使用section,主要用于给页面上的内容分块或者给文章分段,不要与有着完整的独立的内容的article元素混淆.</li>
+<li>注意的是section可以和article嵌套使用,但前者侧重于分段分块,后者侧重于独立,section也要有个标题,当使用一些样式的时候,偏向于使用div</li>
+</ul>
+</li>
+</ul>
 
       
     </div>
@@ -712,7 +846,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML框架"><span class="nav-number">1.</span> <span class="nav-text">HTML框架</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML框架"><span class="nav-number">1.</span> <span class="nav-text">HTML框架</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML背景"><span class="nav-number">2.</span> <span class="nav-text">HTML背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML实体"><span class="nav-number">3.</span> <span class="nav-text">HTML实体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#XHTML介绍"><span class="nav-number">4.</span> <span class="nav-text">XHTML介绍</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#HTML5与HTML4区别"><span class="nav-number">5.</span> <span class="nav-text">HTML5与HTML4区别</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#全局属性"><span class="nav-number">6.</span> <span class="nav-text">全局属性</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#新增的结构元素"><span class="nav-number">7.</span> <span class="nav-text">新增的结构元素</span></a></li></ol></div>
             
 
           </div>
@@ -794,7 +928,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共31.8k字</span>
+  <span class="post-count">博客全站共34.6k字</span>
 </div>
         
 <div class="busuanzi-count">

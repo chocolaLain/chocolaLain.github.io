@@ -91,7 +91,11 @@
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-25/64985219.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-25/53372274.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-25/24799345.jpg">
-<meta property="og:updated_time" content="2018-11-25T05:44:30.407Z">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/85821172.jpg">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/75401807.jpg">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/79540082.jpg">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/56833167.jpg">
+<meta property="og:updated_time" content="2018-11-28T13:09:48.496Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络-物理层">
 <meta name="twitter:description" content="资源:  韩老师讲大学高校课程《计算机网络原理》详细讲解TCPIP协议栈和网络基础原理概念 课件: 链接: https://pan.baidu.com/s/10GInOUv47BhjRYOY5jlSAA 提取码: sybm计算机网络教程(谢希仁第五版) 计算机网络（谢希仁 第7版）课件">
@@ -330,8 +334,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-11-25T13:44:30+08:00" content="2018-11-25">
-                    2018-11-25
+                  <time itemprop="dateUpdated" datetime="2018-11-28T21:09:48+08:00" content="2018-11-28">
+                    2018-11-28
                   </time>
                 </span>
               
@@ -412,7 +416,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.3k
+                  2k
                 </span>
               
 
@@ -428,7 +432,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  4
+                  6
                 </span>
               
             </div>
@@ -508,7 +512,34 @@
 <li>差分曼彻斯特编码与曼彻斯特编码相同，但抗干扰性能强于曼彻斯特编码</li>
 </ul>
 </li>
+<li>信道的极限容量:<img src="http://pi67irekk.bkt.clouddn.com/18-11-28/85821172.jpg" alt=""></li>
+<li>奈氏准则:(没有干扰的情况下):1924年，奈奎斯特（Nyquist）就推导出了著名的奈氏准则.他给出了在假定的理想条件下(传输介质给定.没有干扰的情况下)，为了避免码间串扰，码元的传输速率的上限值。<br>在任何信道中，码元传输的速率是有上限的，否则就会出现码间串扰的问题，使接收端对码元的判决（即识别）成为不可能。(并不能无限快,例如听不清加速说话的速度 standing by)(貌似涉及到了傅里叶变换)<br>如果信道的频带越宽，也就是能够通过的信号高频分量越多，那么就可以用更高的速率传送码元而不出现码间串扰。<ul>
+<li><strong>理想低通信道的最高码元传输速率=2WBaud</strong></li>
+<li>W是理想低通信道的带宽(上限值)，单位为Hz.</li>
+<li>Baud是波特，是码元传输速率的单位</li>
+<li>波特与Bit的区别:<br>波特在调制解调器中经常用到波特这个概念<br>Bit是信息量<br>如果一个码元含有3个Bit信息量1波特=3Bit/s<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-28/75401807.jpg" alt=""><br>右图就表示出来一个波形有八种可能的信息表示,就是1波特承载了三个Bit的信息量,同理1Bit和4Bit的情况.</li>
 </ul>
+</li>
+<li>信噪比:<ul>
+<li>香农（Shannon）用信息论的理论推导出了带宽受限且有高斯白噪声干扰(有一定的干扰)的信道的极限、无差错的信息传输速率。</li>
+<li><img src="http://pi67irekk.bkt.clouddn.com/18-11-28/79540082.jpg" alt=""><br>N越大,要想听清楚,C就越低(例如在一个嘈杂的环境里面,放慢说话速度可以让人听得清楚一些)</li>
+<li>S可以理解为有效信息的平均功率</li>
+<li>再例如笔记本的无线网卡,离AP近的时候例如54兆,离AP远一些就变成了36兆,随着信号的衰减,速度降了下来.</li>
+<li>注意一点,N趋向于0的时候可能会得出C要比W大的结论,这样与实际不符,实际上噪声不可能非常小</li>
+<li>香农公式表明(上面信息的总结):<ul>
+<li>信道的带宽或信道中的信噪比越大，则信息的极限传输速率越高.<br>只要信息传输速率低于信道的极限信息传输速率，就一定可以找到某种办法来实现无差错的传输。</li>
+<li>若信道带宽W或信噪比S/N没有上限（当然实际信道不可能是这样的），则信道的极限信息传输速率C也就没有上限。<br>实际信道上能够达到的信息传输速率要比香农的极限传输速率低不少。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>奈氏准则和香浓公式的应用范围:<img src="http://pi67irekk.bkt.clouddn.com/18-11-28/56833167.jpg" alt=""><ul>
+<li>奈氏准则的范围貌似与广域网传输有关</li>
+<li>香浓公式跟噪声有关</li>
+</ul>
+</li>
+</ul>
+<p>看到了P18</p>
 
       
     </div>
@@ -832,7 +863,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共31.8k字</span>
+  <span class="post-count">博客全站共34.6k字</span>
 </div>
         
 <div class="busuanzi-count">
