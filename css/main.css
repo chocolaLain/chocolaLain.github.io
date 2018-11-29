@@ -1844,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #b09ec7;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3181,6 +3181,30 @@ p::-moz-selection {
   color: #fff;
 }
 p::-webkit-selection {
+  background: #fb7f2c;
+  color: #fff;
+}
+li::selection {
+  background: #fb7f2c;
+  color: #fff;
+}
+li::-moz-selection {
+  background: #fb7f2c;
+  color: #fff;
+}
+li::-webkit-selection {
+  background: #fb7f2c;
+  color: #fff;
+}
+strong::selection {
+  background: #fb7f2c;
+  color: #fff;
+}
+strong::-moz-selection {
+  background: #fb7f2c;
+  color: #fff;
+}
+strong::-webkit-selection {
   background: #fb7f2c;
   color: #fff;
 }
