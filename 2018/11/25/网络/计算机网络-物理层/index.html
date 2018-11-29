@@ -95,7 +95,10 @@
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/75401807.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/79540082.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-28/56833167.jpg">
-<meta property="og:updated_time" content="2018-11-28T13:09:48.496Z">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-29/26254738.jpg">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-29/6297642.jpg">
+<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-29/16154781.jpg">
+<meta property="og:updated_time" content="2018-11-29T12:05:06.037Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="计算机网络-物理层">
 <meta name="twitter:description" content="资源:  韩老师讲大学高校课程《计算机网络原理》详细讲解TCPIP协议栈和网络基础原理概念 课件: 链接: https://pan.baidu.com/s/10GInOUv47BhjRYOY5jlSAA 提取码: sybm计算机网络教程(谢希仁第五版) 计算机网络（谢希仁 第7版）课件">
@@ -334,8 +337,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-11-28T21:09:48+08:00" content="2018-11-28">
-                    2018-11-28
+                  <time itemprop="dateUpdated" datetime="2018-11-29T20:05:06+08:00" content="2018-11-29">
+                    2018-11-29
                   </time>
                 </span>
               
@@ -416,7 +419,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2k
+                  2.7k
                 </span>
               
 
@@ -432,7 +435,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  6
+                  9
                 </span>
               
             </div>
@@ -539,7 +542,45 @@
 </ul>
 </li>
 </ul>
-<p>看到了P18</p>
+<h3 id="物理层下面的传输媒体"><a href="#物理层下面的传输媒体" class="headerlink" title="物理层下面的传输媒体"></a>物理层下面的传输媒体</h3><ul>
+<li>电信领域使用的电磁波频谱</li>
+<li>导向传输媒体<ul>
+<li>导向传输媒体中，电磁波沿着固体媒体传播。</li>
+<li>双绞线:<ul>
+<li>屏蔽双绞线STP(抗干扰能力强,适合远距离传输)</li>
+<li>无屏蔽双线UTP(现在用的)</li>
+</ul>
+</li>
+<li>同轴电缆:<ul>
+<li>50Ω同轴电缆用于数字传输，由于多用于基带传输，也叫基带同轴电缆；</li>
+<li>75Ω同轴电缆用于模拟传输，即宽带同轴电缆。</li>
+</ul>
+</li>
+<li><img src="http://pi67irekk.bkt.clouddn.com/18-11-29/26254738.jpg" alt=""></li>
+<li>光纤图(自己去查)(传输速率也高,而且不容易被窃听)</li>
+<li><img src="http://pi67irekk.bkt.clouddn.com/18-11-29/6297642.jpg" alt=""></li>
+<li>单模光纤&amp;多模光纤(去看PPT):单模光纤指只能传输一种电磁波模式，多模光纤只可以传输多个电磁波模式，实际上单模光纤和多模光纤之分，也就是纤芯的直径之分。单模光纤细，多模光纤粗。在有线电视网络中使用的光纤全是单模光纤，其传播特性好，带宽可达10GHZ，可以在一根光纤中传输60套PAL-D电视节目。</li>
+</ul>
+</li>
+<li>非导向传输媒体<br>非导向传输媒体就是指自由空间，其中的电磁波传输被称为无线传输。<br>无线传输所使用的频段很广。</li>
+<li>短波通信主要是靠电离层的反射，但短波信道的通信质量较差。<br>微波在空间主要是直线传播。(需要一些发射场)<ul>
+<li>地面微波接力通信</li>
+<li>卫星通信</li>
+</ul>
+</li>
+<li>物理层设备—集线器(Hub)<br>工作特点：它在网络中只起到信号放大和重发作用，其目的是扩大网络的传输范围，而<strong>不具备</strong>信号的定向传送能力<br>最大传输距离：100m<br>集线器是一个大的冲突域(它不管谁发给谁,A发给B信息,它也发给其他集线器上的设备,但是其他设备不收,但是其他设备也无法这个时候传输信息,是个半双工的设备,而且也因为这点会影响传输速度,并且有着安全隐患)<br>现在集线器<br>集线器也逐渐被交换机取代了.</li>
+</ul>
+<h3 id="回顾部分复习的时候看"><a href="#回顾部分复习的时候看" class="headerlink" title="回顾部分复习的时候看"></a>回顾部分复习的时候看</h3><h3 id="信道复用技术"><a href="#信道复用技术" class="headerlink" title="信道复用技术"></a>信道复用技术</h3><p>复用（multiplexing）是通信技术中的基本概念。<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-29/16154781.jpg" alt="">(防止了大马拉小车)</p>
+<ul>
+<li>频分复用FDM（Frequency Division Multiplexing）<ul>
+<li>用户在分配到一定的频带后，在通信过程中自始至终都占用这个频带。</li>
+<li>频分复用的所有用户在同样的时间占用不同的带宽资源（请注意，这里的“带宽”是频率带宽而不是数据的发送速率）</li>
+<li>03:46相关图解释,也可以去看PPT和课本</li>
+<li>多个波经过调制之后叠加,成为一个可以分开的复合波,而且这些复合后的信息还可以再复用.</li>
+</ul>
+</li>
+<li>时分复用TDM（Time Division Multiplexing）</li>
+</ul>
 
       
     </div>
@@ -582,8 +623,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/11/27/html-css2/" rel="prev" title="HTML/CSS学习(二:HTML框架)">
-                HTML/CSS学习(二:HTML框架) <i class="fa fa-chevron-right"></i>
+              <a href="/2018/11/27/html-css2/" rel="prev" title="HTML学习(二:HTML框架)">
+                HTML学习(二:HTML框架) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -672,7 +713,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">20</span>
+                  <span class="site-state-item-count">21</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -781,7 +822,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#物理层基本概念"><span class="nav-number">1.</span> <span class="nav-text">物理层基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据通信的基础知识"><span class="nav-number">2.</span> <span class="nav-text">数据通信的基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#相关术语"><span class="nav-number">2.1.</span> <span class="nav-text">相关术语:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有关信道的几个基本概念"><span class="nav-number">2.2.</span> <span class="nav-text">有关信道的几个基本概念:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基带（baseband）信号和带通（band-pass）信号"><span class="nav-number">2.3.</span> <span class="nav-text">基带（baseband）信号和带通（band pass）信号:</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#物理层基本概念"><span class="nav-number">1.</span> <span class="nav-text">物理层基本概念</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#数据通信的基础知识"><span class="nav-number">2.</span> <span class="nav-text">数据通信的基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#相关术语"><span class="nav-number">2.1.</span> <span class="nav-text">相关术语:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#有关信道的几个基本概念"><span class="nav-number">2.2.</span> <span class="nav-text">有关信道的几个基本概念:</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#基带（baseband）信号和带通（band-pass）信号"><span class="nav-number">2.3.</span> <span class="nav-text">基带（baseband）信号和带通（band pass）信号:</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#物理层下面的传输媒体"><span class="nav-number">3.</span> <span class="nav-text">物理层下面的传输媒体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#回顾部分复习的时候看"><span class="nav-number">4.</span> <span class="nav-text">回顾部分复习的时候看</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#信道复用技术"><span class="nav-number">5.</span> <span class="nav-text">信道复用技术</span></a></li></ol></div>
             
 
           </div>
@@ -863,7 +904,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共34.6k字</span>
+  <span class="post-count">博客全站共39.7k字</span>
 </div>
         
 <div class="busuanzi-count">
