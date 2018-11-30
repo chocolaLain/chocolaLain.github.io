@@ -6,9 +6,9 @@ function randomColor() {
 /* 轮播背景图片 */
 $(function () {
     $.backstretch([  
-          "http://pi67irekk.bkt.clouddn.com/18-11-21/81996400.jpg",
-          "http://pi67irekk.bkt.clouddn.com/18-11-17/37361663.jpg",
-          "http://pi67irekk.bkt.clouddn.com/18-11-21/9424912.jpg"
+          "http://lainundalice.oss-cn-beijing.aliyuncs.com/18-11-30/31031060.jpg",
+          "http://lainundalice.oss-cn-beijing.aliyuncs.com/18-11-30/61196401.jpg",
+          "http://lainundalice.oss-cn-beijing.aliyuncs.com/18-11-30/89578206.jpg"
     ], { duration: 6000, fade: 1500 });  
 });
 /* 备用轮播背景图片 */
