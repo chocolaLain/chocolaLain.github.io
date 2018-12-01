@@ -6,8 +6,8 @@ function randomColor() {
 /* 轮播背景图片 */
 $(function () {
     $.backstretch([  
-          "http://lainundalice.oss-cn-beijing.aliyuncs.com/18-11-30/31031060.jpg",
-          "http://lainundalice.oss-cn-beijing.aliyuncs.com/18-11-30/61196401.jpg",
+          "http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-1/82681411.jpg",
+          "http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-1/55844920.jpg",
           "http://lainundalice.oss-cn-beijing.aliyuncs.com/18-11-30/89578206.jpg"
     ], { duration: 6000, fade: 1500 });  
 });
