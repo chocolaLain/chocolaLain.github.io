@@ -87,7 +87,7 @@
 <meta property="og:site_name" content="Lain&#39;s Blog">
 <meta property="og:description" content="资源：用Python做科学计算廖雪峰的官方网站 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-06T15:42:22.951Z">
+<meta property="og:updated_time" content="2018-12-14T05:16:33.055Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="函数与程序结构">
 <meta name="twitter:description" content="资源：用Python做科学计算廖雪峰的官方网站 4.1.1作用域与函数定义1.出现在Python程序文件的表层创建的名字(无论是函数名还是变量名)都具有全局作用域.而模块里的函数定义了一个局部作用域(范围就是函数的体)">
@@ -325,8 +325,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-12-06T23:42:22+08:00" content="2018-12-06">
-                    2018-12-06
+                  <time itemprop="dateUpdated" datetime="2018-12-14T13:16:33+08:00" content="2018-12-14">
+                    2018-12-14
                   </time>
                 </span>
               
@@ -407,7 +407,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  2k
+                  2.1k
                 </span>
               
 
@@ -508,7 +508,8 @@
 <li>y = fun(x + 1) 解释器首先找到fun1的函数对象，在求出实参表达式的值2而后调用函数，希望把函数的执行得到结果赋给变量z</li>
 <li>函数调用前后环境变化情况：执行中遇到了一个函数调用，解释器就会为其建立一个新的名字空间，并建立他与外围的联系（以被调用函数的定义所在的作用域对应的名字空间为其外围）。而后以新建的名字空间为当前名字空间，在这个新环境中执行函数体。函数退出时，为其建立新的名字空间被抛弃，环境回到调用前的布局，随后的语句在恢复的环境中继续执行。</li>
 </ul>
-<h2 id="4-1-4-模块和环境"><a href="#4-1-4-模块和环境" class="headerlink" title="4.1.4 模块和环境"></a>4.1.4 模块和环境</h2><ul>
+<h2 id="4-1-4-模块和环境"><a href="#4-1-4-模块和环境" class="headerlink" title="4.1.4 模块和环境"></a>4.1.4 模块和环境</h2><p>参考:<a href="https://docs.python.org/3/tutorial/modules.html#standard-modules" target="_blank" rel="noopener">https://docs.python.org/3/tutorial/modules.html#standard-modules</a><br><a href="http://www.runoob.com/python/python-modules.html" target="_blank" rel="noopener">http://www.runoob.com/python/python-modules.html</a></p>
+<ul>
 <li>Python解释器把人写好的Python程序文件看作模块。一个模块可以直接执行，也可以在其他模块的执行中被导入。</li>
 <li><a href="https://www.cnblogs.com/kex1n/p/5977051.html" target="_blank" rel="noopener">Python类、模块、包的区别</a><ul>
 <li>模块属性<strong>name</strong>，它的值由Python解释器设定。如果脚本文件是作为主程序调用，其值就设为<strong>main</strong>，如果是作为模块被其他文件导入，它的值就是其文件名。</li>
@@ -530,6 +531,9 @@
 <li><a href="https://blog.csdn.net/mrs_wu/article/details/79254627" target="_blank" rel="noopener">Python基础：Python运行的两种基本方式</a></li>
 <li><a href="https://www.cnblogs.com/chaoguo1234/p/9126056.html" target="_blank" rel="noopener">Python运行的方式</a></li>
 <li><a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431845183474e20ee7e7828b47f7b7607f2dc1e90dbb000" target="_blank" rel="noopener">廖雪峰 使用模块</a></li>
+<li><a href="https://www.cnblogs.com/wdliu/p/6507668.html" target="_blank" rel="noopener">python基础8之自定义模块、if <strong>name</strong>==<strong>main</strong>:解释</a></li>
+<li><a href="https://blog.csdn.net/yjk13703623757/article/details/77918633" target="_blank" rel="noopener">如何简单地理解Python中的if <strong>name</strong> == ‘<strong>main</strong>‘</a></li>
+<li><a href="http://www.dengfeilong.com/post/60.html" target="_blank" rel="noopener">python编程中的if <strong>name</strong> == ‘main’: 的作用和原理</a></li>
 </ul>
 
       
@@ -663,7 +667,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -747,6 +751,10 @@
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://www.bilibili.com/" title="BiliBili" target="_blank">BiliBili</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.qi6.cc/" title="木有书读" target="_blank">木有书读</a>
                   </li>
                 
               </ul>
@@ -854,7 +862,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共43.6k字</span>
+  <span class="post-count">博客全站共57.4k字</span>
 </div>
         
 <div class="busuanzi-count">

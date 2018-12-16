@@ -87,14 +87,14 @@
 <meta property="og:site_name" content="Lain&#39;s Blog">
 <meta property="og:description" content="资源:Oracle从入门到精通教程全套_数据库实战精讲_动力节点 oracle 10G函数大全.chm">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-21/68249014.jpg">
-<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-21/99931896.jpg">
-<meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-21/56433932.jpg">
-<meta property="og:updated_time" content="2018-12-01T15:20:02.617Z">
+<meta property="og:image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-13/88670870.jpg">
+<meta property="og:image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-13/23419468.jpg">
+<meta property="og:image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-13/77484404.jpg">
+<meta property="og:updated_time" content="2018-12-13T09:06:06.854Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Oracle学习">
 <meta name="twitter:description" content="资源:Oracle从入门到精通教程全套_数据库实战精讲_动力节点 oracle 10G函数大全.chm">
-<meta name="twitter:image" content="http://pi67irekk.bkt.clouddn.com/18-11-21/68249014.jpg">
+<meta name="twitter:image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-13/88670870.jpg">
 
 
 
@@ -329,8 +329,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-12-01T23:20:02+08:00" content="2018-12-01">
-                    2018-12-01
+                  <time itemprop="dateUpdated" datetime="2018-12-13T17:06:06+08:00" content="2018-12-13">
+                    2018-12-13
                   </time>
                 </span>
               
@@ -488,12 +488,12 @@
 <li><p>日期函数:</p>
 <div><div class="fold_hider"><div class="close hider_title">点击显/隐内容</div></div><div class="fold">
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">◆日期函数对日期数据进行处理，得到新的日期或者数字</span><br><span class="line">◆Oracle以内部数字格式存储日期：世纪，年，月，日，小时，分钟，秒</span><br><span class="line">◆缺省的日期格式是DD-MON-YY(年月日)</span><br><span class="line">* 搜索日期的时候默认格式例如&apos;20-2月-19811&apos;</span><br><span class="line">◆Oracle内置的SYSDATE函函数，是返回日期和时间的函数</span><br><span class="line">SQL&gt; SELECT SYSDATE AS&quot;时间”</span><br><span class="line">2  FROM  SYS.DUAL；</span><br><span class="line">时间</span><br><span class="line">------------</span><br><span class="line">2007-7-242</span><br></pre></td></tr></table></figure>
-<p><img src="http://pi67irekk.bkt.clouddn.com/18-11-21/68249014.jpg" alt=""><br>SYSDATE - 日期可以得到一个天数.</p>
+<p><img src="http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-13/88670870.jpg" alt=""><br>SYSDATE - 日期可以得到一个天数.</p>
 
 </div></div>
 <ul>
 <li>MONTHS_BETWEEN:两日期相差多少月(精确到月,前面那种算出天数再算出月有误差.)<br>months_between(d1,d2)如果d1大于d2，则返回正数如果d1小于d2，则返回负数(返回一个数字)</li>
-<li>add_months(d1,n1):返回在日期d1(日期)基础上再加n1(数字)个月后新的日期。(返回日期)(精确的转正日期)<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-21/99931896.jpg" alt=""></li>
+<li>add_months(d1,n1):返回在日期d1(日期)基础上再加n1(数字)个月后新的日期。(返回日期)(精确的转正日期)<br><img src="http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-13/23419468.jpg" alt=""></li>
 <li>next_day(d1,c1):<ul>
 <li>【功能】：返回日期d1在下周，星期几(参数c1)的日期<br>【参数】：d1日期型,c1为字符型(参数)，c1默认为j（即当前日期)<br>【参数表】：c1对应:星期一，星期二，星期三……星期日<br>【返回】：日期<br>【示例】<br>select sysdate 当时日期,<br>next_day(sysdate,’星期日’) 下周星期日 from dual;</li>
 </ul>
@@ -505,7 +505,7 @@
 <li>round(d1,c1):【功能】：给出日期d1按期间(参数c1)四舍五入后的期间的第一天日期（与数值四舍五入意思相近）<br><strong>去看文档</strong></li>
 </ul>
 </li>
-<li><p>转换函数:有两种方式,隐式转换(oracle自动转换),显式转换<br>oracle中关于数据有三种类型且可以相互转化:(转化为to_number())数值型;<br>(转化为to_char())字符型;<br>(转化为to_date())日期型;<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-21/56433932.jpg" alt=""><br>三种类型 四种转化<br>注意数值没法转化为日期,数值只有数字的形式.</p>
+<li><p>转换函数:有两种方式,隐式转换(oracle自动转换),显式转换<br>oracle中关于数据有三种类型且可以相互转化:(转化为to_number())数值型;<br>(转化为to_char())字符型;<br>(转化为to_date())日期型;<br><img src="http://lainundalice.oss-cn-beijing.aliyuncs.com/18-12-13/77484404.jpg" alt=""><br>三种类型 四种转化<br>注意数值没法转化为日期,数值只有数字的形式.</p>
 </li>
 </ul>
 </li>
@@ -646,7 +646,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">22</span>
+                  <span class="site-state-item-count">27</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -730,6 +730,10 @@
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://www.bilibili.com/" title="BiliBili" target="_blank">BiliBili</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.qi6.cc/" title="木有书读" target="_blank">木有书读</a>
                   </li>
                 
               </ul>
@@ -837,7 +841,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共43.6k字</span>
+  <span class="post-count">博客全站共57.4k字</span>
 </div>
         
 <div class="busuanzi-count">
