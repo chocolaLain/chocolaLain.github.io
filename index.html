@@ -526,8 +526,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-12-16T23:30:02+08:00" content="2018-12-16">
-                    2018-12-16
+                  <time itemprop="dateUpdated" datetime="2018-12-17T14:15:58+08:00" content="2018-12-17">
+                    2018-12-17
                   </time>
                 </span>
               
@@ -710,8 +710,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-12-16T16:48:30+08:00" content="2018-12-16">
-                    2018-12-16
+                  <time itemprop="dateUpdated" datetime="2018-12-17T08:45:56+08:00" content="2018-12-17">
+                    2018-12-17
                   </time>
                 </span>
               
@@ -765,7 +765,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  280
+                  274
                 </span>
               
 
@@ -818,7 +818,7 @@
 <blockquote>
 <p>“SET SERVEROUTPUT ON”这么一行脚本，利用该脚本可以打开SQL*Plus的输出功能，否则会看不到输出的语句</p>
 </blockquote>
-<p>使用select语句的时候用到了into<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">declare</span><br><span class="line">  v_name varchar2(20);</span><br><span class="line">  v_sno number(10);</span><br><span class="line">  v_sex varchar2(2);</span><br><span class="line">  v_sbrt date;</span><br><span class="line">  </span><br><span class="line">begin</span><br><span class="line">  select sname, sno, sex, sbrt into v_name, v_sno, v_sex, v_sbrt from student where sno = 6100101;</span><br><span class="line">  </span><br><span class="line">  dbms_output.put_line(v_name||&apos;,&apos;||v_sno||&apos;,&apos;||v_sex||&apos;,&apos;||v_sbrt); --注意这里分割显示的数据。</span><br><span class="line">end;</span><br></pre></td></tr></table></figure></p>
+<p>使用select语句的时候用到了into<br><figure class="highlight sql"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">declare</span></span><br><span class="line">  v_name varchar2(<span class="number">20</span>);</span><br><span class="line">  v_sno number(10);</span><br><span class="line">  v_sex varchar2(2);</span><br><span class="line">  v_sbrt date;</span><br><span class="line">  </span><br><span class="line"><span class="keyword">begin</span></span><br><span class="line">  <span class="keyword">select</span> sname, sno, sex, sbrt <span class="keyword">into</span> v_name, v_sno, v_sex, v_sbrt <span class="keyword">from</span> student <span class="keyword">where</span> sno = <span class="number">6100101</span>;</span><br><span class="line">  </span><br><span class="line">  dbms_output.put_line(v_name||','||v_sno||','||v_sex||','||v_sbrt); <span class="comment">--注意这里分割显示的数据。</span></span><br><span class="line"><span class="keyword">end</span>;</span><br></pre></td></tr></table></figure></p>
 <p><a href="https://stackoverflow.com/questions/23372550/what-does-sql-select-symbol-mean?answertab=votes#tab-top" target="_blank" rel="noopener">What does SQL Select symbol || mean?</a><br><a href="https://stackoverflow.com/questions/45783699/why-use-where-1-2-on-a-sql-create-table-syntax" target="_blank" rel="noopener">Why use “where 1=2” on a SQL CREATE TABLE syntax?</a></p>
 
           
@@ -1079,8 +1079,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-12-16T17:33:57+08:00" content="2018-12-16">
-                    2018-12-16
+                  <time itemprop="dateUpdated" datetime="2018-12-17T08:44:40+08:00" content="2018-12-17">
+                    2018-12-17
                   </time>
                 </span>
               
@@ -1266,8 +1266,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-12-16T23:00:12+08:00" content="2018-12-16">
-                    2018-12-16
+                  <time itemprop="dateUpdated" datetime="2018-12-17T14:02:42+08:00" content="2018-12-17">
+                    2018-12-17
                   </time>
                 </span>
               
@@ -1321,7 +1321,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  764
+                  989
                 </span>
               
 
@@ -1337,7 +1337,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -1359,7 +1359,7 @@
 
       
         
-          <p>资源:1.<a href="https://www.bilibili.com/video/av20027947" target="_blank" rel="noopener">【公开课】概率论与数理统计（浙江大学）</a> (<strong>简称浙概</strong>)<br>2.概率论基础教程(罗斯)(<strong>简称罗概</strong>)</p>
+          <p>资源:1.<a href="https://www.bilibili.com/video/av20027947" target="_blank" rel="noopener">【公开课】概率论与数理统计（浙江大学）</a> (<strong>简称浙概</strong>)<br>2.概率论基础教程(罗斯)(<strong>简称罗概</strong>)<br><a href="http://www.cnblogs.com/vamei/p/3416138.html" target="_blank" rel="noopener">概率论11 协方差与相关系数</a><br><a href="https://www.zhihu.com/question/20852004" target="_blank" rel="noopener">如何通俗易懂地解释「协方差」与「相关系数」的概念？</a></p>
           <!--noindex-->
           <div class="post-button text-center">
             <a class="btn" href="/2018/12/09/数学期望与方差/#more" rel="contents">
@@ -2393,7 +2393,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共57.4k字</span>
+  <span class="post-count">博客全站共57.6k字</span>
 </div>
         
 <div class="busuanzi-count">
