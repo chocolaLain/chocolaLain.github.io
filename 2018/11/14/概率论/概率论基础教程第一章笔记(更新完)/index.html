@@ -101,7 +101,7 @@
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-14/41791471.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-14/82036623.jpg">
 <meta property="og:image" content="http://pi67irekk.bkt.clouddn.com/18-11-14/43109054.jpg">
-<meta property="og:updated_time" content="2018-11-30T02:26:30.237Z">
+<meta property="og:updated_time" content="2018-12-21T03:25:08.122Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="概率论基础教程第一章笔记">
 <meta name="twitter:description" content="第一章 组合分析1.2计数基本法则：1.有两个实验，其中试验1有m种可能发生的结果，对应于试验1的每一个结果，试验2有n种可能发生的结果，则对这两个试验来说，一共有mn种可能结果。">
@@ -340,8 +340,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2018-11-30T10:26:30+08:00" content="2018-11-30">
-                    2018-11-30
+                  <time itemprop="dateUpdated" datetime="2018-12-21T11:25:08+08:00" content="2018-12-21">
+                    2018-12-21
                   </time>
                 </span>
               
@@ -465,15 +465,15 @@
 <p>2.当有2个以上的试验时，基本法则可以推广如下：推广计数法则</p>
 <p>一共有r个试验，第一个实验有n1种可能结果；对应于第一个实验的每一个实验结果，第二个试验有n2种可能结果；对应于头两个试验的每一种试验结果，第三个试验有n3种可能结果；等等，那么这r个试验一共有n1·n2···nr种可能结果。<br><img src="http://lainundalice.oss-cn-beijing.aliyuncs.com/18-11-30/89847303.jpg" alt=""></p>
 <hr>
-<h2 id="1-3排列："><a href="#1-3排列：" class="headerlink" title="1.3排列："></a>1.3排列：</h2><p>1.按随意顺序来排列字母A,B,C 一共有多少种排排列方式？3个元素一共有6种可能排列方式，在排列中第一个位置可供选择的元素有3个，第二个位置可供选择的元素是剩下的两个之一，第三个位置只能选择剩下的1个元素，因此一共有3<em>2</em>1=6种可能的排列</p>
+<h2 id="1-3排列："><a href="#1-3排列：" class="headerlink" title="1.3排列："></a>1.3排列：</h2><p>1.按随意顺序来排列字母A,B,C 一共有多少种排排列方式？3个元素一共有6种可能排列方式，在排列中第一个位置可供选择的元素有3个，第二个位置可供选择的元素是剩下的两个之一，第三个位置只能选择剩下的1个元素，因此一共有3 *  2 *  1=6种可能的排列</p>
 <p>假设有n个元素，那么用上述类似的方法，可知一共有n(n-1)(n-2)···3·2·1=n！种不同的排列方式。</p>
 <p><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/19972721.jpg" alt=""> b）男生女生分开排是两种试验，女生每一个结果对应前面男生每一个结果。</p>
 <p>例3c也可以看一下</p>
 <p><strong>例3d比较重要</strong></p>
-<p>如果不理解可以将6！/(3!2!)=60变成6!=60*(3!2!)，理解为有60种相同的情况对应每一种不同的情况，所以除掉所有相同的情况。<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/47964481.jpg" alt=""><br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/39128368.jpg" alt=""><br><strong>如果不理解可以将6！/(3!2!)=60变成6!=60*(3!2!)，理解为有60种相同的情况对应每一种不同的情况，所以除掉所有相同的情况。</strong></p>
+<p><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/47964481.jpg" alt=""><br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/39128368.jpg" alt=""><br><strong>如果不理解可以将6！/(3!2!)=60变成6!=60*(3!2!)，理解为有60种不同的情况对应每一种相同的情况，所以除掉所有相同的情况。</strong></p>
 <hr>
-<h2 id="1-4-组合"><a href="#1-4-组合" class="headerlink" title="1.4 组合:"></a>1.4 组合:</h2><p>1.从n个元素中取r个，一共有多少种取法？这也是一个有趣的问题。比如，从A,B,C,D,E这5个元素中选取3个组成一组，一共有多少种取法？解答如下：取第一个有5种取法，取第2个有4种取法，取第三个有3种取法，所以如果考虑选择顺序的话，那么一共有5<em>4</em>3种取法，但是，每一个包含3个元素的组（比如包含A，B，C的组）都被计算了6次，（也即，如果考虑顺序的话，所有排列ABC,ACB,BAC,BCA,CAB,CBA都被算了一次，但是我们并不在乎他们的顺序）所以，组成方法数为：<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/66568798.jpg" alt=""></p>
-<p>一般来说，如果考虑顺序的话，从n个元素中选择r个组成一组一共有n(n-1)···(n-r+1)种方式，而每个含r个元素的小组都被重复计算了共r!次。所以，能组成不同的组的数目为:<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/11098338.jpg" alt=""><br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/49977850.jpg" alt=""></p>
+<h2 id="1-4-组合"><a href="#1-4-组合" class="headerlink" title="1.4 组合:"></a>1.4 组合:</h2><p>1.从n个元素中取r个，一共有多少种取法？这也是一个有趣的问题。比如，从A,B,C,D,E这5个元素中选取3个组成一组，一共有多少种取法？解答如下：取第一个有5种取法，取第2个有4种取法，取第三个有3种取法，所以如果考虑选择顺序的话，那么一共有5 * 4 * 3种取法，但是，每一个包含3个元素的组（比如包含A，B，C的组）都被计算了6次，（也即，如果考虑顺序的话，所有排列ABC,ACB,BAC,BCA,CAB,CBA都被算了一次，但是我们并不在乎他们的顺序）所以，组成方法数为：<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/66568798.jpg" alt=""></p>
+<p>一般来说，如果考虑顺序的话，从n个元素中选择r个组成一组一共有n(n-1)···(n-r+1)种方式，<strong>而每个含r个元素的小组都被重复计算了共r!次</strong>。所以，能组成不同的组的数目为:<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/11098338.jpg" alt=""><br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/49977850.jpg" alt=""></p>
 <p>2.<img src="http://pi67irekk.bkt.clouddn.com/18-11-14/74525941.jpg" alt=""><br>例4d也很有意思。</p>
 <p>3.以下是一个非常有用的组合恒等式：<br><img src="http://pi67irekk.bkt.clouddn.com/18-11-14/6469437.jpg" alt=""><br>上述恒等式可用分析的方法证明，也可以从组合的角度来证明，设想从n个元素中取r个，一共有（n r）种取法。从另一个角度来考虑，不妨设这n个元素里有一个特殊的，记为元素1，那么取r个元素就有两种结果，取1或者不取元素1.取元素1的方法一共有（n-1 r-1）种（从n-1个元素里面取r-1个）；不取元素1的方法一共有（n-1 r）种（从去掉元素1的剩下n-1个元素种取r个）。两者之和就是从n个元素里面取r个的方法之和，所以恒等式成立。</p>
 <p>同理，可以以此类推，上面的证明也结识了r为什么要&gt;=1.</p>
@@ -616,7 +616,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">28</span>
+                  <span class="site-state-item-count">29</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -786,7 +786,7 @@ show_date_time();
 
     <footer id="footer" class="footer">
       <div class="footer-inner">
-        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
@@ -811,7 +811,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共60.6k字</span>
+  <span class="post-count">博客全站共61.1k字</span>
 </div>
         
 <div class="busuanzi-count">
