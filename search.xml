@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[不系统的数学知识积累]]></title>
+    <url>%2F2019%2F01%2F12%2F%E4%B8%8D%E7%B3%BB%E7%BB%9F%E7%9A%84%E6%95%B0%E5%AD%A6%E7%9F%A5%E8%AF%86%2F</url>
+    <content type="text"><![CDATA[自然数(baidu)]]></content>
+      <tags>
+        <tag>数学</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title><![CDATA[高等数学(一)]]></title>
+    <url>%2F2019%2F01%2F12%2F%E9%AB%98%E6%95%B0%E5%AD%A6%E4%B9%A01%2F</url>
+    <content type="text"><![CDATA[所用教程:《微积分I》《高等数学I》全程教学视频—宋浩老师 函数与极限集合参考资料:集合(baidu)集合(Wiki)) 定义:见百科 注意,例如直线上的所有点,学生,甚至函数是集合,因为都可以是确定的 注意相关的符号表示(集合 元素 关系的符号表示)涉及到了有限集和无限集,一般了解. 表示方法(见百科):列举法(元素多的时候不用)描述法符号法(注意百科里面涉及到了各种符号数集的解释,例如N,Z,R 多了解一下 R是非零实数)*图像法 注意集合包含关系和元素属于关系的符号表示和区别.包含关系是两个独立集合有交叉,而属于关系是一个为另一个的组成部分属于和包含有什么区别1A=&#123;1,2,3&#125;,B=&#123;&#123;1,2,3&#125;,&#123;1&#125;&#125; 考虑这两个的关系,是A属于B,而不是A包含于B 集合相等:见百科空集:见百科集合运算:离散数学-集合运算基本法则 注意集合相减 全集 补集注意集合的 分配律 对偶率(德摩根定律 多看一下那本概率书上的解释) 直积(笛卡尔积):直积(Baidu)直积(Wiki)注意A和B的直积与B和A的直积是不同的,因为这是有序对(可以想一下集合有无序性) 区间区间(Baidu)注意符号表达,有限区间和无限区间 注意一个正无穷-正无穷的情况,不一定为0,考虑一下x-x,x+5-x,x^2-x,x-x^2 此时x→正无穷再思考一下负无穷-负无穷等情况 邻域邻域(Baidu)可以看一下初等定义和公理高数为什么要引进邻域概念？(知乎) 注意一下去心邻域,了解一下它的两种写法可以拓展了解一下拓扑学]]></content>
+      <tags>
+        <tag>数学</tag>
+        <tag>微积分</tag>
+      </tags>
+  </entry>
+  <entry>
     <title><![CDATA[日麻学习笔记]]></title>
     <url>%2F2019%2F01%2F11%2F%E6%97%A5%E9%BA%BB%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0%2F</url>
     <content type="text"><![CDATA[杠!杠!杠!领上开花!日麻基础教学(天凤吧)日麻基础教学【雀魂】超简单易懂日麻的基础教学【东方幻想麻雀】系统说明 v1.6 (重发【熟肉】【初学者日麻讲座】和虚拟YouTuber一起学习！ #1 【麻将牌篇】]]></content>
@@ -12,7 +29,7 @@
   <entry>
     <title><![CDATA[经验&教训&日常吐槽2019]]></title>
     <url>%2F2019%2F01%2F09%2F%E7%BB%8F%E9%AA%8C%E4%B8%8E%E6%95%99%E8%AE%AD2019%2F</url>
-    <content type="text"><![CDATA[20192019-1-9 实现了Hexo文章的加密访问 程序员不可不知的版权协议]]></content>
+    <content type="text"><![CDATA[20192019-1-9 实现了Hexo文章的加密访问 程序员不可不知的版权协议 2019-1-12 一个不错的动漫壁纸资源网站:喵嗖 在写笔记的时候出现了个问题,hexo g之后报错找了下原因是因为刚写的数学笔记里面可能出现了未转义字符,程序在这里出了点问题.遇到有一定数量的未转义字符的字段的时候就把他们放在代码框架里面,这样就不用担心转义字符的问题了,看看之后有没有其他的解决方案hexo g 部署 template render error (unkown path)Hexo在Github中搭建博客系统(6)异常处理]]></content>
       <tags>
         <tag>日记</tag>
       </tags>
@@ -267,7 +284,7 @@
   <entry>
     <title><![CDATA[接下来要完成的事情]]></title>
     <url>%2F2018%2F11%2F14%2F%E6%8E%A5%E4%B8%8B%E6%9D%A5%E8%A6%81%E5%AE%8C%E6%88%90%E7%9A%84%E4%BA%8B%E6%83%85%2F</url>
-    <content type="text"><![CDATA[经验&amp;教训&amp;日常吐槽2019经验&amp;教训&amp;日常吐槽2018 短期计划1月7日 学习计算机网络 尚硅谷前端HTML5视频_HTML &amp; CSS 核心基础教程（103集实战教学，从入门到精通）上作为HTML学习的补充 摁住ctrl+ up/down 可以调节数字大小 1.8 考完试学习GITHUB和GIT 设置标签的样式,例如:夏娜 小孩便签设置一下背景样式和提示音。 中期计划 周日学习概率论期望部分,并复习全概率到分布函数部分. 抽空学习GIT和GITHUB的那几本书 去欣赏一下其他Hexo的其他主题,例如Gal和夏娜,而且这两个主题里面的文章挺不错的. 尝试换一下首页的live2d 长期计划 寒假时期: 学习C语言 复习高数和线性代数 学习OFFICE 继续学习前端知识 继续学习计算机网络 了解一下Python的matplotlib和numpy 把家里的电脑线路弄一下 学习一些电脑结构相关的知识 考完试把音乐显示弄一下. 学习live2d 了解下leetcode 看看有没有小狐狸的live2d,没有就自己做个.(AWSL) 找时间补一下强袭魔女(芳佳真可爱(&gt;▽&lt;)PrPr!!!!!!!!!) 美图]]></content>
+    <content type="text"><![CDATA[经验&amp;教训&amp;日常吐槽2019经验&amp;教训&amp;日常吐槽2018 短期计划1月13日 学完宋浩的函数和数列极限部分 把宋浩资源更新到相关帖子中 学习一下github那本书 背20个单词 设置标签的样式,例如:夏娜 小孩便签设置一下背景样式和提示音。 中期计划 抽空学习GIT和GITHUB的那几本书 去欣赏一下其他Hexo的其他主题,例如Gal和夏娜,而且这两个主题里面的文章挺不错的. 尝试换一下首页的live2d 长期计划 寒假时期: 学习C语言 复习高数和线性代数 学习OFFICE 继续学习前端知识 继续学习计算机网络 了解一下Python的matplotlib和numpy 把家里的电脑线路弄一下 学习一些电脑结构相关的知识 考完试把音乐显示弄一下. 学习live2d 了解下leetcode 看看有没有小狐狸的live2d,没有就自己做个.(AWSL) 找时间补一下强袭魔女(芳佳真可爱(&gt;▽&lt;)PrPr!!!!!!!!!) 美图]]></content>
       <tags>
         <tag>任务和计划</tag>
       </tags>
@@ -275,7 +292,7 @@
   <entry>
     <title><![CDATA[Next主题个人DIY相关文章]]></title>
     <url>%2F2018%2F11%2F14%2F%E8%B5%84%E6%BA%90%E6%94%B6%E9%9B%86%2FNext%E4%B8%BB%E9%A2%98%E4%B8%AA%E4%BA%BADIY%E7%9B%B8%E5%85%B3%E6%96%87%E7%AB%A0%2F</url>
-    <content type="text"><![CDATA[如何将你的github仓库部署到github pages（github.io博客） Next外观相关 打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化 Hexo瞎折腾系列(1) - 准备工作与简单美化 Hexo瞎折腾系列(2) - 添加背景图片轮播 Next主题个性化之自动更换背景图片 Hexo-NexT主题修改页面透明度及页面颜色 Hexo 你的博客之修改字体大小 Next文档:内置标签 hexo-helper-live2d 在页面上放Live2d 原作大大的博客 在Hexo中渲染MathJax数学公式 解决了显示数学公式的问题.有机会也去学习一下MATHJAXCSS：改变用户选中文字的颜色和背景颜色这里我是在css下的_cutsom/custom.styl修改的. Next功能相关 hexo next主题为博客添加分享功能 - Masimaro的专栏 - CSDN博客 hexo的next主题个性化教程:打造炫酷网站 - 简书 Hexo Next 使用配置 这篇文章的设置内连接部分代码有些错误,例如border-bottom的设置里面字体大小 字体样式 和字体颜色没有用空格隔开 以下是我的设置(我将border-bottom的值设置为none,即不显示下划线) 点击显/隐内容 123456789101112131415161718192021222324252627282930313233.post-body p a&#123; color: #0593d3; border-bottom:none; &amp;:hover &#123; color: #fc6423; border-bottom: none; &#125;&#125;.post-body li a&#123; color: #0593d3; border-bottom: none; &amp;:hover &#123; color: #fc6423; border-bottom: none; &#125;&#125; Hexo添加折叠代码块功能 hexo博客优化之文章置顶+置顶标签 hexo添加文章更新时间 根据博客配置文件中的 language 参数修改对应的语言配置文件（博客主目录）/themes/next/languages/zh_Hans.yml 12345post:updated: 更新于试了下,在md文件里面,貌似也可以用html,这个代码块就是用了&lt;div&gt;实现了位置的缩进.不过我是用的&lt;div&gt;&lt;div&gt;,如果用的&lt;div&gt;&lt;/div&gt;的话这个块与其他内容会出现比较大的间隔,这个问题以后研究一下. &gt;我这里的设置原本是**modified: 更新于**,但是显示的是post-updated:时间,将**modified**更改为updated后就成功显示了**更新于:时间** 可能是前面在/themes/next/layout/_macro/post.swig设置的代码是连接到updated变量,但是到zh_Hans.yml的post那里没有updated变量,所以按照默认的来显示更新样式. 这个博客的评论功能是用leancloud和valine实现的评论头像的实现是借助Gravatars实现的,详情见头像配置 实现统计功能在NEXT文档的第三方服务中有,使用不蒜子统计时因为不蒜子的域名变了所以可能会出现数据无法显示的情况,解决方法:hexo博客解决不蒜子统计无法显示问题 Hexo中使用markdown来绘制脑图（mind map） Hexo文章简单加密访问 Hexo文章加密访问 绝配：hexo+next主题及我走过的坑]]></content>
+    <content type="text"><![CDATA[如何将你的github仓库部署到github pages（github.io博客） Next外观相关 打造个性超赞博客Hexo+NexT+GitHubPages的超深度优化 Hexo瞎折腾系列(1) - 准备工作与简单美化 Hexo瞎折腾系列(2) - 添加背景图片轮播 Next主题个性化之自动更换背景图片 Hexo-NexT主题修改页面透明度及页面颜色 Hexo 你的博客之修改字体大小 Next文档:内置标签 hexo-helper-live2d 在页面上放Live2d 原作大大的博客 在Hexo中渲染MathJax数学公式 解决了显示数学公式的问题.有机会也去学习一下MATHJAXCSS：改变用户选中文字的颜色和背景颜色这里我是在css下的_cutsom/custom.styl修改的. Next功能相关 hexo next主题为博客添加分享功能 - Masimaro的专栏 - CSDN博客 hexo的next主题个性化教程:打造炫酷网站 - 简书 Hexo Next 使用配置 这篇文章的设置内连接部分代码有些错误,例如border-bottom的设置里面字体大小 字体样式 和字体颜色没有用空格隔开 以下是我的设置(我将border-bottom的值设置为none,即不显示下划线) 点击显/隐内容 123456789101112131415161718192021222324252627282930313233.post-body p a&#123; color: #0593d3; border-bottom:none; &amp;:hover &#123; color: #fc6423; border-bottom: none; &#125;&#125;.post-body li a&#123; color: #0593d3; border-bottom: none; &amp;:hover &#123; color: #fc6423; border-bottom: none; &#125;&#125; Hexo添加折叠代码块功能 hexo博客优化之文章置顶+置顶标签 hexo添加文章更新时间 根据博客配置文件中的 language 参数修改对应的语言配置文件（博客主目录）/themes/next/languages/zh_Hans.yml 12345post:updated: 更新于试了下,在md文件里面,貌似也可以用html,这个代码块就是用了&lt;div&gt;实现了位置的缩进.不过我是用的&lt;div&gt;&lt;div&gt;,如果用的&lt;div&gt;&lt;/div&gt;的话这个块与其他内容会出现比较大的间隔,这个问题以后研究一下. &gt;我这里的设置原本是**modified: 更新于**,但是显示的是post-updated:时间,将**modified**更改为updated后就成功显示了**更新于:时间** 可能是前面在/themes/next/layout/_macro/post.swig设置的代码是连接到updated变量,但是到zh_Hans.yml的post那里没有updated变量,所以按照默认的来显示更新样式. 这个博客的评论功能是用leancloud和valine实现的评论头像的实现是借助Gravatars实现的,详情见头像配置 实现统计功能在NEXT文档的第三方服务中有,使用不蒜子统计时因为不蒜子的域名变了所以可能会出现数据无法显示的情况,解决方法:hexo博客解决不蒜子统计无法显示问题 Hexo中使用markdown来绘制脑图（mind map） Hexo文章简单加密访问 Hexo文章加密访问 绝配：hexo+next主题及我走过的坑 Hexo在Github中搭建博客系统(6)异常处理]]></content>
       <categories>
         <category>概率论</category>
       </categories>
