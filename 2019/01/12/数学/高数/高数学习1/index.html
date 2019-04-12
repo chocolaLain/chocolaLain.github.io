@@ -1,0 +1,1498 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="数学,微积分,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="所用教程:《微积分I》《高等数学I》全程教学视频—宋浩老师托马斯微积分(中文第十版)(简称托微积)爱学术百度学术中国知网">
+<meta name="keywords" content="数学,微积分">
+<meta property="og:type" content="article">
+<meta property="og:title" content="高等数学(一)">
+<meta property="og:url" content="http://chocolaLain.github.io/2019/01/12/数学/高数/高数学习1/index.html">
+<meta property="og:site_name" content="Lain&#39;s Blog">
+<meta property="og:description" content="所用教程:《微积分I》《高等数学I》全程教学视频—宋浩老师托马斯微积分(中文第十版)(简称托微积)爱学术百度学术中国知网">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-12/55446021.jpg">
+<meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-24/TIM%E5%9B%BE%E7%89%8720190124184202.png">
+<meta property="og:updated_time" content="2019-04-12T12:25:30.114Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="高等数学(一)">
+<meta name="twitter:description" content="所用教程:《微积分I》《高等数学I》全程教学视频—宋浩老师托马斯微积分(中文第十版)(简称托微积)爱学术百度学术中国知网">
+<meta name="twitter:image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-12/55446021.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://chocolaLain.github.io/2019/01/12/数学/高数/高数学习1/">
+
+
+
+
+
+  <title>高等数学(一) | Lain's Blog</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-129336949-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/chocolaLain" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope="" itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lain's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">for Alice</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://chocolaLain.github.io/2019/01/12/数学/高数/高数学习1/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lain">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-14/25336942.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lain's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">高等数学(一)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              
+                <span class="post-updated">
+                  &nbsp; | &nbsp; 更新于
+                  <time itemprop="dateUpdated" datetime="2019-04-12T20:25:30+08:00" content="2019-04-12">
+                    2019-04-12
+                  </time>
+                </span>
+              
+
+
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-12T08:35:16+08:00">
+                2019-01-12
+              </time>
+            
+
+            
+
+            
+
+            
+
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
+                  <a href="/categories/高数/" itemprop="url" rel="index">
+                    <span itemprop="name">高数</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/01/12/数学/高数/高数学习1/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/01/12/数学/高数/高数学习1/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量 <i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4.7k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  16
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p>所用教程:<a href="https://www.bilibili.com/video/av31944511?from=search&amp;seid=11460895907275786496" target="_blank" rel="noopener">《微积分I》《高等数学I》全程教学视频—宋浩老师</a><br><a href="https://book.douban.com/subject/1231399/" target="_blank" rel="noopener">托马斯微积分(中文第十版)(简称托微积)</a><br><a href="https://www.ixueshu.com/" target="_blank" rel="noopener">爱学术</a><br><a href="http://xueshu.baidu.com/" target="_blank" rel="noopener">百度学术</a><br>中国知网<br><img src="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-12/55446021.jpg" alt=""><br><a id="more"></a></p>
+<h2 id="1-1集合"><a href="#1-1集合" class="headerlink" title="1.1集合"></a>1.1集合</h2><h3 id="集合"><a href="#集合" class="headerlink" title="集合"></a>集合</h3><p><strong>参考资料:</strong><br><a href="https://baike.baidu.com/item/%E9%9B%86%E5%90%88/2908117?fr=aladdin" target="_blank" rel="noopener">集合(baidu)</a><br><a href="https://zh.wikipedia.org/wiki/%E9%9B%86%E5%90%88_(%E6%95%B0%E5%AD%A6" target="_blank" rel="noopener">集合(Wiki)</a>)</p>
+<p>定义:见百科</p>
+<blockquote>
+<p>注意,例如直线上的所有点,学生,甚至函数是集合,因为都可以是<strong>确定的</strong></p>
+</blockquote>
+<p>注意相关的符号表示(集合 元素 关系的符号表示)<br>涉及到了有限集和无限集,一般了解.</p>
+<p><strong>表示方法(见百科)</strong>:<br><strong>列举法</strong>(元素多的时候不用)<br><strong>描述法</strong><br><strong>符号法</strong>(注意百科里面涉及到了各种符号数集的解释,例如N,Z,R 多了解一下 R<em>是非零实数)<br><em>*图像法</em></em></p>
+<p>注意集合 <strong>包含</strong>关系和元素 <strong>属于</strong>关系的符号表示和区别.<br>包含关系是两个独立集合有交叉,而属于关系是一个为另一个的组成部分<br><a href="https://zhidao.baidu.com/question/2267637699208040108.html" target="_blank" rel="noopener">属于和包含有什么区别</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">A=&#123;1,2,3&#125;,B=&#123;&#123;1,2,3&#125;,&#123;1&#125;&#125; 考虑这两个的关系,是A属于B,而不是A包含于B</span><br></pre></td></tr></table></figure></p>
+<p><strong>集合相等</strong>:见百科<br><strong>空集</strong>:见百科<br><strong>集合运算</strong>:<a href="https://www.cnblogs.com/ssooking/p/5851282.html" target="_blank" rel="noopener">离散数学-集合运算基本法则</a></p>
+<blockquote>
+<p>注意集合相减 全集 补集<br>注意集合的 <strong>分配律</strong> <strong>对偶率(德摩根定律 多看一下那本概率书上的解释)</strong> </p>
+</blockquote>
+<p><strong>直积(笛卡尔积):</strong><br><strong><a href="https://baike.baidu.com/item/%E7%9B%B4%E7%A7%AF/6537064?fr=aladdin" target="_blank" rel="noopener">直积(Baidu)</a></strong><br><strong><a href="https://zh.wikipedia.org/wiki/%E7%9B%B4%E7%A7%AF" target="_blank" rel="noopener">直积(Wiki)</a></strong><br>注意A和B的直积与B和A的直积是不同的,因为这是<strong>有序对</strong>(可以想一下集合有无序性)</p>
+<h3 id="区间"><a href="#区间" class="headerlink" title="区间"></a>区间</h3><p><a href="https://baike.baidu.com/item/%E5%8C%BA%E9%97%B4/1273117?fr=aladdin" target="_blank" rel="noopener">区间(Baidu)</a><br>注意符号表达,有限区间和无限区间</p>
+<blockquote>
+<p>注意一个正无穷-正无穷的情况,不一定为0,考虑一下x-x,x+5-x,x^2-x,x-x^2 此时x→正无穷<br>再思考一下负无穷-负无穷等情况</p>
+</blockquote>
+<h3 id="邻域"><a href="#邻域" class="headerlink" title="邻域"></a>邻域</h3><p><a href="https://baike.baidu.com/item/%E9%82%BB%E5%9F%9F" target="_blank" rel="noopener">邻域(Baidu)</a>可以看一下初等定义和公理<br><a href="https://www.zhihu.com/question/35476809?sort=created" target="_blank" rel="noopener">高数为什么要引进邻域概念？(知乎)</a></p>
+<blockquote>
+<p>注意一下去心邻域,了解一下它的两种写法<br>可以拓展了解一下拓扑学</p>
+</blockquote>
+<h2 id="1-2函数-托微积p12"><a href="#1-2函数-托微积p12" class="headerlink" title="1.2函数(托微积p12)"></a>1.2函数(托微积p12)</h2><p><a href="https://baike.baidu.com/item/%E5%87%BD%E6%95%B0/301912?fr=aladdin#4_1" target="_blank" rel="noopener">函数(Baidu)</a></p>
+<p>涉及到 <strong>常量</strong> 和 <strong>变量</strong> </p>
+<blockquote>
+<p>托微积预备知识那里可以了解到自变量和因变量</p>
+</blockquote>
+<p><strong>函数的定义</strong>:见托微积,这里可能会考一个函数的判断</p>
+<blockquote>
+<p>注意常见的圆并不是一个函数,而是两个函数y=+/-sqrt(1-x^2)<br>而x^2 + y^2 = 1是一个方程</p>
+</blockquote>
+<p><strong>定义域</strong>:定义见托微积,了解一下自然定义域,书里还涉及到了区间,</p>
+<blockquote>
+<p><strong>例2</strong> 注意一下,思考倒数两个函数的定义域和值域<br>审阅图形有兴趣的话看一看</p>
+</blockquote>
+<p><strong>函数相等</strong>:定义域和对应关系是<strong>相同</strong>的<br>sqrt(x^2) (sqrt(x))^2 定义域不同,两个函数是不同的</p>
+<blockquote>
+<p>f(x+1)=x^2-x,求f(x),可以设x+1=t<br><a href="https://zhidao.baidu.com/question/573650667.html" target="_blank" rel="noopener">f(x)和f(x+1)有什么区别</a></p>
+</blockquote>
+<p><strong>函数的表示方法</strong>:(详细见百科)</p>
+<ul>
+<li><strong>解析法</strong><br>还涉及到了Y=[X],<strong>取整函数</strong>,[1.5]=1,[0.3]=0,[-1.1]=-2,可以考虑一下它的 <strong>函数图像</strong></li>
+<li>列表法</li>
+<li><strong>图像法</strong></li>
+</ul>
+<p><strong>周期函数</strong>:<a href="https://baike.baidu.com/item/%E5%91%A8%E6%9C%9F%E5%87%BD%E6%95%B0/8152668?fr=aladdin" target="_blank" rel="noopener">见百科,注意定义与性质</a>(里面有篇周期函数性质的论文可以了解下)</p>
+<blockquote>
+<p>参考论文:<br>1.梁力平.对周期函数及其和、差、积、商函数周期性的探讨[J].韶关学院学报(自然科学版),2006(06):10-12.</p>
+</blockquote>
+<p>思考:f(x)最小正周期为T,则f(ax)的最小正周期为T/a,可以去看下百科了解一下</p>
+<p><strong>奇函数偶函数(托微积p17)</strong><br>奇函数:<a href="https://baike.baidu.com/item/%E5%A5%87%E5%87%BD%E6%95%B0/107092?fr=aladdin" target="_blank" rel="noopener">Baidu</a><br>偶函数:<a href="https://baike.baidu.com/item/%E5%81%B6%E5%87%BD%E6%95%B0/6254807?fr=aladdin" target="_blank" rel="noopener">Baidu</a><br>函数的奇偶性:<a href="https://baike.baidu.com/item/%E5%87%BD%E6%95%B0%E5%A5%87%E5%81%B6%E6%80%A7/10844145?fr=aladdin#1" target="_blank" rel="noopener">Baidu</a></p>
+<blockquote>
+<p><a href="https://www.ixueshu.com/document/736fbd64686da7af318947a18e7f9386.html" target="_blank" rel="noopener">奇偶函数的性质及其研究</a><br>还了解到:函数奇偶性与对称性及周期性的关系,函数奇偶性与微积分的关系等</p>
+</blockquote>
+<p>相关 <strong>定义</strong> 以及 <strong>性质</strong> 可见百科<br>1.注意函数的定义域要关于<strong>原点对称</strong><br>2.注意f(-x)是否等于-f(x)或f(x)</p>
+<p><strong>单调性</strong><br>单调性:<a href="https://baike.baidu.com/item/%E5%8D%95%E8%B0%83%E6%80%A7/6194133?fr=aladdin" target="_blank" rel="noopener">Baidu</a><br>注意有时候可能是 <strong>某一区间</strong> 内的单调,思考y=1/x,x≠0,需要确定实在x<0还是在x>0时单调递减</0还是在x></p>
+<p><strong>有界性</strong><br>有界性:<a href="https://baike.baidu.com/item/%E6%9C%89%E7%95%8C%E6%80%A7" target="_blank" rel="noopener">Baidu</a><br>注意 <strong>有界</strong> 和 <strong>无界</strong> 的判别,注意有界时的下届和上届.</p>
+<p><strong>反函数(托微积p36)</strong><br>反函数:<a href="https://baike.baidu.com/item/%E5%8F%8D%E5%87%BD%E6%95%B0#reference-[1]-359-wrap" target="_blank" rel="noopener">Baidu</a><br>注意函数具有反函数的条件<br>托微积涉及到了<strong>一对一函数</strong>,并引出了反函数,可与函数具有反函数的条件相联系,还可以考虑一下函数的单调性.<br>还涉及到了 <strong>恒等函数</strong>,以及 <strong>反函数测试</strong>的一种方法<br>托微积的 <strong>求反函数</strong>部分之后再了解</p>
+<p>涉及到了 <strong>函数和反函数是关于y=x对称的</strong>.</p>
+<h3 id="指数函数幂函数对数函数等稍后了解"><a href="#指数函数幂函数对数函数等稍后了解" class="headerlink" title="指数函数幂函数对数函数等稍后了解"></a>指数函数幂函数对数函数等稍后了解</h3><h2 id="数列极限"><a href="#数列极限" class="headerlink" title="数列极限"></a>数列极限</h2><p><strong>数列</strong>:<a href="https://baike.baidu.com/item/%E6%95%B0%E5%88%97/731531?fr=aladdin" target="_blank" rel="noopener">Baidu</a><br>注意下概念,涉及到了 <strong>无穷数列</strong>, <strong>项</strong>, <strong>通项</strong>等概念<br>注意下数列的 <strong>单调性</strong> <strong>有(无)界性</strong></p>
+<p><strong>极限</strong><br>极限:<a href="https://baike.baidu.com/item/%E6%9E%81%E9%99%90/3564509?fr=aladdin" target="_blank" rel="noopener">Baidu</a><br>可以看一下 <strong>数列极限</strong>部分</p>
+<blockquote>
+<p>思考:0.99…为什么等于1,<br>一.例如1/3=0.33…,两边都乘3就可得1,同理可以思考其他问题.<br>二.0.99…=0.9+0.09+0.009+… 可以发现等式右边是一个等比数列,考虑一下等比数列求和公式(不过q那里n趋于无穷的时候本身就用到了极限的概念)<br>三.0.9…=a;9.9…=10a,两个等式相减得出a=1<br>这三个方便理解,可以找一下更准确的证明方法</p>
+</blockquote>
+<p><strong>托微积部分:</strong><br>该部分先从平均速度出发,引入瞬时速度,再引入极限这个概念,注意书上的思路<br>涉及到了 <strong>平均变化率</strong> 和 <strong>割线</strong></p>
+<blockquote>
+<p>y=f（x）关于x在区间[x1，x2]上的平均变化率是<br>$\frac { \Delta y } { \Delta x } = \frac { f \left( x _ { 2 } \right) - f \left( x _ { 1 } \right) } { x _ { 2 } - x _ { 1 } } = \frac { f \left( x _ { 1 } + h \right) - f \left( x _ { 1 } \right) } { h } , \quad h \neq 0$</p>
+</blockquote>
+<p>可以多了解一下<a href="https://baike.baidu.com/item/%E5%89%B2%E7%BA%BF/10077395?fr=aladdin" target="_blank" rel="noopener">割线</a><br>可以了解下p98隔热罩那个例子,跟视频里谈到的例子原理上差不多<br>最后涉及到了 <strong>瞬间变化率与平均变化率</strong> 之间的关系,然后进一步去了解极限</p>
+<hr>
+<p>数列极限:<a href="https://baike.baidu.com/item/%E6%95%B0%E5%88%97%E6%9E%81%E9%99%90/10849253?fr=aladdin" target="_blank" rel="noopener">Baidu</a><br>了解定义和性质,多看几遍,定义的理解可以参考23:30老师举的例子或者百科里的几何意义,画一下图理解</p>
+<p>注意的题型:<br>1.用定义来证明极限(比较难) <a href="https://wenku.baidu.com/view/9baaee35e55c3b3567ec102de2bd960591c6d915.html" target="_blank" rel="noopener">用极限定义证明极限的几种方法</a><br>视频30:00也讲了例1,再考虑一下 <strong>邻域</strong> 这个概念<br>例2涉及到了 <strong>等比数列</strong> <strong>指数函数</strong> <strong>对数函数</strong><br>注意指数函数当指数为0时可能会有特殊情况,要特殊分析<br>思考指数函数与对数函数的关系以及相互转化<br>例3注意一下啊n^a如何转化为我们需要的n<br>n一般会大于某个数,而N则要取整再加1<br>2.求极限</p>
+<p><a href="https://open.163.com/movie/2011/4/T/V/M8LHU8P7V_M8LI649TV.html" target="_blank" rel="noopener">换底公式-网易公开课</a><br><a href="https://www.bilibili.com/video/av23622984/?spm_id_from=333.788.videocard.0" target="_blank" rel="noopener">对数的运算法则-bilibili</a><br><a href="https://www.bilibili.com/video/av27013943?from=search&amp;seid=14139678112072423410" target="_blank" rel="noopener">常数e为什么代表了自然？-bilibili</a></p>
+<h3 id="数列极限性质"><a href="#数列极限性质" class="headerlink" title="数列极限性质"></a>数列极限性质</h3><p><a href="https://blog.csdn.net/qq_35649707/article/details/74453500" target="_blank" rel="noopener">数列极限的概念及性质</a><br>这一篇讲的比较详细,有关性质的证明也有<br>这个博主的博客看起来都不错<br><strong>唯一性</strong>:可以了解一下证明,可用反证法证明,假设数列存在两个极限,最后会发现两个极限的范围会发生矛盾.<br><strong>有界性</strong>:证明的话可以根据定义设一个ϵ为某个值,得出在n&gt;N后,Xn与极限的距离小于ϵ,Xn前面的值是有限个,所以一定能找到一个里面最大的值,而后面无限个Xn有能继续确定其绝对值是小于极限的绝对值+1的,所以在这些数里面一定有一个确定的最大值,也就是界.<br>再去了解一下 <strong><a href="https://baike.baidu.com/item/%E7%BB%9D%E5%AF%B9%E5%80%BC/3995097?fr=aladdin#4" target="_blank" rel="noopener">绝对值以及绝对值不等式</a></strong><br>相关论文和题目可以看一下,关注一下B站的相关内容视频<br><strong>注意,有界是收敛的必要条件,不少充分条件,</strong> 如果是 <strong>单调有界</strong> 的话,则有极限.<br>可以再去了解一下 <strong>充分必要条件</strong><br><a href="https://www.zhihu.com/question/30469121" target="_blank" rel="noopener">充分条件和必要条件怎么区分 ？</a>第一个答案不错</p>
+<p><strong>保号性</strong>:证明比较好理解<br><strong>子数列</strong>:这个概念比较重要,可以去多查查百科<br><a href="https://www.zhihu.com/question/50068746/answer/119192936" target="_blank" rel="noopener">收敛数列有性质 若Xn收敛于A，则其任一子数列都收敛于A。现将前提和结论对调，这句话仍然是对的吗？</a><br><em>这个讨论的答案结果是对的,但是过程分析可能有点争议</em><br>了解一下子数列以及收敛子数列的性质,例如上面这个标题原来的数列发散.<br>推论2:找到两个子数列,虽然收敛,但是极限不同,那么原数列提到的性质就是子数列的一个重要性质.<br>推论1:(逆否命题)如果找到一个子数列不收敛于A,那么发散.<br>推论3:原数列收敛的 <strong>充分必要条件</strong> 是奇数项 偶数项构成的子数列收敛,且极限相同.<br><strong>有兴趣可以找一下掌握这些性质和推论的证明</strong></p>
+<h2 id="函数极限"><a href="#函数极限" class="headerlink" title="函数极限"></a>函数极限</h2><p><strong>托微积部分(p99):</strong><br>涉及到了极限的非正式定义<br>例5(极限值不依赖于在x0处函数是怎样定义的)<br>例6（在每点都有极限的两个函数）:恒等函数和常数函数<br>例7（极限可能不存在）:函数跳跃 函数无限增大 函数无线振动</p>
+<ul>
+<li>例8（控制线性函数）:这个可以看看,将极限的不精确定义过渡到了极限的精确定义.</li>
+</ul>
+<p>讲到了 <strong>极限的正式定义(p103)</strong>,这个定义可以多看一下<br>注释有个符号表达定义的,可以看一下</p>
+<ul>
+<li><strong>例9(检验定义)</strong>:需要多看看,结合着直角坐标系想一下,这个题可以方便理解定义.<br>例如题中我们要使函数结果距离y=2要在半径为1范围内,那么我们就要让x距离x=1的半径起码要小于1/5.</li>
+<li><strong>例10（从给定的ε代数地求δ）</strong>:结合例9和函数的定义多看看,比较重要<br>x-5在(-3,5)的时候可以缩为(-3,3)考虑</li>
+</ul>
+<hr>
+<ul>
+<li>视频10:25例1<br>这个题类似上面的例9例10,与用定义证明数列极限不同,证明函数极限不需要X不需要取整数,所以也就没有取整再 +1的操作.<br>注意这个题是 <strong>x趋于无穷</strong>的情况(对于趋于正无穷还是负无穷,只讨论一边就可以了),与 <strong>趋于有限数</strong>(两边都需要考虑)的情况分清楚</li>
+<li>19:44问题4<br>这个就是讨论 <strong>趋于有限数</strong>时的情况,<br>注意x趋于x0,但是取不到x0</li>
+</ul>
+<p>因为x趋于x0时有些函数是没有办法从两边趋近的,例如y=sqrt(x),x→0,只能从右边逼近,这就引入了 <strong>左极限,右极限</strong>的概念<br><strong>左右极限</strong>相关 <strong>定义与性质</strong><br>可以看托微积p116,有解释 <strong>单侧极限</strong><br>去查百科,注意两个极限的符号表达,由于因为这两种情况我们知道了各自x和x0的位置,所以0&lt;|x-x0|&lt;δ这个情况就可以去掉绝对值符号了.<br><strong>注意:函数在一点处极限存在时，函数在此处的左极限和右极限均存在，且左右极限相等。</strong><br>注意几个思路:1.证明左右极限至少有一个不存在,那么x趋于x0的极限就不存在;2.左右极限存在,但不相等,那么x趋于x0的极限不存在</p>
+<ul>
+<li>42:43 例7</li>
+</ul>
+<p><strong>函数极限的性质</strong><br>函数极限的性质跟数列极限的性质是类似的<br><a href="https://wenku.baidu.com/view/7c9dfdba050876323112129b.html" target="_blank" rel="noopener">函数极限的性质</a><br>唯一性 局部有界性 局部保号性</p>
+<hr>
+<p><strong>托微积部分(p111)</strong></p>
+<ul>
+<li><strong>定理1: 极限运算法则</strong>,和差乘商幂法则以及乘常数法则,可以多了解一下,证明在 <strong>附录2</strong>里面有<blockquote>
+<p>正如例1所表明的，定理1中的公式使我们得出结论：可用代入法来求多项式函数的极限.<br>对于 <strong>有理函数</strong>也可以这样求极限，如果有理函数的分母在计算极限的点处不等于零.<br>有个前提,这些<strong>函数的极限要存在</strong>.而且是有限个<br>视频16:27题目可以拓展了解:分子分母同次,最高次数的系数之比<br>分母次数高的话,结果是0,分子次数高的话,结果是无穷<br>这种分子分母都是无穷大(/小)的,可以想办法过渡到无穷小(/大)的情况,可能在过渡态中找到答案.</p>
+</blockquote>
+</li>
+</ul>
+<p>定理2 可用代入法求多项式的极限(一般了解)<br>定理3 可用代入法求有理函数的极限，<strong>如果分母的极限不等于零</strong>(一般了解)<br>由于可能分母极限为0,为了解决问题,我们可能要考虑下面这个情况.<br><strong>代数的消去零分母(p114)</strong>:注意 <strong>识别公因子</strong>,然后考虑 <strong>消除公因子</strong>,注意一下图像以及解释</p>
+<ul>
+<li><strong>例4（创建并消去公因子）</strong> : 涉及到了 <strong>共轭表达式</strong><blockquote>
+<p><a href="https://www.youtube.com/watch?v=--3VgYE0Ros&amp;t=25s" target="_blank" rel="noopener">共轭复数的基本性质以及讨论-Youtube</a><br><a href="https://baike.baidu.com/item/%E5%85%B1%E8%BD%AD%E5%A4%8D%E6%95%B0/2486343?fr=aladdin" target="_blank" rel="noopener">共轭复数-百度百科</a><br><a href="https://baike.baidu.com/item/%E5%85%B1%E8%BD%AD%E4%BA%8C%E6%AC%A1%E6%A0%B9%E5%BC%8F%E6%80%A7%E8%B4%A8" target="_blank" rel="noopener">共轭二次根式性质-百度百科</a><br>p114底部有个公式印刷错误,sqrt(2+h)-2/h应该为sqrt(2+h)-sqrt(2)/h<br>顺便了解一下分子分母有理化</p>
+</blockquote>
+</li>
+</ul>
+<p><strong>定理4:三明治(夹逼)定理(p115)</strong><br>定义见书本,定义的证明见附录B(额外了解)</p>
+<ul>
+<li>例6（三明治（夹逼）定理的另一个应用）<br>ab证明了x→0时,sinx → 0,cosx → 1;c证明了x→0时,|f(x)|→0,f(x)→0</li>
+</ul>
+<p><strong>单侧极限(p116)</strong><br>定义见书本<br>例7（半圆的单侧极限）可以看一看<br><em>单侧极限具有定理1(函数加减乘除的极限…)列出的所有性质,多项式(定理2)和有理函数的极限(定理3)定理对单侧极限成立，三明治（夹逼）定理对单侧极限同样是成立的.</em></p>
+<ul>
+<li><strong>定理5 单侧极限和双侧极限之间的关系(p118)</strong><br>当x→c时函数f（x）有极限当且仅当f的左侧极限和右侧极限存在且相等<br>可以看一下例8,了解一下单侧极限和双侧极限的各种情况<br>例9（振荡太厉害的函数）一般了解</li>
+</ul>
+<p><strong>有关（sin $\theta$）/$\theta$的极限(p119)</strong></p>
+<ul>
+<li>定理6 : $\lim _ { \theta \rightarrow 0 } \frac { \sin \theta } { \theta } = 1$ $\theta$是弧度<br><strong>相关证明(多看看，涉及到了个单位圆面积对比)</strong> 见书本<br>补一下 <strong>三角函数</strong> 相关:<a href="https://baike.baidu.com/item/%E4%B8%89%E8%A7%92%E5%87%BD%E6%95%B0/1652457" target="_blank" rel="noopener">三角函数-百度百科</a><br><a href="https://www.bilibili.com/video/av33221089?from=search&amp;seid=12868647319645019764" target="_blank" rel="noopener">高中数学模块精讲-李睿-三角函数</a><br>了解一下 <strong>求扇形面积</strong> 相关:<a href="https://baike.baidu.com/item/%E6%89%87%E5%BD%A2%E9%9D%A2%E7%A7%AF/2924531?fr=aladdin" target="_blank" rel="noopener">扇形面积-百度百科</a><br><em>里面的换算关系可以注意一下,例如$\theta$=nπ/180,n是圆心角</em><ul>
+<li>例10运用了这个定理,可以看一下,涉及到了 <strong>半角公式</strong> </li>
+</ul>
+</li>
+</ul>
+<p>—-托微积1.2分界线—-</p>
+<hr>
+<p>宋浩视频-函数极限(二):<br><img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-24/TIM%E5%9B%BE%E7%89%8720190124184202.png" alt=""><br>这个性质以及推论(重要)和例题了解一下<br><strong>可以结合德摩根定律思考一下</strong></p>
+<h2 id="无穷小与无穷大"><a href="#无穷小与无穷大" class="headerlink" title="无穷小与无穷大"></a>无穷小与无穷大</h2><p><strong>无穷小:</strong><br><strong>无穷小相关定义与性质</strong> 见百科,注意无穷小的变化过程,x趋于什么的时候是无穷小<br>注意性质里面的 <strong>无穷小相加相乘等情况</strong></p>
+<p>百科下面的相关引用可以看一下</p>
+<p><strong>无穷小/无穷小在实际做题中会出现很多情况,需要具体分析</strong></p>
+<ul>
+<li><strong>无穷小和有界函数的积</strong>依然是无穷小,详情见百科,较重要<br>视频13:33 例4 稍微了解 可以多注意相关的题目<br>注意用到的 <strong>有界函数</strong> 多是 <strong>三角函数</strong>,再去了解一下 <strong>arctanx</strong>相关</li>
+</ul>
+<p><strong>无穷大:</strong><br><a href="https://baike.baidu.com/item/%E6%97%A0%E7%A9%B7%E5%A4%A7" target="_blank" rel="noopener">无穷大-百度百科</a><br>注意无穷大即可能指 <strong>正无穷大</strong>,也可能指 <strong>负无穷大</strong>,所以在进行无穷大之间的运算的时候要多加注意.<br>两个性质需要注意:(1)无穷大与无穷大的积依然是无穷大 (2)无穷大+有界函数依然是无穷大<br>注意 <strong>无穷大的一些性质(见百科)</strong></p>
+<ul>
+<li>定理:f(x)是无穷大(/小),1/f(x)是无穷小(/大),要求:两个f(x)的变化过程是相同的</li>
+</ul>
+<h2 id="极限存在准则-amp-两个重要极限"><a href="#极限存在准则-amp-两个重要极限" class="headerlink" title="极限存在准则&amp;两个重要极限"></a>极限存在准则&amp;两个重要极限</h2><p><a href="https://jingyan.baidu.com/article/36d6ed1f67158f1bcf4883d3.html" target="_blank" rel="noopener">极限存在准则及两个重要极限</a><br>定理1:<strong>夹逼定理</strong>: 见上文或托微积</p>
+<blockquote>
+<p>贺飞, 刘德. 用数列极限计算函数极限的夹逼定理[J]. 高等数学研究, 2007, 10(5):5-8.</p>
+</blockquote>
+<p>涉及到了2^n, n!, n^5,之间的对比,可以先带入一个比较大的数,然后看到下一个数的增长率,大体比较一下谁大.</p>
+<p>定理2:<strong>单调有界数列必有极限</strong><br>视频(宋)21:52处的例子可以看一下</p>
+<blockquote>
+<p>蒋林智. “单调有界数列必收敛”的应用综述[J]. 皖西学院学报, 2005, 21(2):25-28.(这篇有时间多看看)<br>1.3(2)的思路多思考一下,特别是$a _ { n } ^ { 2 } = 2 a _ { n - 1 }$ 到 $a _ { n } - a _ { n - 1 } &gt; 0$这一段的证明,如果不去思考有界性的话an与2的关系有点难看出来,单调性就比较难以证明了.<br><a href="https://www.zybang.com/question/f1e254dd2bbf9355d3332e27f9e15925.html" target="_blank" rel="noopener">证明n→∞时,lim n次根号下n 等于1</a></p>
+</blockquote>
+<p>两个重要极限:</p>
+<ol>
+<li>$\lim _ { \theta \rightarrow 0 } \frac { \sin \theta } { \theta } = 1$<br>详情见上文和托微积<br>推论:$\lim _ { \theta \rightarrow 0 } \frac { \tan \theta } { \theta } = 1$<br>视频(宋)09:21处涉及到了倍角公式<blockquote>
+<p>如何记住所有的三角函数公式？ - Bluesbone的回答 - 知乎<br><a href="https://www.zhihu.com/question/63652417/answer/548053971" target="_blank" rel="noopener">https://www.zhihu.com/question/63652417/answer/548053971</a><br>最全三角函数公式推导 - 王希的文章 - 知乎<br><a href="https://zhuanlan.zhihu.com/p/20102140" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/20102140</a></p>
+</blockquote>
+</li>
+</ol>
+<p>视频(宋)16:23处涉及到了arctanx=u,x=tanu这个关系</p>
+<p>2.$\lim _ { x \rightarrow \infty } \left( 1 + \frac { 1 } { x } \right) ^ { x } = e$</p>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/数学/" rel="tag"><i class="fa fa-google"></i> 数学</a>
+          
+            <a href="/tags/微积分/" rel="tag"><i class="fa fa-google"></i> 微积分</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/01/11/娱乐/日麻学习笔记/" rel="next" title="日麻学习笔记">
+                <i class="fa fa-chevron-left"></i> 日麻学习笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/01/12/番剧小笔记/" rel="prev" title="番剧小笔记">
+                番剧小笔记 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5beb84d6297d37ba" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-14/25336942.jpg" alt="Lain">
+            
+              <p class="site-author-name" itemprop="name">Lain</p>
+              <p class="site-description motion-element" itemprop="description">Welcome to WEIRD</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">43</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">13</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">34</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/chocolaLain" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lainundalice@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.mackxin.com/" title="馨客栈" target="_blank">馨客栈</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://doub.io/" title="逗比根据地" target="_blank">逗比根据地</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://kanfanba.com/" title="看番吧" target="_blank">看番吧</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://jiantuku.com/" title="极简图床" target="_blank">极简图床</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.baidu.com/" title="百度" target="_blank">百度</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.bilibili.com/" title="BiliBili" target="_blank">BiliBili</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://maxiang.io/" title="马克飞象" target="_blank">马克飞象</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://xueshu.baidu.com/" title="百度学术" target="_blank">百度学术</a>
+                  </li>
+                
+              </ul>
+
+          
+
+          
+            </div>
+
+          
+
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#1-1集合"><span class="nav-number">1.</span> <span class="nav-text">1.1集合</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#集合"><span class="nav-number">1.1.</span> <span class="nav-text">集合</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#区间"><span class="nav-number">1.2.</span> <span class="nav-text">区间</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#邻域"><span class="nav-number">1.3.</span> <span class="nav-text">邻域</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#1-2函数-托微积p12"><span class="nav-number">2.</span> <span class="nav-text">1.2函数(托微积p12)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#指数函数幂函数对数函数等稍后了解"><span class="nav-number">2.1.</span> <span class="nav-text">指数函数幂函数对数函数等稍后了解</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#数列极限"><span class="nav-number">3.</span> <span class="nav-text">数列极限</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#数列极限性质"><span class="nav-number">3.1.</span> <span class="nav-text">数列极限性质</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#函数极限"><span class="nav-number">4.</span> <span class="nav-text">函数极限</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#无穷小与无穷大"><span class="nav-number">5.</span> <span class="nav-text">无穷小与无穷大</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#极限存在准则-amp-两个重要极限"><span class="nav-number">6.</span> <span class="nav-text">极限存在准则&amp;两个重要极限</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+
+
+<div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("11/13/2018 15:13:14");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lain</span>
+
+  
+</div>
+
+<!-- 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+-->
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共72k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访问人数 <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量 <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      人
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'i6b9XM9K35JmBmckhA44a3KG-gzGzoHsz',
+        appKey: 'L9BPdrN71uQlKnmrERKQLCGB',
+        placeholder: 'Hello Lain',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
+
+  
+
+  
+
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+
+  
+
+
+<!-- 图片轮播js文件cdn -->
+<script src="https://cdn.bootcss.com/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+
+
+<!-- 自定义的js文件 -->
+<script type="text/javascript" src="/js/src/custom.js"></script>
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/unitychan.model.json"},"display":{"position":"left","width":120,"height":300},"mobile":{"show":false},"log":false});</script></body>
+</html>
