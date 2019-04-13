@@ -1802,7 +1802,7 @@ pre .javascript .function {
 }
 .site-state-item-name {
   font-size: 13px;
-  color: #999;
+  color: $dark;
 }
 .feed-link {
   margin-top: 20px;
@@ -1844,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fa36b5;
+  background: #c321ee;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2862,13 +2862,14 @@ pre .javascript .function {
   margin-left: -100%;
   right: auto;
   bottom: auto;
+  background: rgba(255,255,255,0);
   -webkit-transform: none;
 }
 .sidebar-inner {
   box-sizing: border-box;
   width: 240px;
   color: #555;
-  background: rgba(255,255,255,0.75);
+  background: rgba(255,255,255,0.85);
   box-shadow: 0 2px 2px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.06), 0 1px 5px 0 rgba(0,0,0,0.12), 0 -1px 0.5px 0 rgba(0,0,0,0.09);
   border-radius: initial;
   opacity: 0;
@@ -3207,4 +3208,11 @@ strong::-moz-selection {
 strong::-webkit-selection {
   background: #fb7f2c;
   color: #fff;
+}
+.content-wrap,
+.sidebar {
+  opacity: 0.92 !important;
+}
+.header-inner {
+  background: rgba(255,255,255,0.9) !important;
 }
