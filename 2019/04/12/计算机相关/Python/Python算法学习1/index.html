@@ -88,7 +88,7 @@
 <meta property="og:description" content="参考资料：数据结构与算法：Python语言描述python数据结构与算法系列课程-Bilibili">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1555006897270&di=a7b0b54233355f8d3024f414a4d284c8&imgtype=0&src=http%3A%2F%2Fi0.hdslb.com%2Fbfs%2Farticle%2Fc31701a0a1fc0220f95f2567b4812453277e7433.jpg">
-<meta property="og:updated_time" content="2019-04-13T10:36:26.646Z">
+<meta property="og:updated_time" content="2019-04-14T04:04:38.151Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Python算法学习1">
 <meta name="twitter:description" content="参考资料：数据结构与算法：Python语言描述python数据结构与算法系列课程-Bilibili">
@@ -327,8 +327,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2019-04-13T18:36:26+08:00" content="2019-04-13">
-                    2019-04-13
+                  <time itemprop="dateUpdated" datetime="2019-04-14T12:04:38+08:00" content="2019-04-14">
+                    2019-04-14
                   </time>
                 </span>
               
@@ -409,7 +409,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  487
+                  763
                 </span>
               
 
@@ -425,7 +425,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -460,7 +460,15 @@
 <p>复习一下list相关的知识，例如生成list的方法<br><a href="https://www.liaoxuefeng.com/wiki/0014316089557264a6b348958f449949df42a6d3a2e542c000/001431779637539089fd627094a43a8a7c77e6102e3a811000" target="_blank" rel="noopener">列表生成式</a><br><a href="https://www.cnblogs.com/yyds/p/6281453.html" target="_blank" rel="noopener">Python之列表生成式、生成器、可迭代对象与迭代器</a><br><a href="https://blog.csdn.net/kancy110/article/details/77131441" target="_blank" rel="noopener">python中append和extend函数区别</a></p>
 </blockquote>
 <p>见下列代码理解Timer函数使用的要点<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">timer1 = Timer(<span class="string">"test1()"</span>, <span class="string">"from __main__ import test1()"</span>)</span><br><span class="line">timer1.timeit(<span class="number">1000</span>)</span><br><span class="line">注意对头添加要比对尾添加慢的情况</span><br></pre></td></tr></table></figure></p>
-<p><a href="https://www.jianshu.com/p/db75baf61cdd" target="_blank" rel="noopener">Python-list 和 dict 内置操作的时间复杂度</a></p>
+<p><a href="https://www.jianshu.com/p/db75baf61cdd" target="_blank" rel="noopener">Python-list 和 dict 内置操作的时间复杂度</a><br><a href="https://blog.csdn.net/Baoli1008/article/details/48059623" target="_blank" rel="noopener">Python 各种集合内置方法的时间复杂度</a><br><a href="https://blog.csdn.net/wzgbm/article/details/54691615" target="_blank" rel="noopener">python中in在list和dict中查找效率比较</a></p>
+<blockquote>
+<p>list里面注意一下slice切片相关</p>
+</blockquote>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">t2</span><span class="params">()</span>:</span></span><br><span class="line">    li = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">        li += [i]</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">t7</span><span class="params">()</span>:</span></span><br><span class="line">    li = []</span><br><span class="line">    <span class="keyword">for</span> i <span class="keyword">in</span> range(<span class="number">10000</span>):</span><br><span class="line">        li = li + [i]</span><br><span class="line"><span class="comment"># PYTHON里面对t2这种形式是有优化的，t2的速度要快于t7</span></span><br></pre></td></tr></table></figure>
+<h3 id="数据结构概念的引入-amp-抽象数据类型"><a href="#数据结构概念的引入-amp-抽象数据类型" class="headerlink" title="数据结构概念的引入&amp;抽象数据类型"></a>数据结构概念的引入&amp;抽象数据类型</h3><p><a href="https://www.cnblogs.com/lph-shares/p/8271208.html" target="_blank" rel="noopener">数据结构概念以及与算法区别</a></p>
+<p><a href="https://segmentfault.com/a/1190000015315359" target="_blank" rel="noopener">重点-抽象数据类型和Python类（豆瓣）</a><br><a href="https://www.cnblogs.com/su47yuwenshu/p/3627410.html" target="_blank" rel="noopener">第一章 抽象数据类型）</a><br><a href="https://www.cnblogs.com/franknihao/p/6890499.html" target="_blank" rel="noopener">笔记-【Python&amp;数据结构】 抽象数据类型 Python类机制和异常</a><br>详细的内容可以看语言描述那本书</p>
+<h4 id="顺序表"><a href="#顺序表" class="headerlink" title="顺序表"></a>顺序表</h4><p><strong>内存</strong><br><a href="https://www.cnblogs.com/vamei/p/3232088.html" target="_blank" rel="noopener">Python深入06 Python的内存管理</a><br><a href="https://blog.csdn.net/mjl960108/article/details/80191308" target="_blank" rel="noopener">python中int类数据的内存大小</a><br><a href="https://www.cnblogs.com/Lvkun/archive/2012/03/01/python_object_memory_usage.html" target="_blank" rel="noopener">Python 对象内存占用</a><br>int a = 1，如果计算机是32位，那么这个a = 1就会占四个字节，char的话如果是一个字节就占一个字节</p>
+<p><a href="https://blog.csdn.net/xzfreewind/article/details/74834226" target="_blank" rel="noopener">重点-数据结构—顺序表定义及python实现</a><br>要点-存储一组相同类型的数据的时候可以考虑一下这个顺序表</p>
 
       
     </div>
@@ -696,7 +704,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#算法效率"><span class="nav-number">1.</span> <span class="nav-text">算法效率</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#大O表示法："><span class="nav-number">1.1.</span> <span class="nav-text">大O表示法：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#时间复杂度相关："><span class="nav-number">1.2.</span> <span class="nav-text">时间复杂度相关：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#算法效率"><span class="nav-number">1.</span> <span class="nav-text">算法效率</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#大O表示法："><span class="nav-number">1.1.</span> <span class="nav-text">大O表示法：</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#时间复杂度相关："><span class="nav-number">1.2.</span> <span class="nav-text">时间复杂度相关：</span></a></li></ol></li></ol><li class="nav-item nav-level-3"><a class="nav-link" href="#数据结构概念的引入-amp-抽象数据类型"><span class="nav-number"></span> <span class="nav-text">数据结构概念的引入&amp;抽象数据类型</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#顺序表"><span class="nav-number">1.</span> <span class="nav-text">顺序表</span></a></li></ol></li></div>
             
 
           </div>
@@ -778,7 +786,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共72.5k字</span>
+  <span class="post-count">博客全站共72.8k字</span>
 </div>
         
 <div class="busuanzi-count">
