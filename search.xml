@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[python类与对象学习]]></title>
     <url>%2F2019%2F04%2F18%2Fpython%E7%B1%BB%E4%B8%8E%E5%AF%B9%E8%B1%A1%E5%AD%A6%E4%B9%A0%2F</url>
-    <content type="text"><![CDATA[参考资料：史上最【萌】的Python教程-10天学会Python-第6天-类与对象史上最【萌】的Python教程-10天学会Python-第7天-继续类与对象 Python 面向对象（初级篇）Python3 面向对象]]></content>
+    <content type="text"><![CDATA[参考资料：史上最【萌】的Python教程-10天学会Python-第6天-类与对象史上最【萌】的Python教程-10天学会Python-第7天-继续类与对象 Python 面向对象（初级篇）Python3 面向对象 Python变量、方法、类的命名规则Python self参数 &amp; 函数详解 python中类的方法python中的面向对象和类的基本语法python中的类属性和实例属性了解一下给对象添加或属性以及获取对象属性的方法。了解一下创建对象，给对象传递参数后传递给init python面向对象中的init方法怎么理解？python的init几种方法总结创建对象后，会自动调用init方法，一般用来完成一些默认的事情，例如添加属性]]></content>
   </entry>
   <entry>
     <title><![CDATA[Python算法学习1]]></title>
@@ -19,7 +19,7 @@
   <entry>
     <title><![CDATA[pycharm操作笔记]]></title>
     <url>%2F2019%2F04%2F11%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%9B%B8%E5%85%B3%2FPython%2Fpycharm%E6%93%8D%E4%BD%9C%E7%AC%94%E8%AE%B0%2F</url>
-    <content type="text"><![CDATA[参考资料：Pycharm使用教程 界面设置手把手教你配置最漂亮的PyCharm界面，Python程序员必备pycharm怎么设置默认编码为utf-8详解pycharm新建文件时头部的模板pycharm创建脚本头文件模板PyCharm使用技巧及常用快捷键 快捷设置pycharm 选中多个单词，类似于sublime的 Ctrl + D？alt+鼠标左键可以多光标选择 功能学习最全Pycharm教程（3）——代码的调试、运行]]></content>
+    <content type="text"><![CDATA[参考资料：Pycharm使用教程 界面设置手把手教你配置最漂亮的PyCharm界面，Python程序员必备pycharm怎么设置默认编码为utf-8详解pycharm新建文件时头部的模板pycharm创建脚本头文件模板PyCharm使用技巧及常用快捷键 快捷设置pycharm 选中多个单词，类似于sublime的 Ctrl + D？alt+鼠标左键可以多光标选择 功能学习最全Pycharm教程（3）——代码的调试、运行Pycharm应用中PEP8简规则PyCharm选择性忽略PEP8代码风格警告信息]]></content>
       <categories>
         <category>Python</category>
       </categories>
@@ -409,14 +409,14 @@
         <category>资源收集</category>
       </categories>
       <tags>
-        <tag>收集</tag>
         <tag>教程</tag>
+        <tag>收集</tag>
       </tags>
   </entry>
   <entry>
     <title><![CDATA[接下来要完成的事情]]></title>
     <url>%2F2018%2F11%2F14%2F%E6%8E%A5%E4%B8%8B%E6%9D%A5%E8%A6%81%E5%AE%8C%E6%88%90%E7%9A%84%E4%BA%8B%E6%83%85%2F</url>
-    <content type="text"><![CDATA[经验&amp;教训&amp;日常吐槽2019经验&amp;教训&amp;日常吐槽2018 短期计划4月19日复习类和对象相关的知识看完地球大炮看两集京吹复习单词 设置标签的样式,例如:夏娜 中期计划 了解一下hexo的迁移 抽空学习GIT和GITHUB的那几本书 去欣赏一下其他Hexo的其他主题,例如Gal和夏娜,而且这两个主题里面的文章挺不错的. 尝试换一下首页的live2d 过年后根据油管上那位live2d制作教程做一个以动画人设为基础的宫藤芳佳live2d 长期计划 学习C语言 复习高数和线性代数 学习OFFICE 继续学习前端知识 继续学习计算机网络 了解一下Python的matplotlib和numpy 把家里的电脑线路弄一下 学习一些电脑结构相关的知识 考完试把音乐显示弄一下. 学习live2d 了解下leetcode 复习ps 看看有没有小狐狸的live2d,没有就自己做个.(AWSL) 找时间补一下强袭魔女(芳佳真可爱(&gt;▽&lt;)PrPr!!!!!!!!!) 美图]]></content>
+    <content type="text"><![CDATA[经验&amp;教训&amp;日常吐槽2019经验&amp;教训&amp;日常吐槽2018 短期计划4月20日上午背单词，有时间看京吹下午争取看完私有属性部分网上学点ae 设置标签的样式,例如:夏娜 中期计划 了解一下hexo的迁移 抽空学习GIT和GITHUB的那几本书 去欣赏一下其他Hexo的其他主题,例如Gal和夏娜,而且这两个主题里面的文章挺不错的. 尝试换一下首页的live2d 过年后根据油管上那位live2d制作教程做一个以动画人设为基础的宫藤芳佳live2d 长期计划 学习C语言 复习高数和线性代数 学习OFFICE 继续学习前端知识 继续学习计算机网络 了解一下Python的matplotlib和numpy 把家里的电脑线路弄一下 学习一些电脑结构相关的知识 考完试把音乐显示弄一下. 学习live2d 了解下leetcode 复习ps 看看有没有小狐狸的live2d,没有就自己做个.(AWSL) 找时间补一下强袭魔女(芳佳真可爱(&gt;▽&lt;)PrPr!!!!!!!!!) 美图]]></content>
       <tags>
         <tag>任务和计划</tag>
       </tags>
@@ -429,8 +429,8 @@
         <category>资源收集</category>
       </categories>
       <tags>
-        <tag>Next主题</tag>
         <tag>收集</tag>
+        <tag>Next主题</tag>
       </tags>
   </entry>
   <entry>
