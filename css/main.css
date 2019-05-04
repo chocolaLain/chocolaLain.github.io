@@ -1844,7 +1844,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff5ff;
+  background: #7a6152;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2764,7 +2764,7 @@ pre .javascript .function {
 .site-meta {
   padding: 20px 0;
   color: #fff;
-  background: #222;
+  background: rgba(122,71,174,0.3);
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
@@ -2786,6 +2786,9 @@ pre .javascript .function {
 .site-subtitle {
   margin: 10px 10px 0;
   font-weight: initial;
+  color: #fff;
+  font-size: 16px;
+  margin-top: 0;
 }
 .site-search form {
   display: none;
