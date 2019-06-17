@@ -86,10 +86,12 @@
 <meta property="og:site_name" content="Lain&#39;s Blog">
 <meta property="og:description" content="参考教程：Data structures: Introduction to graphs[清华大学]数据结构第六章《图》">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-06-16T15:27:24.745Z">
+<meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/1560783725391.jpg">
+<meta property="og:updated_time" content="2019-06-17T15:06:12.381Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="python算法学习-图">
 <meta name="twitter:description" content="参考教程：Data structures: Introduction to graphs[清华大学]数据结构第六章《图》">
+<meta name="twitter:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/1560783725391.jpg">
 
 
 
@@ -324,8 +326,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2019-06-16T23:27:24+08:00" content="2019-06-16">
-                    2019-06-16
+                  <time itemprop="dateUpdated" datetime="2019-06-17T23:06:12+08:00" content="2019-06-17">
+                    2019-06-17
                   </time>
                 </span>
               
@@ -384,7 +386,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  1.4k
+                  1.5k
                 </span>
               
 
@@ -421,9 +423,9 @@
       
 
       
-        <p>参考教程：<a href="https://www.youtube.com/watch?v=gXgEDyodOJU&amp;t=47s" target="_blank" rel="noopener">Data structures: Introduction to graphs</a><br><a href="https://www.bilibili.com/video/av52270499?from=search&amp;seid=89976861284999033" target="_blank" rel="noopener">[清华大学]数据结构第六章《图》</a></p>
+        <p><img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/1560783725391.jpg" alt=""><br>参考教程：<a href="https://www.youtube.com/watch?v=gXgEDyodOJU&amp;t=47s" target="_blank" rel="noopener">Data structures: Introduction to graphs</a><br><a href="https://www.bilibili.com/video/av52270499?from=search&amp;seid=89976861284999033" target="_blank" rel="noopener">[清华大学]数据结构第六章《图》</a></p>
 <a id="more"></a>
-<h2 id="图"><a href="#图" class="headerlink" title="图"></a>图</h2><h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>注意树和图的关系：’Any tree is also a graph.’<br>树有N个节点，就有N-1个边。</p>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>注意树和图的关系：’Any tree is also a graph.’<br>树有N个节点，就有N-1个边。</p>
 <ul>
 <li><a href="https://blog.csdn.net/eyishion/article/details/53234255" target="_blank" rel="noopener">图的定义和各种术语总结</a><br><a href="https://zh.wikipedia.org/wiki/图论术语#环" target="_blank" rel="noopener">图论术语-维基</a><br><a href="https://zh.wikipedia.org/wiki/顶点_(图论" target="_blank" rel="noopener">顶点 (图论)-维基</a>)<br><a href="https://www.jianshu.com/p/a153b3fddfd2" target="_blank" rel="noopener">图graph，G(V,E)=Vertex(顶点集合)+Edge(边集合)</a><br><a href="https://blog.csdn.net/u010853261/article/details/79618379" target="_blank" rel="noopener">【图结构专题】有向图</a><br>注意邻接关系（点点之间）和关联关系（点边之间）这个概念<br><a href="https://zh.wikipedia.org/wiki/节点度" target="_blank" rel="noopener">节点度-维基</a><br>思考一下树的节点度即可<blockquote>
 <p><a href="http://www.sohu.com/a/234371835_663464" target="_blank" rel="noopener">什么是关联图谱？——关联图谱（一） </a><br><a href="https://blog.csdn.net/wdkirchhoff/article/details/45101005" target="_blank" rel="noopener">HCNP-R&amp;S-IERN——理解OSPF邻居与邻接关系</a></p>
@@ -480,6 +482,10 @@
 <h4 id="邻接表-1"><a href="#邻接表-1" class="headerlink" title="邻接表"></a>邻接表</h4><ul>
 <li><a href="https://zhuanlan.zhihu.com/p/43820128" target="_blank" rel="noopener">创建基于邻接表的图（python实现）</a><br><a href="http://www.voidcn.com/article/p-bzgcucrn-bpx.html" target="_blank" rel="noopener">图的常用算法的 python 实现—邻接表表示法</a></li>
 <li>不要直接用邻接矩阵的思路去理解邻接表。理解一下邻接表为什么是“压缩后的邻接矩阵”，因为邻接表的顶点的出边信息可以由邻接矩阵的常规算法获取，省去了一些自循环和无边的情况，只获得有边的情况。</li>
+</ul>
+<h3 id="图的遍历"><a href="#图的遍历" class="headerlink" title="图的遍历"></a>图的遍历</h3><ul>
+<li><a href="https://www.cnblogs.com/6DAN_HUST/archive/2010/08/23/1806560.html" target="_blank" rel="noopener">人工智能——状态空间搜索及状态空间表示法</a><br><a href="https://baike.baidu.com/item/状态空间搜索" target="_blank" rel="noopener">状态空间搜索-百度</a></li>
+<li><a href="https://www.cnblogs.com/skywang12345/p/3711483.html" target="_blank" rel="noopener">图的遍历之 深度优先搜索和广度优先搜索-这个博客不错</a></li>
 </ul>
 
       
@@ -710,7 +716,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#图"><span class="nav-number">1.</span> <span class="nav-text">图</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础"><span class="nav-number">1.1.</span> <span class="nav-text">基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#路径"><span class="nav-number">1.1.1.</span> <span class="nav-text">路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#连通图"><span class="nav-number">1.1.2.</span> <span class="nav-text">连通图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带权图和网络"><span class="nav-number">1.1.3.</span> <span class="nav-text">带权图和网络</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图抽象数据类型"><span class="nav-number">1.1.4.</span> <span class="nav-text">图抽象数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图的表示和实现"><span class="nav-number">1.1.5.</span> <span class="nav-text">图的表示和实现</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#邻接矩阵"><span class="nav-number">1.1.5.1.</span> <span class="nav-text">邻接矩阵</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#邻接表"><span class="nav-number">1.1.5.2.</span> <span class="nav-text">邻接表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图结构的python实现"><span class="nav-number">1.2.</span> <span class="nav-text">图结构的python实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#邻接矩阵-1"><span class="nav-number">1.2.1.</span> <span class="nav-text">邻接矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#邻接表-1"><span class="nav-number">1.2.2.</span> <span class="nav-text">邻接表</span></a></li></ol></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础"><span class="nav-number">1.</span> <span class="nav-text">基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#路径"><span class="nav-number">1.1.</span> <span class="nav-text">路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#连通图"><span class="nav-number">1.2.</span> <span class="nav-text">连通图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带权图和网络"><span class="nav-number">1.3.</span> <span class="nav-text">带权图和网络</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图抽象数据类型"><span class="nav-number">1.4.</span> <span class="nav-text">图抽象数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图的表示和实现"><span class="nav-number">1.5.</span> <span class="nav-text">图的表示和实现</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#邻接矩阵"><span class="nav-number">1.5.1.</span> <span class="nav-text">邻接矩阵</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#邻接表"><span class="nav-number">1.5.2.</span> <span class="nav-text">邻接表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图结构的python实现"><span class="nav-number">2.</span> <span class="nav-text">图结构的python实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#邻接矩阵-1"><span class="nav-number">2.1.</span> <span class="nav-text">邻接矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#邻接表-1"><span class="nav-number">2.2.</span> <span class="nav-text">邻接表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图的遍历"><span class="nav-number">3.</span> <span class="nav-text">图的遍历</span></a></li></ol></div>
             
 
           </div>
@@ -792,7 +798,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共81k字</span>
+  <span class="post-count">博客全站共81.2k字</span>
 </div>
         
 <div class="busuanzi-count">
