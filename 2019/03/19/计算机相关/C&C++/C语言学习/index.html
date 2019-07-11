@@ -87,7 +87,7 @@
 <meta property="og:description" content="参考资料：C Primer Plus">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://www.2d-erocafe.com/wp-content/uploads/2016/05/b77c405950ef8df33e30c740f3eac329.jpg">
-<meta property="og:updated_time" content="2019-07-04T08:40:54.482Z">
+<meta property="og:updated_time" content="2019-07-11T10:20:22.640Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="C语言学习">
 <meta name="twitter:description" content="参考资料：C Primer Plus">
@@ -326,8 +326,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2019-07-04T16:40:54+08:00" content="2019-07-04">
-                    2019-07-04
+                  <time itemprop="dateUpdated" datetime="2019-07-11T18:20:22+08:00" content="2019-07-11">
+                    2019-07-11
                   </time>
                 </span>
               
@@ -345,6 +345,10 @@
 
             
 
+            
+              <i class="fa fa-thumb-tack"></i>
+              <font color="7D26CD">置顶</font>
+              <span class="post-meta-divider">|</span>
             
 
           </span>
@@ -408,7 +412,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  368
+                  776
                 </span>
               
 
@@ -424,7 +428,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  2
                 </span>
               
             </div>
@@ -449,14 +453,36 @@
 <a id="more"></a>
 <h2 id="第一章-初识C语言"><a href="#第一章-初识C语言" class="headerlink" title="第一章 初识C语言"></a><center>第一章 初识C语言</center></h2><ul>
 <li>了解了下C的优缺点还有应用范围/了解下UNIX系统/嵌入式系统</li>
-<li>涉及到了C++和面向对象编程(它通过对语言建模来适应问题，而不是对问题建模以适应语言)</li>
+<li><p>涉及到了C++和面向对象编程(它通过对语言建模来适应问题，而不是对问题建模以适应语言)</p>
+</li>
+<li><p><strong>1.4章涉及到了一些计算机的工作原理-p4</strong><br>重点了解下CPU的结构和功能以及程序处理，涉及到了寄存器<br>涉及到了机器语言/编译器（了解下编译器）</p>
+</li>
+<li><strong>1.6章C语言标准</strong>，可以了解下C语言标准的历史以及现状还有相关内容。</li>
+<li><strong>1.7章使用C语言的七个步骤，这个思路可以多看看</strong><br>了解链接器<br>意识到定义程序的目标和设计程序的重要性</li>
+<li><p><a href="https://zhidao.baidu.com/question/744858718728363892.html" target="_blank" rel="noopener">DEV-C++无法编译-解决</a><br><a href="https://zhidao.baidu.com/question/426503646204894852.html" target="_blank" rel="noopener">用Dev-C++编译的程序为什么输入数值以后按回车，程序直接退出了？</a><br>注意getchar的次数，可能结尾需要多次输入<br><a href="https://zhidao.baidu.com/question/4533944.html" target="_blank" rel="noopener">getchar是什么意思？</a></p>
+</li>
+<li><p><strong>1.8了解编程机制</strong><br>了解目标代码文件、可执行文件和库<br>暂时略过UNIX系统、LINUX系统的讲解<br>在程序执行完毕后，执行程序的窗口立即消失，可以用getchar()来解决<br>了解下windows和linux双系统</p>
+</li>
 </ul>
-<p><strong>1.4章涉及到了一些计算机的工作原理</strong><br>重点了解下CPU的结构和功能以及程序处理，涉及到了寄存器<br>涉及到了机器语言/编译器（了解下编译器）<br><strong>1.6章涉及到C语言标准</strong>，可以了解下C语言标准的历史以及现状还有相关内容。<br><strong>1.7章使用C语言的七个步骤，这个思路可以多看看</strong></p>
-<div><div class="fold_hider"><div class="close hider_title">此处笔记</div></div><div class="fold">
-<p>第1步：定义程序的目标<br>第2步：设计程序<br>第3步：编写代码<br>C是编译型语言。如果之前使用过编译型语言（如，Pascal或FORTRAN），就会很熟悉组建C程序的几个基本步骤。但是，如果以前使用的是解释型语言（如，BASIC）或面向图形界面语言（如，Visual Basic），或者甚至没接触过任何编程语言，就有必要学习如何编译。</p>
-
-</div></div>
-<p><a href="https://zhidao.baidu.com/question/744858718728363892.html" target="_blank" rel="noopener">DEV-C++无法编译-解决</a><br><a href="https://zhidao.baidu.com/question/426503646204894852.html" target="_blank" rel="noopener">用Dev-C++编译的程序为什么输入数值以后按回车，程序直接退出了？</a><br>注意getchar的次数，可能结尾需要多次输入<br><a href="https://zhidao.baidu.com/question/4533944.html" target="_blank" rel="noopener">getchar是什么意思？</a></p>
+<h2 id="C语言概述"><a href="#C语言概述" class="headerlink" title="C语言概述"></a>C语言概述</h2><ul>
+<li><strong>2.2示例解释-20</strong><br>多看看这个图就行，了解C语言中的六种语句</li>
+<li>了解stdio.h的功能，了解圆括号(),int,void的含义</li>
+<li>了解注释的写法</li>
+<li>了解#include指令和头文件，了解C预处理器指令、预处理、头文件这几个概念</li>
+<li>了解main函数以及它与圆括号、int、操作系统的关系，了解void在C99以及C11中的必要性</li>
+<li>了解下注释的单行和多行的写法</li>
+<li>理解花括号、函数体和块</li>
+<li><strong>了解声明（declaration）</strong>，了解变量、int、分号的作用，了解关键字、标识符的概念<br>所有变量需先声明才能使用，且声明变量在块的顶部。但是在C99和C11中可以把声明放在块中的任何位置。<br>了解下数据类型<br>了解下变量命名规则，虽然C99 C11允许使用更长的标识符名，但是编译器只识别前63个字符。<br>理解声明变量的4个理由</li>
+<li>赋值<br><strong>C语言是通过赋值运算符而不是赋值语句来完成赋值操作的</strong></li>
+<li>printf()函数<br>了解换行符、转义序列（escape sequence)，%d的含义，printf中f的含义</li>
+<li>return语句<br>虽然有时候可以省略return语句，但是最好养成写return的习惯，在其他操作系统中也有其他用途。</li>
+<li>照着图理解一下简单的函数结构，理解函数头和函数体两部分<br>注意printf()虽然被叫成’函数调用语句’，但是实际上是表达式语句。</li>
+<li>了解下提高程序可读性的技巧-p29</li>
+<li><p>声明的时候可以同时声明多个变量。</p>
+</li>
+<li><p><strong>多个程序</strong></p>
+</li>
+</ul>
 
       
     </div>
@@ -603,7 +629,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">33</span>
+                  <span class="site-state-item-count">32</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -690,7 +716,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-初识C语言"><span class="nav-number">1.</span> <span class="nav-text">第一章 初识C语言</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-初识C语言"><span class="nav-number">1.</span> <span class="nav-text">第一章 初识C语言</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#C语言概述"><span class="nav-number">2.</span> <span class="nav-text">C语言概述</span></a></li></ol></div>
             
 
           </div>
@@ -772,7 +798,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共75.3k字</span>
+  <span class="post-count">博客全站共72.1k字</span>
 </div>
         
 <div class="busuanzi-count">
