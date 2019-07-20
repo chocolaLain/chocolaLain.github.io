@@ -1,0 +1,98 @@
+// Custom styles.
+
+
+/*
+body {
+    background:url(https://source.unsplash.com/random/1600x900);
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-position:50% 50%;
+}
+*/
+
+.hider_title{
+    font-family: "Microsoft Yahei";
+    cursor: pointer;
+    color: green;
+}
+.close:after{
+    content: "▼";
+}
+.open:after{
+    content: "▲";
+}
+
+// 鼠标样式
+  * {
+      cursor: url("http://pi67irekk.bkt.clouddn.com/18-11-15/12573629.jpg"),auto!important
+  }
+  :active {
+      cursor: url("http://pi67irekk.bkt.clouddn.com/18-11-15/12573629.jpg"),auto!important
+  }
+  
+// 主页文章添加阴影效果
+ .post {
+   margin-top: 60px;
+   margin-bottom: 60px;
+   padding: 20px;
+   -webkit-box-shadow: 0 0 5px rgba(202, 203, 203, .5);
+   -moz-box-shadow: 0 0 5px rgba(202, 203, 204, .5);
+  }
+
+  /* 去掉图片边框 */
+.posts-expand .post-body img {
+    border: none;
+    padding: 0px;
+}
+.post-gallery .post-gallery-img img {
+    padding: 3px;
+}
+/*选中文字后显示的背景颜色*/
+p::selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+p::-moz-selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+p::-webkit-selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+/*选中列表文字后显示的背景颜色*/
+li::selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+li::-moz-selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+li::-webkit-selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+/*选中strong后显示的背景颜色*/
+strong::selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+strong::-moz-selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+strong::-webkit-selection {
+    background:#FB7F2C;
+    color:#FFFFFF;
+}
+
+
+/* 页面透明度 */
+.content-wrap, .sidebar {
+    opacity: .92 !important;
+}
+.header-inner {
+    background: rgba(255, 255, 255, 0.9) !important;
+}
+
