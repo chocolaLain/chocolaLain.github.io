@@ -29,10 +29,14 @@ categories: 办公应用
   1.可以在终端中编译c文件再运行。
 * Visual Studio Code 如何编写运行 C、C++ 程序？ - 谭九鼎的回答 - 知乎
 https://www.zhihu.com/question/30315894/answer/154979413
+  有时候配置文件可能会刷新,需要重新配置一下,另外注意磁盘根目录的compil_filgs.txt文件
+  >根目录下的此文件的作用是确保--target参数是存在的，否则就报找不到头文件的错误，Lint也几乎没用。 此参数的作用可以直接在本文内搜索，提了很多次。
 
 
 ## 美化
 [vscode美化方法以及定制主题插件](https://www.cnblogs.com/TAMING/p/9766377.html)
+[VSCode设置透明度（半透明）](https://blog.csdn.net/mbest6/article/details/90581507)
+[炫酷的VS Code毛玻璃效果-MAC限定](https://www.jianshu.com/p/25fecde188d4)
 
 ## 插件推荐
 * vscodeIcons插件可以修改一些文件图标

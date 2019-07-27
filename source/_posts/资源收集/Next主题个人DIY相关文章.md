@@ -26,7 +26,6 @@ categories: 资源收集
 [CSS：改变用户选中文字的颜色和背景颜色](https://blog.csdn.net/qq_31164127/article/details/76147571)
 >这里我是在css下的_cutsom/custom.styl修改的.
 ## Next功能相关
-* [利用Hexo在多台电脑上提交和更新github pages博客](https://www.jianshu.com/p/0b1fccce74e0)
 * [hexo next主题为博客添加分享功能 - Masimaro的专栏 - CSDN博客](https://blog.csdn.net/lanuage/article/details/78991798)
 * [hexo的next主题个性化教程:打造炫酷网站 - 简书](https://www.jianshu.com/p/f054333ac9e6)
 * [Hexo Next 使用配置](https://www.jianshu.com/p/7614e8a173f5)
@@ -98,3 +97,9 @@ categories: 资源收集
 * [Hexo文章加密访问](https://www.jianshu.com/p/e4203ee066e5)
 * [绝配：hexo+next主题及我走过的坑](https://www.jianshu.com/p/21c94eb7bcd1)
 * [Hexo在Github中搭建博客系统(6)异常处理](https://blog.csdn.net/chwshuang/article/details/52350559)
+
+## HEXO相关
+* [hexo博客出现command not found解决方案](https://blog.csdn.net/whjkm/article/details/42675579)
+* [利用Hexo在多台电脑上提交和更新github pages博客](https://www.jianshu.com/p/0b1fccce74e0)
+* [多台电脑更新博客](https://otakurice.github.io/2018/07/23/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2/)
+* [安装Node.js和npm](https://www.liaoxuefeng.com/wiki/1022910821149312/1023025597810528)  
