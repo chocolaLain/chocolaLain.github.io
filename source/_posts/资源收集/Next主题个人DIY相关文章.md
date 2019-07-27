@@ -103,3 +103,4 @@ categories: 资源收集
 * [利用Hexo在多台电脑上提交和更新github pages博客](https://www.jianshu.com/p/0b1fccce74e0)
 * [多台电脑更新博客](https://otakurice.github.io/2018/07/23/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2/)
 * [安装Node.js和npm](https://www.liaoxuefeng.com/wiki/1022910821149312/1023025597810528)  
+* 有时候github会提示安全漏洞,我目前遇到的都是库的版本问题,可以根据github的提示把这些库升级一下.

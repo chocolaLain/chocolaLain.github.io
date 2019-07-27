@@ -6,6 +6,7 @@
     "version": "3.9.0"
   },
   "dependencies": {
+    "braces": "^3.0.2",
     "hexo": "^3.9.0",
     "hexo-blog-encrypt": "2.0.*",
     "hexo-deployer-git": "^0.3.1",
@@ -26,6 +27,7 @@
     "live2d-widget-model-hibiki": "^1.0.5",
     "live2d-widget-model-unitychan": "^1.0.5",
     "lodash": "^4.17.15",
+    "underscore.string": "^3.3.5",
     "wordcount": "^1.1.1"
   }
 }

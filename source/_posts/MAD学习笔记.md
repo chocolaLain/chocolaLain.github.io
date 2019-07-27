@@ -3,7 +3,7 @@ title: MAD学习笔记
 date: 2019-07-25 19:19:40
 tags:
 ---
-test
+![](https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564222522440&di=57fd027a1f230c06e1630a58f17ff39d&imgtype=0&src=http%3A%2F%2Fdesk-fd.zol-img.com.cn%2Ft_s960x600c5%2Fg5%2FM00%2F02%2F01%2FChMkJlbKxEmISDLzAAWmiEjzW58AALHEQMG6IcABaag664.jpg)
 <!-- more -->
 # 找资源
 参考资料:[【科普】献给好奇心旺盛者的找资源教程(MAD教程第0期)](https://www.bilibili.com/video/av1804134)
