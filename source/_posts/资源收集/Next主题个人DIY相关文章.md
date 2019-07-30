@@ -104,3 +104,5 @@ categories: 资源收集
 * [多台电脑更新博客](https://otakurice.github.io/2018/07/23/%E5%A4%9A%E5%8F%B0%E7%94%B5%E8%84%91%E6%9B%B4%E6%96%B0%E5%8D%9A%E5%AE%A2/)
 * [安装Node.js和npm](https://www.liaoxuefeng.com/wiki/1022910821149312/1023025597810528)  
 * 有时候github会提示安全漏洞,我目前遇到的都是库的版本问题,可以根据github的提示把这些库升级一下.
+  了解一下denpendabot
+* [Laravel 5.2--git冲突error: Your local changes to the following files would be overwritten by merge:](https://www.bbsmax.com/A/QV5ZD7NZzy/)

@@ -107,3 +107,8 @@ live2d:
 ##
 encrypt:
     enable: true
+
+server:
+  port: 4001
+  compress: true
+  header: true
