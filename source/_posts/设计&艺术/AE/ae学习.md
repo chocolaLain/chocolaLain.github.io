@@ -19,9 +19,8 @@ categories: 影视
 <!-- more -->
 
 ### 基础部分
-[AE工作面板介绍](http://blog.sina.com.cn/s/blog_7623712f0102dv84.html) 
 
-#### 工作流畅相关
+#### 工作流程相关
 [ae效果控件栏怎么打开](https://zhidao.baidu.com/question/373615489439566284.html)
 
 [渲染和导出基础知识](https://helpx.adobe.com/cn/after-effects/using/basics-rendering-exporting.html)
@@ -35,7 +34,7 @@ categories: 影视
 [AE怎样正确导入序列图片](https://jingyan.baidu.com/article/15622f24df3ba7fdfcbea59f.html)
 >导入序列图片在合成的显示里面会缩成一个文件
 
-#### 合成相关
+#### 合成
 [AE中新建合成与合成参数的设置方法](https://jingyan.baidu.com/article/ab0b5630a819cdc15afa7de9.html)
 [合成基础知识-包含合成设置等知识-adobe官网](https://helpx.adobe.com/cn/after-effects/using/composition-basics.html)
 >可以设置合成窗口的背景为有色或者透明

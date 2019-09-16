@@ -31,6 +31,7 @@ categories: 办公应用
 https://www.zhihu.com/question/30315894/answer/154979413
   有时候配置文件可能会刷新,需要重新配置一下,另外注意磁盘根目录的compil_filgs.txt文件
   >根目录下的此文件的作用是确保--target参数是存在的，否则就报找不到头文件的错误，Lint也几乎没用。 此参数的作用可以直接在本文内搜索，提了很多次。
+* [Vscode 将终端改为 Git bash](https://www.jianshu.com/p/efa734089206)
 
 
 ## 美化
@@ -44,6 +45,7 @@ https://www.zhihu.com/question/30315894/answer/154979413
 * [VSCode - Beautify 插件配置](https://www.jianshu.com/p/34ad34528549)
 * [能让你开发效率翻倍的 VSCode 插件配置（中）](https://juejin.im/post/5ad13d8a6fb9a028ce7c0721)
 * coderunner插件可以配置一些程序语言的编译环境
+* [使用vscode编写markdown的一些小插件](https://www.jianshu.com/p/9f13e971fe6b)
 
 # VS
 

@@ -106,3 +106,4 @@ categories: 资源收集
 * 有时候github会提示安全漏洞,我目前遇到的都是库的版本问题,可以根据github的提示把这些库升级一下.
   了解一下denpendabot
 * [Laravel 5.2--git冲突error: Your local changes to the following files would be overwritten by merge:](https://www.bbsmax.com/A/QV5ZD7NZzy/)
+* [hexo搭建博客过程中出现的问题，4000端口被占用](http://www.codes51.com/itwd/4282117.html)
