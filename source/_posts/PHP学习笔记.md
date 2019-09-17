@@ -1,10 +1,12 @@
----  
+---
 title: PHP学习笔记  
 date: 2019-09-15 17:30:14  
 tags:  
     - PHP  
----  
+---
 
+![](https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg)
+<!-- more -->
 ## 准备工作  
 * 环境配置:[PHP环境全套针细教程：Windows安装Apache, PHP and MYSQL](https://zhuanlan.zhihu.com/p/81050071)  
 > 1.注册mysql一项时,最好给用户设置上密码,因为phpmyadmind登陆时默认不允许空密码登陆.  
