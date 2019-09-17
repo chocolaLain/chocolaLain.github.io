@@ -38,7 +38,8 @@ categories: 办公应用
 * [Updates were rejected because the remote contains work that you do](https://www.cnblogs.com/alex-415/p/6912294.html)
   [记Git报错-refusing to merge unrelated histories](https://blog.csdn.net/u012145252/article/details/80628451)
 * [git提交时”warning: LF will be replaced by CRLF“提示](https://www.cnblogs.com/sminocence/p/9357209.html)
-* 
+* [**解决error: Your local changes to the following files would be overwritten by merge**](https://www.cnblogs.com/yw0219/p/6020878.html)
+* [**git pull遇到错误：error: Your local changes to the following files would be overwritten by merge:**](https://blog.csdn.net/misakaqunianxiatian/article/details/51103734)
 
 
 ### 创建仓库 仓库主页说明

@@ -49,6 +49,7 @@ https://www.zhihu.com/question/30315894/answer/154979413
 * [能让你开发效率翻倍的 VSCode 插件配置（中）](https://juejin.im/post/5ad13d8a6fb9a028ce7c0721)
 * coderunner插件可以配置一些程序语言的编译环境
 * [使用vscode编写markdown的一些小插件](https://www.jianshu.com/p/9f13e971fe6b)
+* vscode插件Markdown-AutoLinefeed可以用来给markdown自动换行.
 
 # VS
 
