@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="Hexo, NexT">
+
+
+
+
+
+
+
+
+
+
+<meta property="og:type" content="article">
+<meta property="og:title" content="MAD学习笔记">
+<meta property="og:url" content="http://chocolaLain.github.io/2019/07/25/MAD学习笔记/index.html">
+<meta property="og:site_name" content="Lain&#39;s Blog">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564222522440&di=57fd027a1f230c06e1630a58f17ff39d&imgtype=0&src=http%3A%2F%2Fdesk-fd.zol-img.com.cn%2Ft_s960x600c5%2Fg5%2FM00%2F02%2F01%2FChMkJlbKxEmISDLzAAWmiEjzW58AALHEQMG6IcABaag664.jpg">
+<meta property="og:updated_time" content="2019-09-17T15:54:06.720Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="MAD学习笔记">
+<meta name="twitter:image" content="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564222522440&di=57fd027a1f230c06e1630a58f17ff39d&imgtype=0&src=http%3A%2F%2Fdesk-fd.zol-img.com.cn%2Ft_s960x600c5%2Fg5%2FM00%2F02%2F01%2FChMkJlbKxEmISDLzAAWmiEjzW58AALHEQMG6IcABaag664.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://chocolaLain.github.io/2019/07/25/MAD学习笔记/">
+
+
+
+
+
+  <title>MAD学习笔记 | Lain's Blog</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-129336949-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/chocolaLain" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lain's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">for Alice</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://chocolaLain.github.io/2019/07/25/MAD学习笔记/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lain">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-14/25336942.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lain's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">MAD学习笔记</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              
+                <span class="post-updated">
+                  &nbsp; | &nbsp; 更新于
+                  <time itemprop="dateUpdated" datetime="2019-09-17T23:54:06+08:00" content="2019-09-17">
+                    2019-09-17
+                  </time>
+                </span>
+              
+
+
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-07-25T19:19:40+08:00">
+                2019-07-25
+              </time>
+            
+
+            
+
+            
+
+            
+
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/07/25/MAD学习笔记/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/07/25/MAD学习笔记/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量 <i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  4.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  16
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://timgsa.baidu.com/timg?image&amp;quality=80&amp;size=b9999_10000&amp;sec=1564222522440&amp;di=57fd027a1f230c06e1630a58f17ff39d&amp;imgtype=0&amp;src=http%3A%2F%2Fdesk-fd.zol-img.com.cn%2Ft_s960x600c5%2Fg5%2FM00%2F02%2F01%2FChMkJlbKxEmISDLzAAWmiEjzW58AALHEQMG6IcABaag664.jpg" alt><br><a id="more"></a></p>
+<h1 id="找资源"><a href="#找资源" class="headerlink" title="找资源"></a>找资源</h1><p>参考资料:<a href="https://www.bilibili.com/video/av1804134" target="_blank" rel="noopener">【科普】献给好奇心旺盛者的找资源教程(MAD教程第0期)</a></p>
+<h2 id="片源"><a href="#片源" class="headerlink" title="片源"></a>片源</h2><ul>
+<li><p>个人目前习惯用蜜柑计划,速盘的搜索有时候能用上(极影挂了,动漫花园貌似需要翻墙,不过镜像站应该还可以用.)<br>了解BDrip,x264,flac(免费无损音频编码)|BD-VAL,SP,MAV,BIG5(繁体编码)|OAD,AVC(高级视频编码),YUV(一种颜色编码方式,光亮度,色度,浓度)|RAW(生肉),MX(东京电视台TV片源)<br>了解10-bit,8-bit</p>
+</li>
+<li><p>不太推荐用TV版片源,因为会有各种字幕和图标还有圣光暗牧什么的突然出现在屏幕上,另外需要注意做的视频不要太闪(例如做闪现流时,不要滥用强烈对比),参考3D龙事件.</p>
+</li>
+<li>了解BDMV(蓝光原盘,15:00左右涉及到里面一些编码格式的大体讲解),BDremux(无损提取),ISO(镜像文件的一种,类似于压缩包,太大不建议用),推荐下BDrip<br><a href="http://tieba.baidu.com/p/6160094098" target="_blank" rel="noopener">告诉你BDISO、REMUX、WEB、BDRIP等几种4K版本的区别</a><br><a href="https://www.douban.com/note/722226575/" target="_blank" rel="noopener">科普：4K蓝光原盘ISO、REMUX 、WEB之间的区别</a></li>
+<li>了解NC(no-credit)OP/NCED,还可以搜”creditless”,”textless”,”Non telop”;有些op可能根据剧情需要有的画面不同,可以开多个窗口对比着看彼此的区别,不过建议版本数少的时候用这个方法;了解下”I帧”;死神(部分),星际牛仔,黑礁的op貌似是没有NC的,但他们的分镜,设计版式,配色都是很好的学习对象,23:50有个三大民工漫的怀旧向oped链接.</li>
+<li>了解重制:1.可能是指重新制作 2.可能是指数码重制;了解导演剪辑版,OA(On the Air)版,Renew版,Special Edition.</li>
+</ul>
+<h2 id="视频基础"><a href="#视频基础" class="headerlink" title="视频基础"></a>视频基础</h2><ul>
+<li>了解下HD,FHD,SD,Ultra HD;了解一下长宽比(4:3 16:9)以及相关历史(34:00),还可以了解一下黑边是如何诞生的.</li>
+<li>①学院宽银幕（Academy Flat Screen）1.85:1 源于裁掉画面（ Hard Matte）<br>②变形宽银幕（Anamorphic Scope/ Panavision）2.35:1 源于变形镜头（ Soft matte）</li>
+<li>虽然16:10更接近黄金分割,但成本比16:9高(6代玻璃基板,16:9能切出15块,16:10只能切出12块),21:9同理(12块),可以了解一下液晶基板的生产线世代,切割效率以及显示器背光灯管.</li>
+</ul>
+<h3 id="帧-帧率-场"><a href="#帧-帧率-场" class="headerlink" title="帧,帧率,场"></a>帧,帧率,场</h3><ul>
+<li>可以了解一下视觉暂留和似动知觉</li>
+<li>了解<strong>人眼特性-闪烁感觉</strong>,马耳他十字机芯<br>让人眼觉得不闪需要达到45.8HZ,所以16格(fps)是最低选择,(16→48可以了解一下)<br>物语节奏型AM（BC2013第二名av511692）</li>
+<li>了解一下电视电影和游戏的帧速率的问题</li>
+</ul>
+<h3 id="电视制式"><a href="#电视制式" class="headerlink" title="电视制式"></a>电视制式</h3><ul>
+<li>了解NTSC,PAL,SECAM三个制式,重点了解恩制和帕制,了解两者的优缺点;<a href="https://www.zhihu.com/question/19763648/answer/572715321" target="_blank" rel="noopener">PAL与NTSC制式有什么区别？</a></li>
+<li>了解电视线,了解隔行扫描和逐行扫描;了解奇场/上场/顶场,偶场/下场/底场</li>
+<li>N制P制属于模拟电视的范畴,现在可以考虑数字电视,数字电视三种较为成熟的制式DVB,ATSC,ISDB;可以了解一下3-2下位变换,<a href="https://blog.csdn.net/lixiaowei16/article/details/53407862" target="_blank" rel="noopener">出现23.97帧率的原因</a><br>了解一下像素长宽比</li>
+<li><strong>码率</strong>,也就是比特率等,<a href="https://baike.baidu.com/item/%E6%AF%94%E7%89%B9%E7%8E%87/1022775?fromtitle=%E7%A0%81%E7%8E%87&amp;fromid=8973692&amp;fr=aladdin" target="_blank" rel="noopener">比特率</a>,<a href="https://baike.baidu.com/item/%E8%A7%86%E9%A2%91%E7%A0%81%E7%8E%87/10008023?fr=aladdin" target="_blank" rel="noopener">视频码率</a><br>可以了解一下k(1000)和K(1024)的区别,了解码率的两种形式CBR(固定码率,容易浪费;商用,个人收藏),VBR(可变码率;网络传播用),了解一下<strong>后黑</strong>,或许可以用来防压制</li>
+<li><strong>色深(color depth)</strong>,了解一下8bit,24bit(真彩色).了解透明通道(32bit达到真彩色后会给透明通道8bit)<br>了解一下蓝绿幕抠像,颜色的决定关乎到拜耳阵列 有关抠像可详情66:00<br>Hooked(av932396) our tapes(av345660),这两个mad可了解<br>了解png-8和png-24<br><strong>位深(Bit depth)</strong>,色深以8bit为单位,位深以10bit为单位,10bit的优势是无色带,防色块,保细节,高压缩.画质相同体积更小,体积相同画质更好<br><a href="https://www.zhihu.com/question/20100081" target="_blank" rel="noopener">10bit 视频是什么？相比起 8bit 视频有什么优势？ - 知乎</a><br><a href="https://zhuanlan.zhihu.com/p/61429550" target="_blank" rel="noopener">【显示器的bit是什么意思，8bit和10bit到底谁好】 - 浮梁卖茶人的文章 - 知乎</a><br>有兴趣可以了解yuv420信号采样方式,p10量化级别等<br>总结:码率建议VBR,收藏建议用10bit,上传8bit<br>最后75:00讲了YUV,有兴趣可以深入了解一下,了解color space(色彩空间/颜色模型/色域),了解YUV的含义(亮度,明亮度,灰度),U&amp;V信号(色差信号),亮度和色度的关系</li>
+</ul>
+<h2 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h2><ul>
+<li>了解频率(影响音调),振幅(影响响度),波形(影响音色)</li>
+<li>了解基音和泛音,基音决定音高,泛音决定音色.</li>
+<li>了解一下音频的码率,这也跟不同的编码有关,有兴趣可以去看av672031;<br>采样频率,常见的有44.1KHz,48KHz;量化位数(采样精度) 有兴趣也可以去了解其历史.</li>
+<li>了解有损音乐和无损音乐的概念及其相关格式,以及为什么会出现有损的情况(码率,采样精度和采样频率的计算)<br><a href="https://baijiahao.baidu.com/s?id=1604391163540862580&amp;wfr=spider&amp;for=pc" target="_blank" rel="noopener">无损音乐跟有损音乐有什么区别？好用吗</a>‘</li>
+<li>PCM编码的WAV文件就是无损,无损WAV也可以压缩为无损APE,无损FLAC</li>
+<li>了解声道,2ch=two-channel=双声道,了解一下杜比实验室 </li>
+<li>了解DD和DTS,了解2.1,4.0,4.1声道音响等等.av799332,av1522449人头录音了解一下</li>
+<li>18:00开始是如何辨别真假音质的实录,这一块先略过去,等需要这方面的实践知识的时候再看.</li>
+</ul>
+<h2 id="格式"><a href="#格式" class="headerlink" title="格式"></a>格式</h2><ul>
+<li>了解下AVI,体积很大,不建议用;RMVB格式,体积小,低码率,但是剪视频不建议用.WMV略<br>MP4(MPEG-4),H.264是MP4的一种高清编码,了解H.264的FourCC:x264/AVC1/H264等;H.264又名AVC(Advanced Video Coding),MPEG4 P10;H.265/HEVC<br>mkv,拥有优秀的封装能力,能封装多个音轨和字幕.</li>
+</ul>
+<h2 id="字幕"><a href="#字幕" class="headerlink" title="字幕"></a>字幕</h2><ul>
+<li>了解CH/JAP/EN,GB/BIG5,CHS/CHT/CH</li>
+<li>了解closed caption(CC),相对应的还有open caption,一般是针对本国人用的<br>subtitle一般是针对翻译用的,也就是翻译字幕.理解硬字幕/内嵌字幕,外挂字幕.<br>subom/subhd这两个网站可用于查找字幕</li>
+<li>软字幕常见格式:SRT,SSA,ASS<br>18:57有SSA格式文件里的详细解释,可用于自定义格式</li>
+<li>MkvToolnix可用于拆解出MKV里的视频,音轨,字幕</li>
+<li>除了字幕文件还有字体文件.</li>
+</ul>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li>了解下OVA和OAD的概念和不同</li>
+<li>算法:CRC32码,验证文件管完整性;MD5码,同时用来验证文件完整性,散列值128位,牵扯到哈希值;SHA-1算法,160位.</li>
+<li>了解Bittorrent/ed2k</li>
+<li>了解GPL协议,迅雷和QQ影音做过的那些事,33:21了解其他开源协议</li>
+</ul>
+<p>34:35有时间再看剩下的</p>
+<h1 id="备战MAD"><a href="#备战MAD" class="headerlink" title="备战MAD"></a>备战MAD</h1><p>参考资料: <a href="https://www.bilibili.com/video/av6479027" target="_blank" rel="noopener">备战MAD-硬软件的选择及圈内风气新人误区（MAD教程第0.5期）</a>  </p>
+<ul>
+<li>01:28可以了解中日欧美mad圈的相关术语.<br><a href="http://page.renren.com/601005971/note/845460717" target="_blank" rel="noopener">零基础mad教程番外MAD的前世今生</a><h2 id="硬件的选择"><a href="#硬件的选择" class="headerlink" title="硬件的选择"></a>硬件的选择</h2></li>
+<li>了解下水银加速<h2 id="软件的选择"><a href="#软件的选择" class="headerlink" title="软件的选择"></a>软件的选择</h2></li>
+<li>建议安装PR,AE英文版,另外需要AU,BR,PS\</li>
+<li>了解MG动画的重要性,可以看一下东之伊甸的OP,关注网站Vimeo,po主Motion Graphic</li>
+<li>了解下vegas,会声会影,nuke</li>
+<li>43:15的mad不错,可以了解一下马小褂,’作画讲座’,作画wiki,anitama,sakugabooru,booru</li>
+<li>了解一些作画MAD,金田透视,金田光,金田跳;背动,BL影,BANK兼用镜头;星际牛仔天国之扉OP,无罪作画,冲浦启之.</li>
+<li>了解摄影(后期)</li>
+<li>54:42的后记总结可以多看一下.</li>
+<li>谈到了手书,摹写,MMD</li>
+<li><p>补完永生之酒和低俗小说</p>
+</li>
+<li><p>了解手书MAD和手书的关系,PV和CM的定义,注意pv是先音乐后画面的</p>
+</li>
+<li>了解音MAD</li>
+<li>关注意公子及其’艺术很难吗’</li>
+<li>70:00左右大体讲了各种类型的视频建议用什么软件做<h3 id="格式转换"><a href="#格式转换" class="headerlink" title="格式转换"></a>格式转换</h3></li>
+<li>建议装一个格式工厂,以备不时之需</li>
+<li>了解AVSVideoReMaker及其用法,各剪辑片段可分开导出这个功能不错.</li>
+<li>再次了解下”I帧”和”无损分割”<br><a href="https://www.cnblogs.com/ljtknowns/p/9281838.html" target="_blank" rel="noopener">I帧、B帧、P帧、NALU类型</a><br><a href="https://www.bilibili.com/video/av5940430?from=search&amp;seid=17332971887651134394" target="_blank" rel="noopener">直播延时的原因！网络传输和I帧~</a><br><a href="https://www.youtube.com/watch?v=P7abyWT4dss" target="_blank" rel="noopener">MPEG Compression &amp; how it works in IPTV and other digital media delivery systems.s</a><br><a href="https://www.cnblogs.com/personnel/p/7986944.html" target="_blank" rel="noopener">H.264编码原理以及I帧B帧P帧</a></li>
+<li>了解小丸工具箱,如果对压制有要求可以考虑megui.了解CRF(小丸)<br><a href="http://www.360doc.com/content/18/0521/16/27492377_755739379.shtml" target="_blank" rel="noopener">小丸工具箱FAQ问答</a><br><a href="http://www.360doc.com/content/18/0308/13/39820179_735368394.shtml" target="_blank" rel="noopener">CRF参数详解</a></li>
+<li>压制相关需要多去了解</li>
+</ul>
+<h3 id="字幕-1"><a href="#字幕-1" class="headerlink" title="字幕"></a>字幕</h3><ul>
+<li>了解Ageisub,82:00左右有这个软件的大体操作</li>
+<li>了解Arctime,在有文本的情况下,可以通过鼠标选择区域来快速打轴,另外还有自动分轴的功能</li>
+<li>字幕特效可以考虑lua和TCAX(MAD字幕)</li>
+</ul>
+<h3 id="音频处理"><a href="#音频处理" class="headerlink" title="音频处理"></a>音频处理</h3><ul>
+<li>了解下去BGM和去人声的操作</li>
+<li>Phoenix Anniversary 4这个MAD的BGM衔接可以学习一下</li>
+</ul>
+<h3 id="录屏软件"><a href="#录屏软件" class="headerlink" title="录屏软件"></a>录屏软件</h3><ul>
+<li>了解Bandicam,98:29后面暂略</li>
+</ul>
+<h3 id="圈内风气"><a href="#圈内风气" class="headerlink" title="圈内风气"></a>圈内风气</h3><ul>
+<li>不一定是特效好才是好视频,可以关注一些纯剪创意视频,例如av236901.</li>
+<li>教程与制作可以同步进行,完整进行一个MAD有时候比看教程更具有实用性.</li>
+<li>不允许”三剪”</li>
+<li>经验之谈:看MAD时可以静音,放着自己喜欢的音乐,可以学习优秀MAD的长处,还可以汲取灵感</li>
+<li>做MAD可以考虑在片尾家credit,包括BGM,素材等</li>
+<li><strong>做MAD要肯花时间</strong></li>
+<li>不用急着入组,更别谈建组了.</li>
+<li>关注一下加刘景长(好像在A岛见过)</li>
+<li><strong>重视拉片</strong></li>
+<li><a href="https://www.zcool.com.cn/article/ZMTE1MDA4.html" target="_blank" rel="noopener">为什么大神不愿意帮你？</a></li>
+<li>26:48可以看到一个问问题的实例,了解虚假同感偏差,<a href="https://zhidao.baidu.com/question/623477633741891644.html?fr=iks&amp;word=%B2%B4%CB%C9%B7%D6%B2%BC%BE%BF%BE%B9%CA%C7%D4%F5%C3%B4%BB%D8%CA%C2&amp;ie=gbk" target="_blank" rel="noopener">泊松分布究竟是怎么回事？</a></li>
+<li>了解面质</li>
+<li>了解版权问题,amv illegal,数字千年版权法案,著作权法,伯尔尼公约,了解一下御涵song画的著作权法漫画,最近发展区理论.</li>
+<li>最好是用版权绘,用同人图要在后面附上画师ID之类的,ASCii2d.net和saucenao.com,iqbd.org可用于搜图</li>
+<li>可以通过仿MAD来学习历练,但不要套模板</li>
+<li>有兴趣可以了解柠檬市场,”劣币驱逐良币”</li>
+</ul>
+<p>56:08</p>
+<h1 id="AE基础篇"><a href="#AE基础篇" class="headerlink" title="AE基础篇"></a>AE基础篇</h1><ul>
+<li>素材命名:1.编号式 2.描述式 3.标签式</li>
+<li>整理素材时可以使用文件的详情信息一栏,前期打字麻烦,后期整理的时候方便一些.</li>
+<li>了解listary</li>
+<li>重命名的话可以了解一些工具,单纯用系统指令的话可以用F2,TAB可以切换至下一个文件命名,shift+tab可以撤回至上一个命名.</li>
+<li>不用刻意去记所有的快捷键,ctrl+shift+a取消选择</li>
+</ul>
+<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><ul>
+<li>素材栏可以调整设置注释之类的,根据需要来设定栏目</li>
+<li>ctrl+k可以设置合成,合成设置界面可以设置预设,像素长宽比,帧率之类的,复习一下23.976这个帧率是怎么来的,如果用这个帧率的话抠图可能会比25的少那么几帧</li>
+<li>在变换里面可以找到适应合成这个选项,’~’可以用来霸屏</li>
+<li>了解SMTP(时分秒帧)码,ctrl＋左键点击时间吗/帧可以互相切换,home/end可以空降至开头或者末尾</li>
+<li>在合成设置duration那里可以调整持续时间,’31603’即为三分十六秒零三帧</li>
+<li>音频片段可以调节audio levels(音量)</li>
+<li>了解工作区(work area),’b’设置工作区起点,’n’设置终点,小键盘’0’预览,<a href="https://www.zhihu.com/question/268701208" target="_blank" rel="noopener">Ae空格播放和小键盘0预览的差别？</a>(以后可以不用特别的说明RAM预览了)</li>
+<li>小键盘*可以设置标记,shift+0~9也可以设置标记(0~9可以实现跳转),ctrl+左键可以删除标记,shift点击可以快速切换到标记附近</li>
+<li>保存:了解保存,另存为,增量保存(改稿时候可以用)</li>
+<li>渲染:了解QuickTime,Audio put on等</li>
+</ul>
+<h3 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h3><ul>
+<li>ctrl+backspace删除文件或者文件夹可以不弹出确认窗口,’\’可以激活合成预览,</li>
+<li>ctrl+shift+d可以用来分割片段(分尸),d可以使时间轴线位于时间轴中间</li>
+<li>小键盘’.’可以进行音频预览,连按两次L可以开波形</li>
+<li>alt+滚轮可以调节时间轴目镜.-/=也可以做到这个效果</li>
+<li>alt+[]可以设置斩首/斩尾作层偷2,单独的方括号可以将层头层尾移至时间线处</li>
+</ul>
+<h1 id="AE基础篇02"><a href="#AE基础篇02" class="headerlink" title="AE基础篇02"></a>AE基础篇02</h1><ul>
+<li>了解transform的基本操作,anchor,position,scale,rotation,opacity(存在感);了解预览窗口的rulers和guides</li>
+<li>了解如何开图层的<strong>独立显示</strong></li>
+<li>复习一下锚点的知识,了解补偿移动PanBehindTool(Y,定位点工具),摁住(后摁)ctrl移动可以吸附一些特殊点(中心点,边界点);要旋转或者缩放以及给位置K帧的时候要定好锚点</li>
+<li>13:00左右有实例演示,了解弹力表达式,其中用到了参考线.</li>
+<li>alt拖动关键帧,可以以第一个关键帧为基准,向其靠拢;ctrl+D复制图层.</li>
+<li>注意label分类,设置好各自的颜色分类的话整理图层时会很方便,了解选中同一颜色图层组和反选</li>
+<li>设置时间轴标记的时候可以用标点符号来注释,例如,.! 方便来表现情绪;shift+;可以在当前范围与合成范围之间切换</li>
+<li>59:00讲的有点快,大体上讲的是复制和创建副本相关的东西</li>
+<li>79:00有详细的从视听语言角度上分析一个AMV</li>
+<li>89:00左右会有一些动画常见的摄影手法</li>
+<li>126:00处的一个分析EVA的混合系非常棒   </li>
+<li>132:07有一个作业,了解一下</li>
+</ul>
+<h2 id="习惯-意识"><a href="#习惯-意识" class="headerlink" title="习惯/意识"></a>习惯/意识</h2><ul>
+<li>导入音频后可以先打上标记,找好节奏点,标记本身也可以当作备忘录,计划簿之类的</li>
+<li>理解乐理有助于按照拍子来剪视频</li>
+<li>混杂多个画面时注意主次关系,并且注意关联,即使画面再快,观众也能看清一两个画面,如果次要镜头是凑数弄出来的话,反而会很乱,违和</li>
+<li>画面过乱,特写不明,内容繁多等多种情形都需要放缓剪辑的’节奏’,弄了一些过快的镜头要考虑是否也交代了人物与环境.</li>
+<li>多看看AMVNEWS或者animemusicvideos.org</li>
+<li>AE特效有很多,一般来说很难都了解,参数之类的去试一下知道是个什么效果就好,不用怕.</li>
+<li>分段性的剪辑会造成层次感,没有层次感也没啥看头,按故事性剪辑适合单素材,混剪另说(83:45)</li>
+<li>如果分段,情感渲染的不好,有时候会出现某几个片段很棒,但是整体比较平淡的现象.</li>
+<li>了解一个东西如何出现如何消失最好的方法就是逐帧看</li>
+<li>了解空镜头的重要性,可以用作缓冲或者过渡,交代背景之类的.素材掺杂的信息量太大,而且相互之间连贯性强且一时半会凸显不了主次的话,剪成MAD可能会让MAD不知所以然.</li>
+<li>除非有明显暗示等情况,一般且意义不大的说话镜头最好不要当作剪辑素材;一闪而过的画面有时候也会有种信息量不全的观感.</li>
+<li>慎用一些有大众所熟知的意象的镜头,往往会影响下一个镜头的发展,反之用好了有意象的镜头会有很好的效果.</li>
+<li>镜头要让观众大体知道发生了什么,不要太快,注重前后联系,要有层次感.</li>
+<li>与歌词同步很好,适合新人,当然采用故事性剪辑更具挑战性.</li>
+<li>多看一些AE官方文档,很有帮助</li>
+<li>做MAD可以由画面找音乐,也可以由音乐找画面,选好后给音乐分大段,可以先做高潮部分</li>
+<li>关注中国剪辑师联盟</li>
+</ul>
+<h2 id="技巧-1"><a href="#技巧-1" class="headerlink" title="技巧"></a>技巧</h2><ul>
+<li>了解pr的打标记(M)方法,还有个办法很快的将视频匹配上</li>
+<li>了解帧冻结</li>
+<li>shift+r/a等可以在原有属性的基础上调出其他属性设置</li>
+<li>一些视频过渡可以尝试各种混合模式,shift+’=’/‘-‘可以挨个试</li>
+<li>ctrl+shift+T/F3可以快速切换特效面板,但还是用鼠标滚轮比较快</li>
+<li>小键盘数字键可以选择相应的层,加shift可以多选</li>
+<li>了解关键帧助手里的给层排序,图层多的话能很快排好</li>
+<li>scratch可以控制播放速度</li>
+</ul>
+<h3 id="快捷键-1"><a href="#快捷键-1" class="headerlink" title="快捷键"></a>快捷键</h3><ul>
+<li>alt+左键可以检测两个标记之间的长度</li>
+<li>alt+小键盘*在层上打标记,并且打开注释,ctrl+右键可以删掉标记以及本层其他标记(还有其他功能)</li>
+<li>了解独奏的相关知识,多个独奏时,alt+左键可以取消其他独奏</li>
+<li>I/O定位到层头层尾.ctrl配合方向键试一下有什么样的效果</li>
+<li>ctrl+alt+shift+E 添加刚才的特效</li>
+<li>ctrl+展开▲可以展开所有属性,alt+shift+左键可以折叠某项属性</li>
+<li>u可以展开所有带关键帧的项目,两下U可以展开所有有修改过的项</li>
+<li>page up/down可以先前后向后移动一帧,ctrl+左右方向键也可以</li>
+<li>X将某一层置顶显示</li>
+<li>e展开特效</li>
+</ul>
+<h3 id="特效"><a href="#特效" class="headerlink" title="特效"></a>特效</h3><ul>
+<li>color correction里面可以设置exposure可以设置曝光特效</li>
+<li>optics compensation(光学补偿)</li>
+<li>特效栏可以切换显示方式categories/Explorer folders/AlphaBetical.</li>
+<li>87:29有大体介绍常见特效的.</li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/07/11/数学/高数/高数学习/" rel="next" title="微积分学习">
+                <i class="fa fa-chevron-left"></i> 微积分学习
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/07/31/剧本创作学习记录/" rel="prev" title="剧本创作学习记录">
+                剧本创作学习记录 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5beb84d6297d37ba" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-14/25336942.jpg" alt="Lain">
+            
+              <p class="site-author-name" itemprop="name">Lain</p>
+              <p class="site-description motion-element" itemprop="description">Welcome to WEIRD</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/chocolaLain" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lainundalice@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.mackxin.com/" title="馨客栈" target="_blank">馨客栈</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://cn.bing.com" title="Bing" target="_blank">Bing</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.bilibili.com/" title="BiliBili" target="_blank">BiliBili</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://maxiang.io/" title="马克飞象" target="_blank">马克飞象</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://xueshu.baidu.com/" title="百度学术" target="_blank">百度学术</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.wallpapermaiden.com" title="wallpapermaiden" target="_blank">wallpapermaiden</a>
+                  </li>
+                
+              </ul>
+
+          
+
+          
+            </div>
+
+          
+
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#找资源"><span class="nav-number">1.</span> <span class="nav-text">找资源</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#片源"><span class="nav-number">1.1.</span> <span class="nav-text">片源</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#视频基础"><span class="nav-number">1.2.</span> <span class="nav-text">视频基础</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#帧-帧率-场"><span class="nav-number">1.2.1.</span> <span class="nav-text">帧,帧率,场</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#电视制式"><span class="nav-number">1.2.2.</span> <span class="nav-text">电视制式</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#音频"><span class="nav-number">1.3.</span> <span class="nav-text">音频</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#格式"><span class="nav-number">1.4.</span> <span class="nav-text">格式</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#字幕"><span class="nav-number">1.5.</span> <span class="nav-text">字幕</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他"><span class="nav-number">1.6.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#备战MAD"><span class="nav-number">2.</span> <span class="nav-text">备战MAD</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件的选择"><span class="nav-number">2.1.</span> <span class="nav-text">硬件的选择</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#软件的选择"><span class="nav-number">2.2.</span> <span class="nav-text">软件的选择</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#格式转换"><span class="nav-number">2.2.1.</span> <span class="nav-text">格式转换</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#字幕-1"><span class="nav-number">2.2.2.</span> <span class="nav-text">字幕</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#音频处理"><span class="nav-number">2.2.3.</span> <span class="nav-text">音频处理</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#录屏软件"><span class="nav-number">2.2.4.</span> <span class="nav-text">录屏软件</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#圈内风气"><span class="nav-number">2.2.5.</span> <span class="nav-text">圈内风气</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AE基础篇"><span class="nav-number">3.</span> <span class="nav-text">AE基础篇</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#技巧"><span class="nav-number">3.1.</span> <span class="nav-text">技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键"><span class="nav-number">3.1.1.</span> <span class="nav-text">快捷键</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#AE基础篇02"><span class="nav-number">4.</span> <span class="nav-text">AE基础篇02</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#习惯-意识"><span class="nav-number">4.1.</span> <span class="nav-text">习惯/意识</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技巧-1"><span class="nav-number">4.2.</span> <span class="nav-text">技巧</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#快捷键-1"><span class="nav-number">4.2.1.</span> <span class="nav-text">快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#特效"><span class="nav-number">4.2.2.</span> <span class="nav-text">特效</span></a></li></ol></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+
+
+<div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("11/13/2018 15:13:14");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lain</span>
+
+  
+</div>
+
+<!-- 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+-->
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共84k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访问人数 <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量 <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      人
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'i6b9XM9K35JmBmckhA44a3KG-gzGzoHsz',
+        appKey: 'L9BPdrN71uQlKnmrERKQLCGB',
+        placeholder: 'Hello Lain',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+
+  
+<!-- 图片轮播js文件cdn -->
+<script src="https://cdn.bootcss.com/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+
+<!-- 自定义的js文件 -->
+<script type="text/javascript" src="/js/src/custom.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/unitychan.model.json"},"display":{"position":"left","width":120,"height":300},"mobile":{"show":false},"log":false});</script></body>
+</html>

@@ -1,0 +1,1379 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next gemini use-motion" lang="zh-Hans">
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css">
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css">
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css">
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="python,">
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="参考教程：Data structures: Introduction to graphs[清华大学]数据结构第六章《图》">
+<meta name="keywords" content="python">
+<meta property="og:type" content="article">
+<meta property="og:title" content="python算法学习-图">
+<meta property="og:url" content="http://chocolaLain.github.io/2019/06/16/计算机相关/Python/python算法学习-图/index.html">
+<meta property="og:site_name" content="Lain&#39;s Blog">
+<meta property="og:description" content="参考教程：Data structures: Introduction to graphs[清华大学]数据结构第六章《图》">
+<meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/1560783725391.jpg">
+<meta property="og:updated_time" content="2019-09-17T15:54:06.731Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="python算法学习-图">
+<meta name="twitter:description" content="参考教程：Data structures: Introduction to graphs[清华大学]数据结构第六章《图》">
+<meta name="twitter:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/1560783725391.jpg">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Gemini',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":true,"scrollpercent":true,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://chocolaLain.github.io/2019/06/16/计算机相关/Python/python算法学习-图/">
+
+
+
+
+
+  <title>python算法学习-图 | Lain's Blog</title>
+  
+
+
+
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-129336949-1', 'auto');
+  ga('send', 'pageview');
+</script>
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+    <a href="https://github.com/chocolaLain" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Lain's Blog</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">for Alice</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br>
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br>
+            
+            分类
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br>
+            
+            归档
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off" placeholder="搜索..." spellcheck="false" type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://chocolaLain.github.io/2019/06/16/计算机相关/Python/python算法学习-图/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lain">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-14/25336942.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lain's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">python算法学习-图</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              
+                <span class="post-updated">
+                  &nbsp; | &nbsp; 更新于
+                  <time itemprop="dateUpdated" datetime="2019-09-17T23:54:06+08:00" content="2019-09-17">
+                    2019-09-17
+                  </time>
+                </span>
+              
+
+
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-06-16T15:01:18+08:00">
+                2019-06-16
+              </time>
+            
+
+            
+
+            
+
+            
+
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Python/" itemprop="url" rel="index">
+                    <span itemprop="name">Python</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/06/16/计算机相关/Python/python算法学习-图/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/06/16/计算机相关/Python/python算法学习-图/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量 <i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.6k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  5
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <p><img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/1560783725391.jpg" alt><br>参考教程：<a href="https://www.youtube.com/watch?v=gXgEDyodOJU&amp;t=47s" target="_blank" rel="noopener">Data structures: Introduction to graphs</a><br><a href="https://www.bilibili.com/video/av52270499?from=search&amp;seid=89976861284999033" target="_blank" rel="noopener">[清华大学]数据结构第六章《图》</a></p>
+<a id="more"></a>
+<h3 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h3><p>注意树和图的关系：’Any tree is also a graph.’<br>树有N个节点，就有N-1个边。</p>
+<ul>
+<li><a href="https://blog.csdn.net/eyishion/article/details/53234255" target="_blank" rel="noopener">图的定义和各种术语总结</a><br><a href="https://zh.wikipedia.org/wiki/图论术语#环" target="_blank" rel="noopener">图论术语-维基</a><br><a href="https://zh.wikipedia.org/wiki/顶点_(图论" target="_blank" rel="noopener">顶点 (图论)-维基</a>)<br><a href="https://www.jianshu.com/p/a153b3fddfd2" target="_blank" rel="noopener">图graph，G(V,E)=Vertex(顶点集合)+Edge(边集合)</a><br><a href="https://blog.csdn.net/u010853261/article/details/79618379" target="_blank" rel="noopener">【图结构专题】有向图</a><br>注意邻接关系（点点之间）和关联关系（点边之间）这个概念<br><a href="https://zh.wikipedia.org/wiki/节点度" target="_blank" rel="noopener">节点度-维基</a><br>思考一下树的节点度即可<blockquote>
+<p><a href="http://www.sohu.com/a/234371835_663464" target="_blank" rel="noopener">什么是关联图谱？——关联图谱（一） </a><br><a href="https://blog.csdn.net/wdkirchhoff/article/details/45101005" target="_blank" rel="noopener">HCNP-R&amp;S-IERN——理解OSPF邻居与邻接关系</a></p>
+</blockquote>
+</li>
+<li><a href="https://zh.wikipedia.org/wiki/完全圖" target="_blank" rel="noopener">完全图</a><br><a href="https://www.matrix67.com/blog/archives/998" target="_blank" rel="noopener">趣题：完全图K_n最少可以拆成多少个完全二分图？</a><br><a href="https://www.cnblogs.com/xpjiang/p/4466562.html" target="_blank" rel="noopener">完全偶图K(3,3)与完全图K5是否存在平面表示</a></li>
+</ul>
+<ul>
+<li><a href="https://blog.csdn.net/hguisu/article/details/7719428" target="_blank" rel="noopener">图的应用详解-数据结构</a><br><a href="https://www.zhihu.com/question/38341609" target="_blank" rel="noopener">什么是图计算及其应用场景？</a><br><a href="https://blog.csdn.net/a60782885/article/details/72742557" target="_blank" rel="noopener">算法——图之加权图</a></li>
+</ul>
+<h4 id="路径"><a href="#路径" class="headerlink" title="路径"></a>路径</h4><ul>
+<li><p>了解一下路径、简单路径、环/环路（含简单）、有向无环图（DAG）<br><a href="https://baike.baidu.com/item/简单路径" target="_blank" rel="noopener">简单路径-百度</a><br><a href="https://blog.csdn.net/omnispace/article/details/80381329" target="_blank" rel="noopener">有向无环图（DAG）技术白话解读</a><br><a href="https://blog.csdn.net/XXJ19950917/article/details/78046550" target="_blank" rel="noopener">有向无环图VS树</a></p>
+</li>
+<li><p><a href="https://baike.baidu.com/item/欧拉回路" target="_blank" rel="noopener">欧拉回路-百度</a><br><a href="http://www.cppblog.com/MatoNo1/archive/2011/03/27/142776.html" target="_blank" rel="noopener">欧拉环、欧拉路径的判定和求法</a><br><a href="http://read.pudn.com/downloads128/ebook/548247/图论讲义/图论讲义41E图.pdf" target="_blank" rel="noopener">第四章 Euler 图和 Hamilton 图</a><br><a href="https://www.cnblogs.com/zhj5chengfeng/p/3233992.html" target="_blank" rel="noopener">哈密尔顿回路总结</a><br><a href="https://zh.wikipedia.org/wiki/哈密顿图" target="_blank" rel="noopener">哈密顿图-维基</a></p>
+</li>
+<li><p>注意<strong>有边</strong>和<strong>连通</strong>的区别</p>
+</li>
+</ul>
+<h4 id="连通图"><a href="#连通图" class="headerlink" title="连通图"></a>连通图</h4><ul>
+<li><a href="https://blog.csdn.net/majiakun1/article/details/88635889" target="_blank" rel="noopener">什么是连通图，（强）连通图详解</a><br><a href="https://zhuanlan.zhihu.com/p/35908516" target="_blank" rel="noopener">图的连通性-知乎</a></li>
+<li><p><a href="https://www.cnblogs.com/dalt/p/7420841.html" target="_blank" rel="noopener">连通图的一些性质</a><br>（最小连通无向图的变数）包含n个顶点的最小连通无向图G恰有n-1个边。了解一下<strong>最小连通图</strong>（类似于树）</p>
+</li>
+<li><p><a href="https://baike.baidu.com/item/子图" target="_blank" rel="noopener">子图-百度</a><br><a href="https://www.zhihu.com/question/26713487/answer/33773778" target="_blank" rel="noopener">什么是极大强连通子图？</a><br><a href="https://zh.wikipedia.org/wiki/强连通分量" target="_blank" rel="noopener">强连通分量</a><br><a href="https://zhuanlan.zhihu.com/p/37792015" target="_blank" rel="noopener">图论：连通分量和强连通分量</a><br><a href="https://www.cnblogs.com/five20/p/7594239.html" target="_blank" rel="noopener"><strong>浅析强连通分量（Tarjan和kosaraju）</strong></a><br>注意区分子图和连通分量</p>
+<blockquote>
+<p>无向图的G的极大连通子图称为G的连通分量（Connected）。任何连通图的连通分量都只有一个，即使是其本身，非连通的无向图有多个连通分量。<br>不理解的点：图G的强连通分量只形成其顶点的一个划分，所有强连通分量的并未必等于图G，可能少一些连接不同连通分量的有向边。这一点与无向图不同。可能是说图G本身未必是一个强连通图所以会出现这种情况。</p>
+</blockquote>
+</li>
+</ul>
+<h4 id="带权图和网络"><a href="#带权图和网络" class="headerlink" title="带权图和网络"></a>带权图和网络</h4><p>了解下带权图和网络的概念和性质</p>
+<h4 id="图抽象数据类型"><a href="#图抽象数据类型" class="headerlink" title="图抽象数据类型"></a>图抽象数据类型</h4><p><a href="https://blog.csdn.net/Wonder233/article/details/79081759" target="_blank" rel="noopener">抽象数据类型及存储结构</a><br>注意的点：1.图可能有回路，注意不要遍历已经遍历过的部分。2.图可能不连通，或者这个图不是有跟图，即使是有跟图，算法也可能没有从图中的根开始遍历，因此，要完成对一个图里所有顶点（或所有边）的遍历，遍历完图中可达的那个部分（在无向图里是一个连通分量，在有向图里是一个或几个强连通分量），并不一定是整个图遍历的结束，还需要考虑从初始顶点不可达的部分。</p>
+<h4 id="图的表示和实现"><a href="#图的表示和实现" class="headerlink" title="图的表示和实现"></a>图的表示和实现</h4><ul>
+<li>在抽象讨论中，主要关注的是边与顶点的关联关系和顶点间的邻接关系，这是图表示的关键。</li>
+</ul>
+<h5 id="邻接矩阵"><a href="#邻接矩阵" class="headerlink" title="邻接矩阵"></a>邻接矩阵</h5><ul>
+<li><a href="https://baike.baidu.com/item/邻接矩阵" target="_blank" rel="noopener">邻接矩阵-百度</a><br>注意：1.无向图的邻接矩阵是对称矩阵 2.顶点的度和矩阵行/列中国年非零元素的关系 3.邻接关系的定义<br>如果图中的权表示从顶点到顶点的一种代价，无边时的代价无穷大，而顶点到自身的代价为0。则教材p230底部的邻接矩阵反映了这个情况</li>
+<li><a href="https://blog.csdn.net/a1414345/article/details/74986159" target="_blank" rel="noopener">图的邻接矩阵与邻接表存储方式及优缺点对比</a></li>
+</ul>
+<h5 id="邻接表"><a href="#邻接表" class="headerlink" title="邻接表"></a>邻接表</h5><p><a href="https://blog.csdn.net/jnu_simba/article/details/8866844" target="_blank" rel="noopener">数据结构：图的存储结构之邻接表</a></p>
+<h3 id="图结构的python实现"><a href="#图结构的python实现" class="headerlink" title="图结构的python实现"></a>图结构的python实现</h3><ul>
+<li>教程p231有多种实现方法可以看一下<br><a href="https://blog.csdn.net/u014281392/article/details/79120406" target="_blank" rel="noopener">常见的图结构表示(python)</a><br><a href="https://blog.csdn.net/lanchunhui/article/details/50954005" target="_blank" rel="noopener">Python 数据结构与算法——图（Graph）</a><br><a href="https://www.jianshu.com/p/2192a8e10314" target="_blank" rel="noopener">Python数据结构实现图</a><br><a href="https://www.cnblogs.com/hanahimi/p/4693260.html" target="_blank" rel="noopener">python数据结构与算法——图的基本实现及迭代器</a></li>
+</ul>
+<h4 id="邻接矩阵-1"><a href="#邻接矩阵-1" class="headerlink" title="邻接矩阵"></a>邻接矩阵</h4><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/52962038" target="_blank" rel="noopener">基于邻接矩阵技术实现图类（python）-知乎</a><blockquote>
+<p><a href="https://stackoverflow.com/questions/34264710/what-is-the-point-of-floatinf-in-python" target="_blank" rel="noopener">What is the point of float(‘Inf’) in Python?</a><br><a href="https://stackoverflow.com/questions/13957829/how-to-use-raise-keyword-in-python" target="_blank" rel="noopener">How to use “raise” keyword in Python [duplicate]
+</a></p>
+</blockquote>
+</li>
+<li>注意：1.使用列表表示矩阵时检查矩阵是否合格的方法。需要去理解一下如果如何用列表表示矩阵<br>2.矩阵和二维表的拷贝这里不太懂，参考这个<a href="https://www.cnblogs.com/ifantastic/p/3811145.html" target="_blank" rel="noopener">[Python] 正确复制列表的方法</a><br>3.相对于给定的图，可能我们更需要在类里面弄一个自己的图来使用。<br>4.我们刚添加进去的矩阵目前是没有边的，需要参照邻接矩阵的设计方式给图里的顶点添加边<div><div class="fold_hider"><div class="close hider_title">拓展参考教程</div></div><div class="fold">
+<p><a href="https://networkx.github.io/documentation/stable/tutorial.html" target="_blank" rel="noopener">找到的一个教程，有关NetworkX</a><br><a href="https://www.cnblogs.com/minglex/p/9205160.html" target="_blank" rel="noopener">networkx整理</a><br><a href="https://blog.csdn.net/wisgood/article/details/51590144" target="_blank" rel="noopener">Scala 无参数方法和统一访问原则</a><br><a href="https://www.cnblogs.com/wangyongsong/p/6750454.html#_label0" target="_blank" rel="noopener">python基础——特性（property）、静态方法（staticmethod）、类方法（classmethod）、<strong>str</strong>的用法</a><br><a href="https://blog.csdn.net/lihao21/article/details/79762681" target="_blank" rel="noopener">Python 实例方法、类方法和静态方法</a><br><a href="http://funhacks.net/explore-python/Class/method.html" target="_blank" rel="noopener">类方法和静态方法</a><br><a href="https://www.zhihu.com/question/20021164" target="_blank" rel="noopener">Python 中的 classmethod 和 staticmethod 有什么具体用途？</a><br><a href="https://blog.csdn.net/doiido/article/details/43538833" target="_blank" rel="noopener">Python join() 函数 连接字符串</a><br><a href="https://blog.csdn.net/SeeTheWorld518/article/details/46959871" target="_blank" rel="noopener">Python map()函数的用法</a><br><a href="https://www.zhihu.com/question/19754941" target="_blank" rel="noopener">Python 的类的下划线命名有什么不同？</a></p>
+
+</div></div>
+</li>
+</ul>
+<h4 id="邻接表-1"><a href="#邻接表-1" class="headerlink" title="邻接表"></a>邻接表</h4><ul>
+<li><a href="https://zhuanlan.zhihu.com/p/43820128" target="_blank" rel="noopener">创建基于邻接表的图（python实现）</a><br><a href="http://www.voidcn.com/article/p-bzgcucrn-bpx.html" target="_blank" rel="noopener">图的常用算法的 python 实现—邻接表表示法</a></li>
+<li>不要直接用邻接矩阵的思路去理解邻接表。理解一下邻接表为什么是“压缩后的邻接矩阵”，因为邻接表的顶点的出边信息可以由邻接矩阵的常规算法获取，省去了一些自循环和无边的情况，只获得有边的情况。</li>
+</ul>
+<h3 id="图的遍历"><a href="#图的遍历" class="headerlink" title="图的遍历"></a>图的遍历</h3><ul>
+<li><a href="https://www.cnblogs.com/6DAN_HUST/archive/2010/08/23/1806560.html" target="_blank" rel="noopener">人工智能——状态空间搜索及状态空间表示法</a><br><a href="https://baike.baidu.com/item/状态空间搜索" target="_blank" rel="noopener">状态空间搜索-百度</a></li>
+<li><a href="https://www.cnblogs.com/skywang12345/p/3711483.html" target="_blank" rel="noopener">图的遍历之 深度优先搜索和广度优先搜索-这个博客不错</a></li>
+<li><a href="http://data.biancheng.net/view/45.html" target="_blank" rel="noopener">深度优先生成树和广度优先生成树</a></li>
+</ul>
+<h4 id="kruskal算法"><a href="#kruskal算法" class="headerlink" title="kruskal算法"></a>kruskal算法</h4><p><a href="https://blog.csdn.net/qq_40581789/article/details/80626475" target="_blank" rel="noopener">Kruskal算法——求最小生成树</a><br><a href="https://jingyan.baidu.com/article/9113f81b6707c52b3214c794.html" target="_blank" rel="noopener">普利姆算法（prim）求最小生成树（MST)过程详解</a></p>
+<h3 id="拓扑排序"><a href="#拓扑排序" class="headerlink" title="拓扑排序"></a>拓扑排序</h3><ul>
+<li><a href="https://blog.csdn.net/qq_41152351/article/details/85312810" target="_blank" rel="noopener">拓扑排序概念</a><br><a href="https://www.bilibili.com/video/av34661475/?p=7" target="_blank" rel="noopener">数据结构之图的应用-最小生成树+最短路径+拓扑排序+关键路径</a><br><a href="https://www.cnblogs.com/H-Vking/p/4133789.html" target="_blank" rel="noopener">关于拓扑排序的一些想法（有关求所有拓扑排序）</a></li>
+</ul>
+
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/python/" rel="tag"><i class="fa fa-google"></i> python</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/06/13/设计&艺术/live2d学习笔记/" rel="next" title="live2d学习笔记">
+                <i class="fa fa-chevron-left"></i> live2d学习笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2019/06/18/设计&艺术/色彩学习/" rel="prev" title="色彩学习">
+                色彩学习 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5beb84d6297d37ba" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
+
+      <section class="site-overview-wrap sidebar-panel">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <img class="site-author-image" itemprop="image" src="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-14/25336942.jpg" alt="Lain">
+            
+              <p class="site-author-name" itemprop="name">Lain</p>
+              <p class="site-description motion-element" itemprop="description">Welcome to WEIRD</p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">54</span>
+                  <span class="site-state-item-name">日志</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">15</span>
+                  <span class="site-state-item-name">分类</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">31</span>
+                  <span class="site-state-item-name">标签</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+            <div class="links-of-author motion-element">
+                
+                  <span class="links-of-author-item">
+                    <a href="https://github.com/chocolaLain" target="_blank" title="GitHub">
+                      
+                        <i class="fa fa-fw fa-github"></i>GitHub</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="mailto:lainundalice@gmail.com" target="_blank" title="E-Mail">
+                      
+                        <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
+                  </span>
+                
+            </div>
+          
+
+          
+          
+
+          
+          
+            <div class="links-of-blogroll motion-element links-of-blogroll-inline">
+              <div class="links-of-blogroll-title">
+                <i class="fa  fa-fw fa-link"></i>
+                友情链接
+              </div>
+              <ul class="links-of-blogroll-list">
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://www.mackxin.com/" title="馨客栈" target="_blank">馨客栈</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://cn.bing.com" title="Bing" target="_blank">Bing</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.bilibili.com/" title="BiliBili" target="_blank">BiliBili</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://maxiang.io/" title="马克飞象" target="_blank">马克飞象</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://xueshu.baidu.com/" title="百度学术" target="_blank">百度学术</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="https://www.wallpapermaiden.com" title="wallpapermaiden" target="_blank">wallpapermaiden</a>
+                  </li>
+                
+              </ul>
+
+          
+
+          
+            </div>
+
+          
+
+
+        </div>
+      </section>
+
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#基础"><span class="nav-number">1.</span> <span class="nav-text">基础</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#路径"><span class="nav-number">1.1.</span> <span class="nav-text">路径</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#连通图"><span class="nav-number">1.2.</span> <span class="nav-text">连通图</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#带权图和网络"><span class="nav-number">1.3.</span> <span class="nav-text">带权图和网络</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图抽象数据类型"><span class="nav-number">1.4.</span> <span class="nav-text">图抽象数据类型</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#图的表示和实现"><span class="nav-number">1.5.</span> <span class="nav-text">图的表示和实现</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#邻接矩阵"><span class="nav-number">1.5.1.</span> <span class="nav-text">邻接矩阵</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#邻接表"><span class="nav-number">1.5.2.</span> <span class="nav-text">邻接表</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图结构的python实现"><span class="nav-number">2.</span> <span class="nav-text">图结构的python实现</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#邻接矩阵-1"><span class="nav-number">2.1.</span> <span class="nav-text">邻接矩阵</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#邻接表-1"><span class="nav-number">2.2.</span> <span class="nav-text">邻接表</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#图的遍历"><span class="nav-number">3.</span> <span class="nav-text">图的遍历</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#kruskal算法"><span class="nav-number">3.1.</span> <span class="nav-text">kruskal算法</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#拓扑排序"><span class="nav-number">4.</span> <span class="nav-text">拓扑排序</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
+
+      
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
+
+    </div>
+  </aside>
+
+
+
+
+<div id="days"></div>
+<script>
+function show_date_time(){
+window.setTimeout("show_date_time()", 1000);
+BirthDay=new Date("11/13/2018 15:13:14");
+today=new Date();
+timeold=(today.getTime()-BirthDay.getTime());
+sectimeold=timeold/1000
+secondsold=Math.floor(sectimeold);
+msPerDay=24*60*60*1000
+e_daysold=timeold/msPerDay
+daysold=Math.floor(e_daysold);
+e_hrsold=(e_daysold-daysold)*24;
+hrsold=setzero(Math.floor(e_hrsold));
+e_minsold=(e_hrsold-hrsold)*60;
+minsold=setzero(Math.floor((e_hrsold-hrsold)*60));
+seconds=setzero(Math.floor((e_minsold-minsold)*60));
+document.getElementById('days').innerHTML="已运行"+daysold+"天"+hrsold+"小时"+minsold+"分"+seconds+"秒";
+}
+function setzero(i){
+if (i<10)
+{i="0" + i};
+return i;
+}
+show_date_time();
+</script>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2019</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Lain</span>
+
+  
+</div>
+
+<!-- 
+  <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">主题 &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Gemini</a> v5.1.4</div>
+-->
+
+
+
+<div class="theme-info">
+  <div class="powered-by"></div>
+  <span class="post-count">博客全站共84k字</span>
+</div>
+        
+<div class="busuanzi-count">
+  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      本站访问人数 <i class="fa fa-user"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      人次
+    </span>
+  
+
+  
+    <span class="site-pv">
+      本站总访问量 <i class="fa fa-eye"></i>
+      <span class="busuanzi-value" id="busuanzi_value_site_pv"></span>
+      人
+    </span>
+  
+</div>
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'i6b9XM9K35JmBmckhA44a3KG-gzGzoHsz',
+        appKey: 'L9BPdrN71uQlKnmrERKQLCGB',
+        placeholder: 'Hello Lain',
+        avatar:'mm',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+  
+
+
+  
+
+  
+
+
+  <!-- 页面点击小红心 -->
+  <script type="text/javascript" src="/js/src/love.js"></script>
+
+  
+<!-- 图片轮播js文件cdn -->
+<script src="https://cdn.bootcss.com/jquery-backstretch/2.0.4/jquery.backstretch.min.js"></script>
+
+<!-- 自定义的js文件 -->
+<script type="text/javascript" src="/js/src/custom.js"></script>
+
+
+<script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"pluginRootPath":"live2dw/","pluginJsPath":"lib/","pluginModelPath":"assets/","tagMode":false,"debug":false,"model":{"jsonPath":"/live2dw/assets/unitychan.model.json"},"display":{"position":"left","width":120,"height":300},"mobile":{"show":false},"log":false});</script></body>
+</html>
