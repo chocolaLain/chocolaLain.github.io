@@ -12,7 +12,8 @@ categories: 办公应用
 [【教程】学会Git玩转Github【全】](https://www.bilibili.com/video/av10475153?from=search&seid=13771455105864045370)
 [try.github.com](http://try.github.io/)
 [Github入门与实践](https://book.douban.com/subject/26462816/)
-[Pro Git](http://iissnan.com/progit/)
+[Pro Git](https://gitee.com/progit/)
+[git - 简易指南(简单回顾/学习)](https://www.bootcss.com/p/git-guide/)
 ![](https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1547088293&di=4c958fb981820b935400a2982da85b54&src=http://imgs.aixifan.com/live/1484548189566/1484548189566.jpg)
 <!-- more -->
 
@@ -40,6 +41,7 @@ categories: 办公应用
 * [git提交时”warning: LF will be replaced by CRLF“提示](https://www.cnblogs.com/sminocence/p/9357209.html)
 * [**解决error: Your local changes to the following files would be overwritten by merge**](https://www.cnblogs.com/yw0219/p/6020878.html)
 * [**git pull遇到错误：error: Your local changes to the following files would be overwritten by merge:**](https://blog.csdn.net/misakaqunianxiatian/article/details/51103734)
+* [You have not concluded your merge (MERGE_HEAD exists)](https://blog.csdn.net/xlgen157387/article/details/51146949)
 
 
 ### 创建仓库 仓库主页说明
