@@ -86,7 +86,7 @@
 <meta property="og:site_name" content="Lain&#39;s Blog">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg">
-<meta property="og:updated_time" content="2019-09-17T16:44:16.914Z">
+<meta property="og:updated_time" content="2019-09-18T10:02:13.370Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP学习笔记">
 <meta name="twitter:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg">
@@ -299,7 +299,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lain">
       <meta itemprop="description" content>
-      <meta itemprop="image" content="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-14/25336942.jpg">
+      <meta itemprop="image" content="/images\avatar.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -324,7 +324,7 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2019-09-18T00:44:16+08:00" content="2019-09-18">
+                  <time itemprop="dateUpdated" datetime="2019-09-18T18:02:13+08:00" content="2019-09-18">
                     2019-09-18
                   </time>
                 </span>
@@ -384,7 +384,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  719
+                  990
                 </span>
               
 
@@ -400,7 +400,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  2
+                  3
                 </span>
               
             </div>
@@ -421,7 +421,7 @@
       
 
       
-        <p><img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg" alt><br><a id="more"></a></p>
+        <p><img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg" alt><br><a id="more"></a>  </p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
 <li>环境配置:<a href="https://zhuanlan.zhihu.com/p/81050071" target="_blank" rel="noopener">PHP环境全套针细教程：Windows安装Apache, PHP and MYSQL</a>  <blockquote>
 <p>1.注册mysql一项时,最好给用户设置上密码,因为phpmyadmind登陆时默认不允许空密码登陆.<br>apache用来解析php,如果发现自己的php文件没有被解析(例如在浏览器页面中显示出源代码),可以将php文件移至apacheXX文件夹中的htdocs文件中,再进入localhost即可查看到自己的php文件.<br>安装php，将文件解压到C盘的时候最好把dev等文件夹集直接放在php文件夹下，而不是在php文件夹下的php7.x文件夹下。  </p>
@@ -437,13 +437,19 @@
 </code></pre>了解表单变量的应用,例如1.将post/get表单变量传递给简单变量,input标签(其中的name键)与php表单变量的关系 2.连接操作符的应用  </li>
 <li>理解标识符:了解标识符的一些简单规则,例如命名方式,是否区分大小写,尽量减少误差的命名习惯.  </li>
 <li>检查变量类型:1.了解PHP的数据类型(1.7.1有各种数据类型的全称) 2.了解类型强度 3.了解类型转换<br>4.<strong>了解可变变量(多理解,但暂时不用去深究)</strong> 5.了解声明和使用常量,phpinfo函数中包含了许多常量的用法.,了解常量只可以保存哪些值.  </li>
-<li>了解变量的作用域,例如超级全局变量,常量,在一个脚本中声明的全局变量等.<br>了解超级全局变量的完整列表<br>变量作用域这里暂时略一下.  </li>
+<li>了解<strong>变量的作用域</strong>,例如超级全局变量,常量,在一个脚本中声明的全局变量等.<br>了解超级全局变量的完整列表<br><em>注意一下php函数的局部变量和全局变量的问题.以及再去深入了解一下php脚本这个概念</em><br>变量作用域这里暂时略一下.  </li>
 </ul>
 <h3 id="使用操作符"><a href="#使用操作符" class="headerlink" title="使用操作符"></a>使用操作符</h3><ul>
 <li>注意!为变量取反值的真正含义.  </li>
-<li>我们使用星号和正斜线是作为操作符来使用的,而不是作为常规的运算符号来使用的.  </li>
+<li>我们使用星号和正斜线是作为操作符来使用的,而不是作为常规的运算符号来使用的.<br>注意算术运算符遇到字符串或者e/E这种科学表示法的情况.  </li>
+<li>了解<strong>赋值运算操作符</strong>,复合赋值运算操作符(例如’.=’操作符)<br>注意前置递增递减和后置递增递减运算符,两者运作原理不同.<br>了解<strong>引用操作符</strong>.了解unset函数和该操作符之间的运用.  </li>
+<li>了解比较操作符,例如等于或者恒等于(===)操作符,书上还写了其他操作符.  </li>
+<li>了解<strong>逻辑运算符</strong>,了解运算符之间的优先级.</li>
+<li>了解位运算符</li>
+<li>了解其他操作符:例如逗号,new和-&gt;操作符,<strong>三元操作符</strong>(类似if-else),错误抑制操作符<br>执行操作符,数组操作符,类型操作符(暂略)</li>
+<li>理解操作符的优先级和结合性<br>涉及到了print函数,了解它和echo的异同.</li>
 </ul>
-<h2 id="杂七杂八的问题"><a href="#杂七杂八的问题" class="headerlink" title="杂七杂八的问题"></a>杂七杂八的问题</h2><ul>
+<h3 id="使用可变函数"><a href="#使用可变函数" class="headerlink" title="使用可变函数"></a>使用可变函数</h3><h2 id="杂七杂八的问题"><a href="#杂七杂八的问题" class="headerlink" title="杂七杂八的问题"></a>杂七杂八的问题</h2><ul>
 <li><a href="https://www.cnblogs.com/propheterLiu/p/5878998.html" target="_blank" rel="noopener">php中单引号’’和双引号””的区别</a><br>双引号里面的字段会经过编译器解释，然后再当作HTML代码输出。<br>单引号里面的不进行解释，直接输出。  </li>
 <li><a href="https://www.cnblogs.com/jijm123/p/7623928.html" target="_blank" rel="noopener">php技术–php中感叹号!和双感叹号!!的用法(三元运算)</a>  <h2 id="其他待解决问题"><a href="#其他待解决问题" class="headerlink" title="其他待解决问题"></a>其他待解决问题</h2></li>
 <li>查一下127.0.0.1和localhost的关系(待删)<br>了解phpinfo函数  </li>
@@ -565,7 +571,7 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
-              <img class="site-author-image" itemprop="image" src="http://lainundalice.oss-cn-beijing.aliyuncs.com/19-1-14/25336942.jpg" alt="Lain">
+              <img class="site-author-image" itemprop="image" src="/images\avatar.png" alt="Lain">
             
               <p class="site-author-name" itemprop="name">Lain</p>
               <p class="site-description motion-element" itemprop="description">Welcome to WEIRD</p>
@@ -687,7 +693,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-PHP基础知识"><span class="nav-number">2.</span> <span class="nav-text">第一章 PHP基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用操作符"><span class="nav-number">2.1.</span> <span class="nav-text">使用操作符</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂七杂八的问题"><span class="nav-number">3.</span> <span class="nav-text">杂七杂八的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他待解决问题"><span class="nav-number">4.</span> <span class="nav-text">其他待解决问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-PHP基础知识"><span class="nav-number">2.</span> <span class="nav-text">第一章 PHP基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用操作符"><span class="nav-number">2.1.</span> <span class="nav-text">使用操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用可变函数"><span class="nav-number">2.2.</span> <span class="nav-text">使用可变函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂七杂八的问题"><span class="nav-number">3.</span> <span class="nav-text">杂七杂八的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他待解决问题"><span class="nav-number">4.</span> <span class="nav-text">其他待解决问题</span></a></li></ol></div>
             
 
           </div>
@@ -769,7 +775,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共84k字</span>
+  <span class="post-count">博客全站共84.3k字</span>
 </div>
         
 <div class="busuanzi-count">
