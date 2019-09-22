@@ -88,7 +88,7 @@
 <meta property="og:description" content="3DsMax2018 Help文档(软件中直接F1也可以打开)">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/586f5255gy1g6lg53z588j20ko0fcaoi.jpg">
-<meta property="og:updated_time" content="2019-09-18T04:54:40.016Z">
+<meta property="og:updated_time" content="2019-09-22T17:10:42.213Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="3dsmax学习笔记">
 <meta name="twitter:description" content="3DsMax2018 Help文档(软件中直接F1也可以打开)">
@@ -327,8 +327,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2019-09-18T12:54:40+08:00" content="2019-09-18">
-                    2019-09-18
+                  <time itemprop="dateUpdated" datetime="2019-09-23T01:10:42+08:00" content="2019-09-23">
+                    2019-09-23
                   </time>
                 </span>
               
@@ -387,7 +387,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  41
+                  1k
                 </span>
               
 
@@ -403,7 +403,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  3
                 </span>
               
             </div>
@@ -425,9 +425,68 @@
 
       
         <p><img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/586f5255gy1g6lg53z588j20ko0fcaoi.jpg" alt><br><a href="http://help.autodesk.com/view/3DSMAX/2018/CHS/?guid=GUID-2B24CF20-383F-48B7-955B-03D8AECCD3B9" target="_blank" rel="noopener">3DsMax2018 Help文档(软件中直接F1也可以打开)</a><br><a id="more"></a></p>
-<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><h2 id="杂七杂八的问题"><a href="#杂七杂八的问题" class="headerlink" title="杂七杂八的问题"></a>杂七杂八的问题</h2><ul>
-<li>软件BUG<br><a href="https://blog.csdn.net/shichimiyasatone/article/details/82937865" target="_blank" rel="noopener">2018版下拉菜单项的子菜单无法选中</a></li>
+<h2 id="入门"><a href="#入门" class="headerlink" title="入门"></a>入门</h2><ul>
+<li><strong>视图背景颜色和栅格颜色</strong>可以在自定义用户界面那里配置,还可以把配置好的用户界面(UI)保存起来.</li>
+<li>自定义快捷键也可以在自定义用户界面那里配置</li>
+<li>要旋转多个物体,需要考虑<strong>参考坐标系和旋转坐标中心</strong></li>
+<li>了解<a href="http://help.autodesk.com/view/3DSMAX/2018/CHS/?guid=GUID-9D7F747F-3F31-41A9-B8AA-BA94F251B5C5" target="_blank" rel="noopener">阵列复制对象</a></li>
+<li>了解”复制”,”实例”,”参考”的概念</li>
 </ul>
+<h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><ul>
+<li>p12展示了如何利用阵列复制做一个楼梯</li>
+</ul>
+<h2 id="技巧"><a href="#技巧" class="headerlink" title="技巧"></a>技巧</h2><ul>
+<li>下方有个<strong>隔离选择开关</strong>,可以隔离某个对象,方便操作</li>
+</ul>
+<h2 id="盲点"><a href="#盲点" class="headerlink" title="盲点"></a>盲点</h2><ul>
+<li>普通的撤销操作对旋转没有用,可以再透视上右键进行旋转撤销(或者shift+z).</li>
+<li>修改器里面右上角有修改模型的颜色的选项.</li>
+<li>了解”局部”,”世界”,”视图”三种坐标系的区别,局部坐标系是针对对象本身操作,世界是指整体坐标系,视图坐标系是在视图平面内操作(透视除外)</li>
+<li>谨慎打开”捕捉开关”,移动对象的时候会出现一些误差.</li>
+</ul>
+<h2 id="意识-amp-习惯"><a href="#意识-amp-习惯" class="headerlink" title="意识&amp;习惯"></a>意识&amp;习惯</h2><ul>
+<li>如果可能的话尽量不要调节对象的尺寸,要调节参数的尺寸,百分比尽量控制在100%.</li>
+<li>在文件中设置好项目文件夹,可以看到项目文件夹中建立了我们可能需要用到的文件夹.<br>也可以使用现成的项目文件夹,不过要保证XMP文件的存在.</li>
+<li>了解一下系统单位设置,一般情况下不要改,跟其他软件(例如MAYA)或者游戏引擎联动的时候可能需要改,而且要在建模之前改,如果建模之后再改可能会使场景变得一团糟.</li>
+</ul>
+<h2 id="可能会忽略的功能"><a href="#可能会忽略的功能" class="headerlink" title="可能会忽略的功能"></a>可能会忽略的功能</h2><ul>
+<li>工具栏里面有个选择工具,另外还有一个选择并移动工具,注意区分.</li>
+<li>Gizmo坐标可以选择xy,yz,xz这些二维平面进行移动.</li>
+<li>单位设置可以在自定义菜单中可以进行操作,可以防止因单位不同而带来的误差.</li>
+<li>了解主栅格的设置,例如栅格间距,栅格范围,了解次栅格线和主栅格线的区别.(右键捕捉开关即可打开栅格和捕捉设置)</li>
+<li>要显示阴影不光在”高质量”模式中可以显示,在”标准”视图中也可以选择阴影模式</li>
+<li>左侧有个选项可以用来调节视图的排版布局</li>
+</ul>
+<h2 id="快捷键"><a href="#快捷键" class="headerlink" title="快捷键"></a>快捷键</h2><h3 id="常用快捷键"><a href="#常用快捷键" class="headerlink" title="常用快捷键"></a>常用快捷键</h3><ul>
+<li>摄像机<ul>
+<li>ctrl+alt+滚轮/中键可以用来前后移动摄像机  </li>
+<li>alt+滚轮/中键可以进行摄像机的弧形旋转,中键可以进行摄像机的平移,shift+中键可以进行摄像机的定向平移.</li>
+</ul>
+</li>
+<li>对象操作<ul>
+<li>Q,W,E,R分别对应”选择”,”选择并移动”,”选择并旋转”,”选择并均匀缩放”工具</li>
+<li>空格键:锁定当前对象/选项,不能操作其他对象.</li>
+</ul>
+</li>
+<li>视图<ul>
+<li>alt+w可以放大视图</li>
+<li>F3可以在透视和线框之间切换.</li>
+<li>F4可以显示”边面”,即让模型加上线框.<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3></li>
+</ul>
+</li>
+<li>‘J’可以开关选择框</li>
+<li>‘-‘/‘=’可以用来缩小/放大Gizmos(就是物体自带的那个坐标轴)</li>
+<li>z/ctrl+alt+z可以用来最大化显示所选对象/所有视图最大化显示</li>
+</ul>
+<h2 id="杂七杂八的问题"><a href="#杂七杂八的问题" class="headerlink" title="杂七杂八的问题"></a>杂七杂八的问题</h2><ul>
+<li>软件BUG<br><a href="https://blog.csdn.net/shichimiyasatone/article/details/82937865" target="_blank" rel="noopener">2018版下拉菜单项的子菜单无法选中</a></li>
+<li>建议<em>将撤退数设置成100</em>,将<em>局部路径转化为相对路径</em></li>
+<li>场景浏览器比较占地方,可以关掉,等需要的时候再用.</li>
+<li>ViewCube有时候会导致误操作,让事情变得复杂,可以在视口配置中先关掉.</li>
+<li>调节半径参数之类的也可以直接在三角号那里上下拖</li>
+<li>可以试着用AEC extended新建一个植物,然后关掉树冠模式</li>
+</ul>
+<p>013</p>
 
       
     </div>
@@ -663,7 +722,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#入门"><span class="nav-number">1.</span> <span class="nav-text">入门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂七杂八的问题"><span class="nav-number">2.</span> <span class="nav-text">杂七杂八的问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#入门"><span class="nav-number">1.</span> <span class="nav-text">入门</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#实践"><span class="nav-number">2.</span> <span class="nav-text">实践</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#技巧"><span class="nav-number">3.</span> <span class="nav-text">技巧</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#盲点"><span class="nav-number">4.</span> <span class="nav-text">盲点</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#意识-amp-习惯"><span class="nav-number">5.</span> <span class="nav-text">意识&amp;习惯</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#可能会忽略的功能"><span class="nav-number">6.</span> <span class="nav-text">可能会忽略的功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#快捷键"><span class="nav-number">7.</span> <span class="nav-text">快捷键</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#常用快捷键"><span class="nav-number">7.1.</span> <span class="nav-text">常用快捷键</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">7.2.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂七杂八的问题"><span class="nav-number">8.</span> <span class="nav-text">杂七杂八的问题</span></a></li></ol></div>
             
 
           </div>
@@ -745,7 +804,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共84.3k字</span>
+  <span class="post-count">博客全站共85.6k字</span>
 </div>
         
 <div class="busuanzi-count">
