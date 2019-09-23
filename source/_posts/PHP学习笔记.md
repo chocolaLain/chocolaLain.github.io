@@ -58,8 +58,10 @@ tags:
 * 了解if-else语句的写法
   如果if后只执行一条语句,可以省略花括号.
 * 了解elseif/else if的用法,了解他和if的区别.
-* 
+* 了解switch语句,以及他和if用法的不同.
 
+### 循环语句
+* 了解while循环,了解while循环和html之间混编的应用,以及如何搭配双引号来应用.(例如如何用while循环来生成表单)
 ## 杂七杂八的问题  
 * [php中单引号''和双引号""的区别](https://www.cnblogs.com/propheterLiu/p/5878998.html)  
   双引号里面的字段会经过编译器解释，然后再当作HTML代码输出。  
