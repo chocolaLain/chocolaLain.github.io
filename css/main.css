@@ -1844,7 +1844,11 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
+<<<<<<< HEAD
   background: #29c945;
+=======
+  background: #33e33e;
+>>>>>>> 71af0dcfe0579c0a071734c969969c6f97e2db81
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2764,7 +2768,11 @@ pre .javascript .function {
 .site-meta {
   padding: 20px 0;
   color: #fff;
+<<<<<<< HEAD
   background: rgba(238,50,51,0.3);
+=======
+  background: rgba(122,71,174,0.3);
+>>>>>>> 71af0dcfe0579c0a071734c969969c6f97e2db81
 }
 @media (min-width: 768px) and (max-width: 991px) {
   .site-meta {
