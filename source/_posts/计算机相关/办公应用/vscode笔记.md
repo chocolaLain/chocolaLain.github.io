@@ -2,7 +2,8 @@
 title: vscode&vs笔记
 date: 2019-07-03 08:29:16
 tags:
-    - 软件操作
+    - vscode
+    - 文件编辑器
 categories: 办公应用
 ---
 

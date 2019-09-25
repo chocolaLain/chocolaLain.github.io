@@ -2,7 +2,6 @@
 title: markdown语法学习
 date: 2018-11-13 19:40:27
 tags: 
-	- 语法学习
     - markdown
 categories: 前端
 ---

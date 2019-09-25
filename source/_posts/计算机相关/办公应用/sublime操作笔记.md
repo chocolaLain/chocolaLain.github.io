@@ -2,7 +2,8 @@
 title: sublime操作笔记
 date: 2018-11-22 09:18:03
 tags:
-	- 软件操作
+	- sublime
+	- 文件编辑器
 categories: 办公应用
 ---
 

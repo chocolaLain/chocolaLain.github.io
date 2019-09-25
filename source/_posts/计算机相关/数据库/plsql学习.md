@@ -3,6 +3,7 @@ title: plsql学习
 date: 2018-12-16 14:30:00
 tags:
     - 数据库
+    - plsql
 categories: 数据库
 ---
 [尚硅谷Java视频_ORACLE、SQL、PLSQL 视频教程](https://www.bilibili.com/video/av37000215/?p=34)
