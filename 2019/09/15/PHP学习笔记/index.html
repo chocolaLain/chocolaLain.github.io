@@ -79,16 +79,20 @@
 
 
 
+<meta name="description" content="[TOC]">
 <meta name="keywords" content="PHP">
 <meta property="og:type" content="article">
 <meta property="og:title" content="PHP学习笔记">
 <meta property="og:url" content="http://chocolaLain.github.io/2019/09/15/PHP学习笔记/index.html">
 <meta property="og:site_name" content="Lain&#39;s Blog">
+<meta property="og:description" content="[TOC]">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg">
-<meta property="og:updated_time" content="2019-09-18T10:02:13.370Z">
+<meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/20190925154108.png">
+<meta property="og:updated_time" content="2019-09-25T11:36:30.890Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP学习笔记">
+<meta name="twitter:description" content="[TOC]">
 <meta name="twitter:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg">
 
 
@@ -324,8 +328,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2019-09-18T18:02:13+08:00" content="2019-09-18">
-                    2019-09-18
+                  <time itemprop="dateUpdated" datetime="2019-09-25T19:36:30+08:00" content="2019-09-25">
+                    2019-09-25
                   </time>
                 </span>
               
@@ -384,7 +388,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  990
+                  2.1k
                 </span>
               
 
@@ -400,7 +404,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  3
+                  7
                 </span>
               
             </div>
@@ -421,7 +425,8 @@
       
 
       
-        <p><img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg" alt><br><a id="more"></a>  </p>
+        <p>[TOC]</p>
+<p><img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg" alt><br><a id="more"></a>  </p>
 <h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul>
 <li>环境配置:<a href="https://zhuanlan.zhihu.com/p/81050071" target="_blank" rel="noopener">PHP环境全套针细教程：Windows安装Apache, PHP and MYSQL</a>  <blockquote>
 <p>1.注册mysql一项时,最好给用户设置上密码,因为phpmyadmind登陆时默认不允许空密码登陆.<br>apache用来解析php,如果发现自己的php文件没有被解析(例如在浏览器页面中显示出源代码),可以将php文件移至apacheXX文件夹中的htdocs文件中,再进入localhost即可查看到自己的php文件.<br>安装php，将文件解压到C盘的时候最好把dev等文件夹集直接放在php文件夹下，而不是在php文件夹下的php7.x文件夹下。  </p>
@@ -449,9 +454,67 @@
 <li>了解其他操作符:例如逗号,new和-&gt;操作符,<strong>三元操作符</strong>(类似if-else),错误抑制操作符<br>执行操作符,数组操作符,类型操作符(暂略)</li>
 <li>理解操作符的优先级和结合性<br>涉及到了print函数,了解它和echo的异同.</li>
 </ul>
-<h3 id="使用可变函数"><a href="#使用可变函数" class="headerlink" title="使用可变函数"></a>使用可变函数</h3><h2 id="杂七杂八的问题"><a href="#杂七杂八的问题" class="headerlink" title="杂七杂八的问题"></a>杂七杂八的问题</h2><ul>
+<h3 id="使用可变函数"><a href="#使用可变函数" class="headerlink" title="使用可变函数"></a>使用可变函数</h3><ul>
+<li>了解gettype和settype两个函数的功能,大体了解下is_double()、is_float()、is_real()等.</li>
+<li>了解测试变量状态,isset,unset(销毁变量),empty三个函数(注意isset和empty检测变量存在的重点不同.)</li>
+</ul>
+<h3 id="根据条件进行决策"><a href="#根据条件进行决策" class="headerlink" title="根据条件进行决策"></a>根据条件进行决策</h3><ul>
+<li>了解if-else语句的写法<br>如果if后只执行一条语句,可以省略花括号.</li>
+<li>了解elseif/else if的用法,了解他和if的区别.</li>
+<li>了解switch语句,以及他和if用法的不同.</li>
+</ul>
+<h3 id="循环语句"><a href="#循环语句" class="headerlink" title="循环语句"></a>循环语句</h3><ul>
+<li>了解while循环,了解while循环和html之间混编的应用,以及如何搭配双引号来应用.(例如如何用while循环来生成表单)</li>
+<li>了解for循环</li>
+<li>了解do-while循环,注意它和while循环的区别.</li>
+</ul>
+<h2 id="第二章数据存储与检索"><a href="#第二章数据存储与检索" class="headerlink" title="第二章数据存储与检索"></a>第二章数据存储与检索</h2><ul>
+<li>认识到普通文件的局限性,可以考虑用数据库来处理文件.</li>
+</ul>
+<h3 id="技巧-amp-盲点"><a href="#技巧-amp-盲点" class="headerlink" title="技巧&amp;盲点"></a>技巧&amp;盲点</h3><ul>
+<li>写文件路径的时候最好是相对路径,而不是绝对路径<blockquote>
+<p>在UNIX环境下，目录中的间隔符是正斜线（/）。如果你使用的是Windows平台，可以使用正斜线或者反斜线。如果使用反斜线，就必须使用转义</p>
+</blockquote>
+</li>
+<li>请记住，URL中的域名不区分大小写，但是路径和文件名可能会区分大小写。<h3 id="打开文件"><a href="#打开文件" class="headerlink" title="打开文件"></a>打开文件</h3></li>
+<li>了解打开文件要注意的三种选择情况.</li>
+<li>了解fopen()函数及其参数.<br>第一个参数(文件路径):就像有不同的方法可以访问表单数据一样，也可以使用不同的方法访问预定义的服务器变量.<br>第二个参数(文件模式):了解<strong>fopen函数的文件模式</strong>,例如r,r+,w,a,a+等参数,注意应用.<br>第三四个参数可选,暂略</li>
+<li>可以通过FTP或HTTP打开文件,注意如果用前两者,fopen函数会建立一个什么样的链接.123</li>
+</ul>
+<h2 id="第三章-数组"><a href="#第三章-数组" class="headerlink" title="第三章 数组"></a>第三章 数组</h2><h3 id="第三章支线"><a href="#第三章支线" class="headerlink" title="第三章支线"></a>第三章支线</h3><ul>
+<li>了解数组的概念:<blockquote>
+<p>1.数组是一个可以存储一组或一系列数值的变量。一个数组可以具有许多个元素。<br> 2.一个标量变量就是一个用来存储数值的命名区域。同样，一个数组就是一个用来存储一系列变量值的命名区域<br> 3.存储在数组中的值称为数组元素</p>
+</blockquote>
+</li>
+<li>了解<strong>foreach循环</strong>,可以用来遍历数组</li>
+<li>php不仅支持默认排序的数组,还支持关联数组(例如用字符串当所以,=&gt;).</li>
+<li>了解<strong>数组操作符</strong>:<img src="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/20190925154108.png" alt>联合操作符需要注意.</li>
+<li>了解<strong>多维数组</strong></li>
+</ul>
+<h3 id="意识-amp-习惯-amp-技巧"><a href="#意识-amp-习惯-amp-技巧" class="headerlink" title="意识&amp;习惯&amp;技巧"></a>意识&amp;习惯&amp;技巧</h3><ul>
+<li>函数list()可以用来将一个数组分解为一系列的值</li>
+<li>reset()可以将当前元素重新设置到数组开始处，因此允许再次遍历数组</li>
+<li><strong>遍历二维数组</strong>可以使用两个for循环.</li>
+<li>使用<strong>描述性索引</strong>，不需要记住某个元素是存放在XY位置的。使用一对有意义的行和列的名称作为索引可以使你很容易找到所需的数据。<br>然而，不能使用一个简单的for循环按顺序遍历<strong>每一列</strong>,注意行列的关系和其所代表的含义.</li>
+</ul>
+<h3 id="盲点"><a href="#盲点" class="headerlink" title="盲点"></a>盲点</h3><ul>
+<li>就像echo语句一样，array()实际上是一个语言结构，而不是一个函数</li>
+<li>因为关联数组的索引不是数字，因此无法在for循环语句中使用一个简单的计数器对数组进行操作,此时可以使用<strong>foreach循环或list()和each()结构</strong>.</li>
+<li>注意多维数组(例如二维数组)一个元素具有多个所以(类似行和列的位置.)</li>
+</ul>
+<h3 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h3><ul>
+<li>调用each()结构之后系统提示不推荐使用,查了下已经过时了.</li>
+</ul>
+<h2 id="其他-主线"><a href="#其他-主线" class="headerlink" title="其他(主线)"></a>其他(主线)</h2><h3 id="技巧-amp-盲点-1"><a href="#技巧-amp-盲点-1" class="headerlink" title="技巧&amp;盲点"></a>技巧&amp;盲点</h3><ul>
+<li>如果要从控制结构或者脚本中跳出,可以使用break,continue,exit.注意三者的区别.</li>
+<li>控制结构可以进行语法替换(除了do-while),例如endif、endswitch、endwhile、endfor或endforeach</li>
+<li>!=和&lt;&gt;都是不等价的意思,一样用.</li>
+<li>for循环不能用前置递增递减操作符.</li>
+</ul>
+<h3 id="杂七杂八的问题"><a href="#杂七杂八的问题" class="headerlink" title="杂七杂八的问题"></a>杂七杂八的问题</h3><ul>
 <li><a href="https://www.cnblogs.com/propheterLiu/p/5878998.html" target="_blank" rel="noopener">php中单引号’’和双引号””的区别</a><br>双引号里面的字段会经过编译器解释，然后再当作HTML代码输出。<br>单引号里面的不进行解释，直接输出。  </li>
-<li><a href="https://www.cnblogs.com/jijm123/p/7623928.html" target="_blank" rel="noopener">php技术–php中感叹号!和双感叹号!!的用法(三元运算)</a>  <h2 id="其他待解决问题"><a href="#其他待解决问题" class="headerlink" title="其他待解决问题"></a>其他待解决问题</h2></li>
+<li><a href="https://www.cnblogs.com/jijm123/p/7623928.html" target="_blank" rel="noopener">php技术–php中感叹号!和双感叹号!!的用法(三元运算)</a>  </li>
+<li>大体了解下declare结构和ticks语句<h3 id="其他待解决问题"><a href="#其他待解决问题" class="headerlink" title="其他待解决问题"></a>其他待解决问题</h3></li>
 <li>查一下127.0.0.1和localhost的关系(待删)<br>了解phpinfo函数  </li>
 </ul>
 
@@ -584,7 +647,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">55</span>
+                  <span class="site-state-item-count">57</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -606,7 +669,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -693,7 +756,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-PHP基础知识"><span class="nav-number">2.</span> <span class="nav-text">第一章 PHP基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用操作符"><span class="nav-number">2.1.</span> <span class="nav-text">使用操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用可变函数"><span class="nav-number">2.2.</span> <span class="nav-text">使用可变函数</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#杂七杂八的问题"><span class="nav-number">3.</span> <span class="nav-text">杂七杂八的问题</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他待解决问题"><span class="nav-number">4.</span> <span class="nav-text">其他待解决问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-PHP基础知识"><span class="nav-number">2.</span> <span class="nav-text">第一章 PHP基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用操作符"><span class="nav-number">2.1.</span> <span class="nav-text">使用操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用可变函数"><span class="nav-number">2.2.</span> <span class="nav-text">使用可变函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据条件进行决策"><span class="nav-number">2.3.</span> <span class="nav-text">根据条件进行决策</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环语句"><span class="nav-number">2.4.</span> <span class="nav-text">循环语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章数据存储与检索"><span class="nav-number">3.</span> <span class="nav-text">第二章数据存储与检索</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点"><span class="nav-number">3.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开文件"><span class="nav-number">3.2.</span> <span class="nav-text">打开文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三章-数组"><span class="nav-number">4.</span> <span class="nav-text">第三章 数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第三章支线"><span class="nav-number">4.1.</span> <span class="nav-text">第三章支线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#意识-amp-习惯-amp-技巧"><span class="nav-number">4.2.</span> <span class="nav-text">意识&amp;习惯&amp;技巧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盲点"><span class="nav-number">4.3.</span> <span class="nav-text">盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">4.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他-主线"><span class="nav-number">5.</span> <span class="nav-text">其他(主线)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点-1"><span class="nav-number">5.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂七杂八的问题"><span class="nav-number">5.2.</span> <span class="nav-text">杂七杂八的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他待解决问题"><span class="nav-number">5.3.</span> <span class="nav-text">其他待解决问题</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -775,7 +838,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共85.6k字</span>
+  <span class="post-count">博客全站共88.3k字</span>
 </div>
         
 <div class="busuanzi-count">
