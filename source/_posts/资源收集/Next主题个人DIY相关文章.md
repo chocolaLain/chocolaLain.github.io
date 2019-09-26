@@ -108,3 +108,6 @@ categories: 资源收集
 * [Laravel 5.2--git冲突error: Your local changes to the following files would be overwritten by merge:](https://www.bbsmax.com/A/QV5ZD7NZzy/)
 * [hexo搭建博客过程中出现的问题，4000端口被占用](http://www.codes51.com/itwd/4282117.html)
 * hexo文章标题部分不要在横杠后有空格,显示上会出现错误
+
+### 功能
+* [hexo自适应BiliBili视频大小的解决方案](https://www.teamssix.com/year/190614-111512.html)
