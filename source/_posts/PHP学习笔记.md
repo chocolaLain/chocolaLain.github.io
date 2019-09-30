@@ -111,7 +111,7 @@ tags:
 ### 其他
 * 调用each()结构之后系统提示不推荐使用,查了下已经过时了.
 
-## 其他(主线)
+## 其他(总线)
 ### 技巧&盲点
 * 如果要从控制结构或者脚本中跳出,可以使用break,continue,exit.注意三者的区别.
 * 控制结构可以进行语法替换(除了do-while),例如endif、endswitch、endwhile、endfor或endforeach
