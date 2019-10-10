@@ -79,18 +79,15 @@
 
 
 
-<meta name="description" content="绪论认识数字图像处理 了解数字图像的概念,以及和像素的关系.-P1 大体了解下数字图像处理的历史-P2,数字图像处理的实例-P4 数字图像处理的基本步骤-P14→图像获取→图像增强(了解它的重要性和局限性)→图像复原→彩色图像处理→小波(以不同分辨率来描述图像的基础)→压缩→形态学处理涉及提取图像分量的工具→分割将一幅图像划分为它的组成部分或目标。通常，自动分割是数字图像处理中最困难的任务之一。→">
 <meta name="keywords" content="数字图像处理">
 <meta property="og:type" content="article">
 <meta property="og:title" content="数字图像处理笔记">
 <meta property="og:url" content="http://chocolaLain.github.io/2019/09/23/数字图像处理笔记/index.html">
 <meta property="og:site_name" content="Lain&#39;s Blog">
-<meta property="og:description" content="绪论认识数字图像处理 了解数字图像的概念,以及和像素的关系.-P1 大体了解下数字图像处理的历史-P2,数字图像处理的实例-P4 数字图像处理的基本步骤-P14→图像获取→图像增强(了解它的重要性和局限性)→图像复原→彩色图像处理→小波(以不同分辨率来描述图像的基础)→压缩→形态学处理涉及提取图像分量的工具→分割将一幅图像划分为它的组成部分或目标。通常，自动分割是数字图像处理中最困难的任务之一。→">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-09-30T10:18:49.261Z">
+<meta property="og:updated_time" content="2019-10-10T13:10:57.210Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="数字图像处理笔记">
-<meta name="twitter:description" content="绪论认识数字图像处理 了解数字图像的概念,以及和像素的关系.-P1 大体了解下数字图像处理的历史-P2,数字图像处理的实例-P4 数字图像处理的基本步骤-P14→图像获取→图像增强(了解它的重要性和局限性)→图像复原→彩色图像处理→小波(以不同分辨率来描述图像的基础)→压缩→形态学处理涉及提取图像分量的工具→分割将一幅图像划分为它的组成部分或目标。通常，自动分割是数字图像处理中最困难的任务之一。→">
 
 
 
@@ -325,8 +322,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2019-09-30T18:18:49+08:00" content="2019-09-30">
-                    2019-09-30
+                  <time itemprop="dateUpdated" datetime="2019-10-10T21:10:57+08:00" content="2019-10-10">
+                    2019-10-10
                   </time>
                 </span>
               
@@ -422,7 +419,10 @@
       
 
       
-        <h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2><h3 id="认识数字图像处理"><a href="#认识数字图像处理" class="headerlink" title="认识数字图像处理"></a>认识数字图像处理</h3><ul>
+        <div style="position: relative; width: 100%; height: 0; padding-bottom: 75%;"><iframe src="//player.bilibili.com/player.html?aid=67220578&cid=117294607&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;"> </iframe></div>
+
+<a id="more"></a>
+<h2 id="绪论"><a href="#绪论" class="headerlink" title="绪论"></a>绪论</h2><h3 id="认识数字图像处理"><a href="#认识数字图像处理" class="headerlink" title="认识数字图像处理"></a>认识数字图像处理</h3><ul>
 <li>了解数字图像的概念,以及和像素的关系.-P1</li>
 <li>大体了解下数字图像处理的历史-P2,数字图像处理的实例-P4</li>
 <li>数字图像处理的基本步骤-P14<br>→<strong>图像获取</strong><br>→<strong>图像增强</strong>(了解它的重要性和局限性)<br>→<strong>图像复原</strong><br>→<strong>彩色图像处理</strong><br>→<strong>小波</strong>(以不同分辨率来描述图像的基础)<br>→<strong>压缩</strong><br>→<strong>形态学处理</strong>涉及提取图像分量的工具<br>→<strong>分割</strong>将一幅图像划分为它的组成部分或目标。通常，自动分割是数字图像处理中最困难的任务之一。<br>→<strong>表示与描述</strong> 描述又称为<strong>特征选择</strong>，涉及提取特征，它可得到某些感兴趣的定量信息，或是区分一组目标与其他目标的基础<br>→<strong>识别</strong>是基于目标的描述给该目标赋予标志（譬如“车辆”）的过程。<br>需要注意<strong>图像显示</strong>也很重要,还应注意，不是所有的图像处理应用都需要上述给出的复杂交互。<h3 id="图像处理系统的组成-p15"><a href="#图像处理系统的组成-p15" class="headerlink" title="图像处理系统的组成 -p15"></a>图像处理系统的组成 -p15</h3><h2 id="第2章数字图像基础"><a href="#第2章数字图像基础" class="headerlink" title="第2章数字图像基础"></a>第2章数字图像基础</h2><h3 id="2-1视觉感知要素-p20"><a href="#2-1视觉感知要素-p20" class="headerlink" title="2.1视觉感知要素 -p20"></a>2.1视觉感知要素 -p20</h3></li>
@@ -766,7 +766,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共93.3k字</span>
+  <span class="post-count">博客全站共97.7k字</span>
 </div>
         
 <div class="busuanzi-count">
