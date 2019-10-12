@@ -3,6 +3,8 @@ title: PHP学习笔记
 date: 2019-09-15 17:30:14  
 tags:  
     - PHP  
+
+mathjax: true
 ---
 [TOC]
 
@@ -194,3 +196,7 @@ tags:
 ### 其他待解决问题  
 * 查一下127.0.0.1和localhost的关系(待删)  
   了解phpinfo函数  
+
+测试
+
+
