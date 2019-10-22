@@ -5,7 +5,10 @@ tags:
 ---
 
 [vs code配置MySQL，实现连接、查询等功能](https://www.cnblogs.com/jdwfff/p/10491834.html)
-
+* 使用phpmyadmin的时候,有时候进入服务器里面会弹出报错窗口"在服务上检测到错误!...",这时候找到config.default.php,设置SendErrorReports为never,有则更改,无则添加.
+* 创建root用户以外的mysql用户的时候,一般来说新的用户拥有的权限很少,如果想要创建管理员用户,那么就要添加更多的权限,而mysql5.4和mysql8.0设置权限的方式不同.  
+  [详解mysql8.0创建用户授予权限报错解决方法](https://www.jb51.net/article/148145.htm)
+  注意设置好权限之后需要将mysql服务重启.
 <!-- more -->
 
 ## 第8章　设计Web数据库
