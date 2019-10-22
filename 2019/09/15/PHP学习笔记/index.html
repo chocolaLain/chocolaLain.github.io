@@ -89,7 +89,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/F623_FuO9CWs 2200×1504.jpg">
 <meta property="og:image" content="https://lainundalice.oss-cn-beijing.aliyuncs.com/img/20190925154108.png">
-<meta property="og:updated_time" content="2019-10-09T11:12:31.168Z">
+<meta property="og:updated_time" content="2019-10-15T12:00:17.295Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="PHP学习笔记">
 <meta name="twitter:description" content="[TOC]">
@@ -328,8 +328,8 @@
               
                 <span class="post-updated">
                   &nbsp; | &nbsp; 更新于
-                  <time itemprop="dateUpdated" datetime="2019-10-09T19:12:31+08:00" content="2019-10-09">
-                    2019-10-09
+                  <time itemprop="dateUpdated" datetime="2019-10-15T20:00:17+08:00" content="2019-10-15">
+                    2019-10-15
                   </time>
                 </span>
               
@@ -388,7 +388,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  3.1k
+                  3.7k
                 </span>
               
 
@@ -404,7 +404,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  10
+                  13
                 </span>
               
             </div>
@@ -530,8 +530,18 @@
 <li>了解<strong>函数的作用域</strong>:<ul>
 <li>局部变量,全局变量,超级全局变量.</li>
 <li>使用require()和include()并不影响作用域.如果在函数内部or函数外部使用…则…(略)</li>
-<li>关键字”global”可以用来手动指定一个在函数中定义或使用的变量具有全局作用域。</li>
+<li>关键字”global”可以用来手动指定一个在函数中定义或使用的变量具有全局作用域。<br><a href="https://www.cnblogs.com/aademeng/articles/10896609.html" target="_blank" rel="noopener">php中在局部作用域内访问全局变量</a></li>
 <li>unset()可以删除变量</li>
+</ul>
+</li>
+<li>5.8　参数的引用传递和值传递<ul>
+<li>通常，函数获取参数的方式是<strong>值传递</strong>,为了<strong>避免</strong>想要通过函数更改变量但因为函数作用域导致作用域内外同名变量本质不同的问题,可以使用<strong>引用传递</strong>来解决.<br>可以通过<strong>在函数定义的参数名前加一个地址符（＆）</strong>来指定参数的引用传递。在<strong>函数调用处</strong>不用修改。</li>
+</ul>
+</li>
+<li>5.9用Return关键字<br>关键字”return”将终止函数的执行。<br>了解!isset()函数的用法.</li>
+<li>5.10使用递归<ul>
+<li>略</li>
+<li><a href="https://blog.csdn.net/star_yt/article/details/53103172" target="_blank" rel="noopener">PHP实现斐波那契数列（递归 + 非递归）实现</a></li>
 </ul>
 </li>
 </ul>
@@ -550,6 +560,8 @@
 </li>
 </ul>
 </li>
+<li><p>函数返回:<br>通常，执行特定任务但又不返回任何具体值的函数将返回”true”或”false”来表示函数执行是否成功。布尔值”true”和”false”可以分别用整数“1”和“0”来表示，虽然它们是不同的数据类型。</p>
+</li>
 </ul>
 <h3 id="习惯-amp-意识"><a href="#习惯-amp-意识" class="headerlink" title="习惯&amp;意识"></a>习惯&amp;意识</h3><ul>
 <li>函数调用<ul>
@@ -557,11 +569,38 @@
 <li><strong>函数名</strong>可以按照便于自己阅读的方式任意使用大小写，但应该尽量保持一致。</li>
 </ul>
 </li>
-<li>函数命名具有如下几个限制：<br>■函数名称不能和已有的函数重名。<br>■函数名称只能包含字母、数字和下画线。<br>■函数名称不能以数字开始。</li>
+<li>了解函数命名的限制</li>
 <li>许多语言允许重复使用函数名称。这个特性叫做函数的重载。<strong>但是PHP不支持函数重载</strong>,而且<strong>虽然可以在不同的文件中重复使用一个函数名，但这会引起混乱，所以应该避免</strong></li>
 <li>也可以<strong>声明能够接收可变参数数量的函数</strong>。可以确定已经传递了多少个参数以及这些参数的值。</li>
+<li>函数作用域:<ul>
+<li>注意局部变量的值的改变一般不会影响到全局变量(除非你用了global)</li>
+<li><strong>变量的作用域</strong>是从执行global$var；这一行语句开始的。函数的声明可以在调用它之前或之后（请注意，<strong>函数的作用域不同于变量的作用域！</strong>）</li>
 </ul>
-<h2 id="其他-总线"><a href="#其他-总线" class="headerlink" title="其他(总线)"></a>其他(总线)</h2><h3 id="技巧-amp-盲点-2"><a href="#技巧-amp-盲点-2" class="headerlink" title="技巧&amp;盲点"></a>技巧&amp;盲点</h3><ul>
+</li>
+<li>return关键字:<ul>
+<li>如果不仅仅是将函数的结果输出，而是将比较的<strong>结果返回</strong>，那么这个函数会更加有用(指直接返回数据.)</li>
+</ul>
+</li>
+</ul>
+<h2 id="第6章-面向对象的PHP"><a href="#第6章-面向对象的PHP" class="headerlink" title="第6章　面向对象的PHP"></a>第6章　面向对象的PHP</h2><ul>
+<li>理解类和对象<ul>
+<li>面向对象软件由一系列具有属性和操作的自包含对象组成，这些对象之间能够交互，从而达到我们的要求。</li>
+<li>面向对象软件的一个重要优点是支持和鼓励封装的能力——封装也叫数据隐藏</li>
+<li>在面向对象的软件中，对象是一个被保存数据和操作这些数据的操作方法的唯一、可标识的集合。在软件中，我们用不同的变量作为对象的句柄（唯一标识符）。</li>
+<li>对象可以按类进行分类。类是表示彼此之间可能互不相同，但是必须具有一些共同点的对象集合。</li>
+</ul>
+</li>
+<li>理解多态性(查)</li>
+<li>理解继承</li>
+<li>6.2　在PHP中创建类、属性和操作<ul>
+<li>6.2.1 类的结构<ul>
+<li>类需要添加一些属性和操作。通过在类的定义中使用某些<strong>关键词来声明变量，可以创建属性</strong>。这些关键字与变量的作用域相关：public、private和protected</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="技巧-amp-盲点-2"><a href="#技巧-amp-盲点-2" class="headerlink" title="技巧&amp;盲点"></a>技巧&amp;盲点</h3><h3 id="习惯-amp-意识-1"><a href="#习惯-amp-意识-1" class="headerlink" title="习惯&amp;意识"></a>习惯&amp;意识</h3><h2 id="其他-总线"><a href="#其他-总线" class="headerlink" title="其他(总线)"></a>其他(总线)</h2><h3 id="技巧-amp-盲点-3"><a href="#技巧-amp-盲点-3" class="headerlink" title="技巧&amp;盲点"></a>技巧&amp;盲点</h3><ul>
 <li>如果要从控制结构或者脚本中跳出,可以使用break,continue,exit.注意三者的区别.</li>
 <li>控制结构可以进行语法替换(除了do-while),例如endif、endswitch、endwhile、endfor或endforeach</li>
 <li>!=和&lt;&gt;都是不等价的意思,一样用.</li>
@@ -703,7 +742,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">57</span>
+                  <span class="site-state-item-count">59</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -812,7 +851,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-PHP基础知识"><span class="nav-number">2.</span> <span class="nav-text">第一章 PHP基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用操作符"><span class="nav-number">2.1.</span> <span class="nav-text">使用操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用可变函数"><span class="nav-number">2.2.</span> <span class="nav-text">使用可变函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据条件进行决策"><span class="nav-number">2.3.</span> <span class="nav-text">根据条件进行决策</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环语句"><span class="nav-number">2.4.</span> <span class="nav-text">循环语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章数据存储与检索"><span class="nav-number">3.</span> <span class="nav-text">第二章数据存储与检索</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点"><span class="nav-number">3.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开文件"><span class="nav-number">3.2.</span> <span class="nav-text">打开文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三章-数组"><span class="nav-number">4.</span> <span class="nav-text">第三章 数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第三章支线"><span class="nav-number">4.1.</span> <span class="nav-text">第三章支线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#意识-amp-习惯-amp-技巧"><span class="nav-number">4.2.</span> <span class="nav-text">意识&amp;习惯&amp;技巧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盲点"><span class="nav-number">4.3.</span> <span class="nav-text">盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">4.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五章-代码重用和函数编写"><span class="nav-number">5.</span> <span class="nav-text">第五章 代码重用和函数编写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点-1"><span class="nav-number">5.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#习惯-amp-意识"><span class="nav-number">5.2.</span> <span class="nav-text">习惯&amp;意识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他-总线"><span class="nav-number">6.</span> <span class="nav-text">其他(总线)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点-2"><span class="nav-number">6.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂七杂八的问题"><span class="nav-number">6.2.</span> <span class="nav-text">杂七杂八的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他待解决问题"><span class="nav-number">6.3.</span> <span class="nav-text">其他待解决问题</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#准备工作"><span class="nav-number">1.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第一章-PHP基础知识"><span class="nav-number">2.</span> <span class="nav-text">第一章 PHP基础知识</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#使用操作符"><span class="nav-number">2.1.</span> <span class="nav-text">使用操作符</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#使用可变函数"><span class="nav-number">2.2.</span> <span class="nav-text">使用可变函数</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#根据条件进行决策"><span class="nav-number">2.3.</span> <span class="nav-text">根据条件进行决策</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#循环语句"><span class="nav-number">2.4.</span> <span class="nav-text">循环语句</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第二章数据存储与检索"><span class="nav-number">3.</span> <span class="nav-text">第二章数据存储与检索</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点"><span class="nav-number">3.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#打开文件"><span class="nav-number">3.2.</span> <span class="nav-text">打开文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第三章-数组"><span class="nav-number">4.</span> <span class="nav-text">第三章 数组</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第三章支线"><span class="nav-number">4.1.</span> <span class="nav-text">第三章支线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#意识-amp-习惯-amp-技巧"><span class="nav-number">4.2.</span> <span class="nav-text">意识&amp;习惯&amp;技巧</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盲点"><span class="nav-number">4.3.</span> <span class="nav-text">盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他"><span class="nav-number">4.4.</span> <span class="nav-text">其他</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第五章-代码重用和函数编写"><span class="nav-number">5.</span> <span class="nav-text">第五章 代码重用和函数编写</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点-1"><span class="nav-number">5.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#习惯-amp-意识"><span class="nav-number">5.2.</span> <span class="nav-text">习惯&amp;意识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#第6章-面向对象的PHP"><span class="nav-number">6.</span> <span class="nav-text">第6章　面向对象的PHP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点-2"><span class="nav-number">6.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#习惯-amp-意识-1"><span class="nav-number">6.2.</span> <span class="nav-text">习惯&amp;意识</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他-总线"><span class="nav-number">7.</span> <span class="nav-text">其他(总线)</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#技巧-amp-盲点-3"><span class="nav-number">7.1.</span> <span class="nav-text">技巧&amp;盲点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#杂七杂八的问题"><span class="nav-number">7.2.</span> <span class="nav-text">杂七杂八的问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其他待解决问题"><span class="nav-number">7.3.</span> <span class="nav-text">其他待解决问题</span></a></li></ol></li></ol></div>
             
 
           </div>
@@ -894,7 +933,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共97.7k字</span>
+  <span class="post-count">博客全站共102.3k字</span>
 </div>
         
 <div class="busuanzi-count">
@@ -1414,6 +1453,26 @@ show_date_time();
   
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 

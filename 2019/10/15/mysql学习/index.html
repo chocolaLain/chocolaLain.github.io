@@ -79,16 +79,17 @@
 
 
 
-<meta name="description" content="Welcome to WEIRD">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Lain&#39;s Blog">
-<meta property="og:url" content="http://chocolaLain.github.io/tags/软件操作/index.html">
+<meta name="description" content="vs code配置MySQL，实现连接、查询等功能  使用phpmyadmin的时候,有时候进入服务器里面会弹出报错窗口”在服务上检测到错误!…”,这时候找到config.default.php,设置SendErrorReports为never,有则更改,无则添加. 创建root用户以外的mysql用户的时候,一般来说新的用户拥有的权限很少,如果想要创建管理员用户,那么就要添加更多的权限,而mys">
+<meta property="og:type" content="article">
+<meta property="og:title" content="mysql学习">
+<meta property="og:url" content="http://chocolaLain.github.io/2019/10/15/mysql学习/index.html">
 <meta property="og:site_name" content="Lain&#39;s Blog">
-<meta property="og:description" content="Welcome to WEIRD">
+<meta property="og:description" content="vs code配置MySQL，实现连接、查询等功能  使用phpmyadmin的时候,有时候进入服务器里面会弹出报错窗口”在服务上检测到错误!…”,这时候找到config.default.php,设置SendErrorReports为never,有则更改,无则添加. 创建root用户以外的mysql用户的时候,一般来说新的用户拥有的权限很少,如果想要创建管理员用户,那么就要添加更多的权限,而mys">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:updated_time" content="2019-10-22T14:42:08.533Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Lain&#39;s Blog">
-<meta name="twitter:description" content="Welcome to WEIRD">
+<meta name="twitter:title" content="mysql学习">
+<meta name="twitter:description" content="vs code配置MySQL，实现连接、查询等功能  使用phpmyadmin的时候,有时候进入服务器里面会弹出报错窗口”在服务上检测到错误!…”,这时候找到config.default.php,设置SendErrorReports为never,有则更改,无则添加. 创建root用户以外的mysql用户的时候,一般来说新的用户拥有的权限很少,如果想要创建管理员用户,那么就要添加更多的权限,而mys">
 
 
 
@@ -118,13 +119,13 @@
 
 
 
-  <link rel="canonical" href="http://chocolaLain.github.io/tags/软件操作/">
+  <link rel="canonical" href="http://chocolaLain.github.io/2019/10/15/mysql学习/">
 
 
 
 
 
-  <title>标签: 软件操作 | Lain's Blog</title>
+  <title>mysql学习 | Lain's Blog</title>
   
 
 
@@ -152,7 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
     <a href="https://github.com/chocolaLain" class="github-corner" aria-label="View source on GitHub"><svg width="80" height="80" viewbox="0 0 250 250" style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; right: 0;" aria-hidden="true"><path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"/><path d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2" fill="currentColor" style="transform-origin: 130px 106px;" class="octo-arm"/><path d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z" fill="currentColor" class="octo-body"/></svg></a><style>.github-corner:hover .octo-arm{animation:octocat-wave 560ms ease-in-out}@keyframes octocat-wave{0%,100%{transform:rotate(0)}20%,60%{transform:rotate(-25deg)}40%,80%{transform:rotate(10deg)}}@media (max-width:500px){.github-corner:hover .octo-arm{animation:none}.github-corner .octo-arm{animation:octocat-wave 560ms ease-in-out}}</style>
 
@@ -279,78 +280,299 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block tag">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>软件操作<small>标签</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://chocolaLain.github.io/2019/10/15/mysql学习/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Lain">
+      <meta itemprop="description" content>
+      <meta itemprop="image" content="/images\avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Lain's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2019/07/03/计算机相关/办公应用/vscode笔记/" itemprop="url">
-              
-                <span itemprop="name">vscode&vs笔记</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">mysql学习</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2019-07-03T08:29:16+08:00" content="2019-07-03">
-          07-03
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+              
+                <span class="post-updated">
+                  &nbsp; | &nbsp; 更新于
+                  <time itemprop="dateUpdated" datetime="2019-10-22T22:42:08+08:00" content="2019-10-22">
+                    2019-10-22
+                  </time>
+                </span>
+              
 
-    </header>
-  </article>
 
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-10-15T16:44:56+08:00">
+                2019-10-15
+              </time>
+            
+
+            
+
+            
+
+            
+
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2019/10/15/mysql学习/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/2019/10/15/mysql学习/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv">本文总阅读量 <i class="fa fa-file-o"></i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv"></span>次
+            </span>
+          
+
+          
+            <div class="post-wordcount">
+              
+                
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-file-word-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">字数统计&#58;</span>
+                
+                <span title="字数统计">
+                  1.8k
+                </span>
+              
+
+              
+                <span class="post-meta-divider">|</span>
+              
+
+              
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-clock-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">阅读时长 &asymp;</span>
+                
+                <span title="阅读时长">
+                  6
+                </span>
+              
+            </div>
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-        
+      
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2018/11/22/计算机相关/办公应用/sublime操作笔记/" itemprop="url">
-              
-                <span itemprop="name">sublime操作笔记</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2018-11-22T09:18:03+08:00" content="2018-11-22">
-          11-22
-        </time>
-      </div>
-
-    </header>
-  </article>
-
+      
+        <p><a href="https://www.cnblogs.com/jdwfff/p/10491834.html" target="_blank" rel="noopener">vs code配置MySQL，实现连接、查询等功能</a></p>
+<ul>
+<li>使用phpmyadmin的时候,有时候进入服务器里面会弹出报错窗口”在服务上检测到错误!…”,这时候找到config.default.php,设置SendErrorReports为never,有则更改,无则添加.</li>
+<li>创建root用户以外的mysql用户的时候,一般来说新的用户拥有的权限很少,如果想要创建管理员用户,那么就要添加更多的权限,而mysql5.4和mysql8.0设置权限的方式不同.<br><a href="https://www.jb51.net/article/148145.htm" target="_blank" rel="noopener">详解mysql8.0创建用户授予权限报错解决方法</a><br>注意设置好权限之后需要将mysql服务重启.<a id="more"></a>
+</li>
+</ul>
+<h2 id="第8章-设计Web数据库"><a href="#第8章-设计Web数据库" class="headerlink" title="第8章　设计Web数据库"></a>第8章　设计Web数据库</h2><ul>
+<li>了解关系型数据库的优点.</li>
+<li>了解关系型数据库的概念<ul>
+<li>了解表格,表,列,行,值,<strong>键</strong></li>
+<li>了解<strong>主键和外键</strong>的异同 </li>
+<li>了解模式:数据库整套表格的完整设计称为数据库的模式。一个模式应该显示<strong>表格及表格的列、每个表的主键和外键。</strong></li>
+<li>了解关系:外键表示两个表格数据的关系。<br>关系型数据库有<strong>三种基本的关系类型</strong>:一对一,一对多,多对多.重点了解这三种关系的实例</li>
+</ul>
+</li>
+<li>8.2设计Web数据库<ul>
+<li>8.2.1　考虑要建模的实际对象<br>通常，要建模的每一种现实世界对象都需要有自己的表。考虑这样一个问题：我们要保存所有客户的同类信息。如果有一组属于同一类型的数据，就可以很容易根据这些数据创建一个表。</li>
+<li>8.2.2　避免保存冗余数据<br>注意两个基本问题:1.空间浪费. 2.更新后数据不一致(需要避免3种情况的更新不规则：修改、插入和删除不规则。).</li>
+<li>8.2.3　使用原子列值<br>使用原子列值的意思是对每一行的每个属性只存储一个数据。若存储多个数据,那么系统再也不能只计算匹配字段了，<strong>而必须分析每个属性值</strong>，看系统中是否包含一个匹配。</li>
+<li>8.2.4　选择有意义的键</li>
+<li>8.2.5　考虑需要询问数据库的问题</li>
+<li>8.2.6　避免多个空属性的设计:<br>数据库里有许多空值是一件糟糕的事情。它极大地浪费空间，并且在统计列总量或对其他数值列应用计算函数时可能导致错误。</li>
+<li>8.2.7　表格类型的总结<br>通常，数据库由两种类型的表组成：1. 描述现实世界对象的简单表. 2.描述两个现实世界对象的多对多关系的关联表，多对多关系例如Orders与Books的关系。</li>
+</ul>
+</li>
+<li>8.3　Web数据库架构<ul>
+<li>Web数据库的基本结构包括Web浏览器、Web服务器、脚本引擎和数据库服务器</li>
+<li>了解典型的web数据库事务的步骤(用户的Web浏览器发出HTTP请求balabala).   </li>
+<li>随着应用程序在大小和复杂度上的不断增加，我们可能会将PHP应用程序分成不同的层——通常，包括与MySQL交互的数据库层、包含了应用程序核心的业务逻辑层和管理HTML输出的表示层。</li>
+</ul>
+</li>
+<li>8.4　进一步学习:如果要研究关系数据库背后深层的理论，可阅读关系数据库权威（如C.J.Date）所编写的图书,不过这些<strong>理论性比较强,可能无法立即应用.</strong></li>
+</ul>
+<h2 id="创建Web数据库"><a href="#创建Web数据库" class="headerlink" title="创建Web数据库"></a>创建Web数据库</h2><ul>
+<li>9.1　使用MySQL监视程序<ul>
+<li>MySQL例子中，每个命令之间都用分号（;）分开，分号将告诉MySQL执行这个命令<br>SQL语句不区分大小写，但数据库和表的名称则区分大小写</li>
+</ul>
+</li>
+<li>9.2　登录到MySQL</li>
+<li>9.3　<strong>了解如何创建一个数据库</strong>,创建数据库和用户 ;</li>
+<li>9.4　设置用户与权限 ; </li>
+<li>9.5　<strong>MySQL权限系统</strong>的介绍:1.最少权限原则, 2.创建用户：GRANT(授予)命令,了解权限的四个级别.略</li>
+<li>9.6 </li>
+<li>9.7　使用正确的数据库</li>
+<li><strong>9.8　创建数据库表</strong><ul>
+<li>9.8.1　理解其他关键字的意思<br>了解<strong>NULL</strong>, <strong>AUTO_INCREMENT</strong>(指定AUTO_INCREMENT的列必须是索引列。), <strong>PRIMARY KEY(了解给单列和多列设置主键的情况)</strong></li>
+<li>9.8.2　理解列的类型<ul>
+<li>对索引列使用int unsigned(无符号) auto_increment,mysql可以自动为我们(生成)管理id.</li>
+<li>了解char和varchar的优缺点.</li>
+<li>我们所声明的所有列都是NOT NULL（不为空），这是一个小小的优化措施(为了处理速度快)</li>
+<li>TINYINT UNSIGNED数据类型，其取值范围为0～255之间的一个整数。</li>
+<li>text。该数据类型用于更长的文本</li>
+</ul>
+</li>
+<li>9.8.3　用SHOW和DESCRIBE来查看数据库<ul>
+<li>可以在mysql命令行中可以使用<strong>use dbname/databases, show tables,describe table等命令.</strong><br>如果没有SHOW DATABASES权限，你将只看到权限范围内的数据库。</li>
+</ul>
+</li>
+<li>9.8.4　创建索引:了解语句.</li>
+</ul>
+</li>
+<li>9.9　理解MySQL的标识符<ul>
+<li>了解数据库和表的大小写问题(跟操作系统有关); 列,索引,别名(Alias)不区分大小写.</li>
+</ul>
+</li>
+<li>9.10　选择列数据类型:MySQL中3种基本的列数据类型：数字、日期和时间、字符串<ul>
+<li>9.10.1　数字类型:数字类型和取值范围</li>
+<li>9.10.2　日期和时间类型.</li>
+<li>9.10.3　字符串类型,<strong>分为三类</strong>:第一类为普通字符串，即小段文本,:char,varchar;第2类为TEXT和BLOB类型。这些类型大小可变，它们分别适用于长文本或二进制数据;第3类包括两种特殊类型，SET和ENUM。SET类型用来指定列中的值必须来自一个特定集合中的指定值。</li>
+</ul>
+</li>
+</ul>
+<h3 id="第10章-使用MySQL数据库"><a href="#第10章-使用MySQL数据库" class="headerlink" title="第10章　使用MySQL数据库"></a>第10章　使用MySQL数据库</h3><ul>
+<li>10.1 了解SQL<ul>
+<li>了解数据定义语言和数据操作语言(DDL和DML),DML是用来保存和获得数据库中真正数据的部分，因此我们将更频繁地使用它。</li>
+</ul>
+</li>
+<li>10.2　在数据库中<strong>插入数据</strong><ul>
+<li>了解<strong>插入数据的语句</strong><br>我们所指定的值将<strong>按出现顺序</strong>添加到表中的列,<strong>了解不按顺序来插入数据的方法,可以特殊指定某一列来添添加数据.</strong><br><strong>也可以一次将多行插入到一个表中</strong><br>了解Insert的几个关键字.</li>
+<li>MySQL中的字符串应该包含在一对单引号或双引号中。（在本书中，我们将使用这两种情况）。数字和日期并不需要引号。</li>
+<li>主键我们已经设置为自动添加了,这时候可以看到自动设置主键的<strong>便利性</strong>.</li>
+</ul>
+</li>
+<li>10.3　从数据库中<strong>获取数据</strong><ul>
+<li>了解select语句的基本格式</li>
+<li>了解where条件,除了相等，MySQL还支持<strong>所有比较操作符和正则表达式。</strong><ul>
+<li>注意<strong>LIKE与REGEXP 匹配模式</strong>,LIKE使用简单的SQL模式匹配,了解匹配任何字符的%和匹配一个字符的_<br>REGEXP关键词用于<strong>正则表达式</strong>的匹配。<h3 id="盲点"><a href="#盲点" class="headerlink" title="盲点"></a>盲点</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>在vscode中写完sql语句后可以选中语句右键运行.</li>
+</ul>
 
       
     </div>
+    
+    
+    
 
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2019/10/12/c#学习笔记/" rel="next" title="c#学习笔记">
+                <i class="fa fa-chevron-left"></i> c#学习笔记
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
+
+
+    <div class="post-spread">
+      
+        <!-- Go to www.addthis.com/dashboard to customize your tools -->
+<div class="addthis_inline_share_toolbox">
+  <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5beb84d6297d37ba" async="async"></script>
+</div>
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -358,6 +580,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -378,8 +607,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <section class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -396,7 +634,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">55</span>
+                  <span class="site-state-item-count">59</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -418,7 +656,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">35</span>
+                  <span class="site-state-item-count">44</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -496,6 +734,22 @@
       </section>
 
       
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#第8章-设计Web数据库"><span class="nav-number">1.</span> <span class="nav-text">第8章　设计Web数据库</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#创建Web数据库"><span class="nav-number">2.</span> <span class="nav-text">创建Web数据库</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#第10章-使用MySQL数据库"><span class="nav-number">2.1.</span> <span class="nav-text">第10章　使用MySQL数据库</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#盲点"><span class="nav-number">2.2.</span> <span class="nav-text">盲点</span></a></li></ol></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
+      
 
       
         <div class="back-to-top">
@@ -571,7 +825,7 @@ show_date_time();
 
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共85.6k字</span>
+  <span class="post-count">博客全站共102.3k字</span>
 </div>
         
 <div class="busuanzi-count">
@@ -691,6 +945,10 @@ show_date_time();
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
@@ -1087,26 +1345,6 @@ show_date_time();
   
 
   
-  
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {
-          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
-          processEscapes: true,
-          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
-        }
-      });
-    </script>
-
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax(), i;
-        for (i=0; i < all.length; i += 1) {
-          all[i].SourceElement().parentNode.className += ' has-jax';
-        }
-      });
-    </script>
-    <script type="text/javascript" src="//cdn.bootcss.com/mathjax/2.7.1/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
   
 
 
